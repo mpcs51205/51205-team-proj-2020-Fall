@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-19T06:18:31.983Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="_ZPnhSTMDudSbD4_GG3j" version="13.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-19T07:22:03.906Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="iNE4T1Pe_dVMLfJGKYEc" version="13.8.0" type="github">
   <diagram id="RLGC6BTBYfzD5YC2vYYs" name="Page-1">
     <mxGraphModel dx="1221" dy="1679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -383,10 +383,10 @@
         <mxCell id="F9z4cHkh2gLeOEDDPN0g-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.018;entryY=0.12;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="F9z4cHkh2gLeOEDDPN0g-2" target="F9z4cHkh2gLeOEDDPN0g-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="F9z4cHkh2gLeOEDDPN0g-9" value="action page" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="F9z4cHkh2gLeOEDDPN0g-9" value="user page" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="430" y="408" width="170" height="128" as="geometry" />
         </mxCell>
-        <mxCell id="F9z4cHkh2gLeOEDDPN0g-10" value="See active actions" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="F9z4cHkh2gLeOEDDPN0g-9">
+        <mxCell id="F9z4cHkh2gLeOEDDPN0g-10" value="See active auctions" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="F9z4cHkh2gLeOEDDPN0g-9">
           <mxGeometry y="26" width="170" height="26" as="geometry" />
         </mxCell>
         <mxCell id="F9z4cHkh2gLeOEDDPN0g-11" value="Add Item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="F9z4cHkh2gLeOEDDPN0g-9">
@@ -418,9 +418,6 @@
         </mxCell>
         <mxCell id="F9z4cHkh2gLeOEDDPN0g-3" value="Create Use" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="F9z4cHkh2gLeOEDDPN0g-1">
           <mxGeometry y="52" width="170" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="F9z4cHkh2gLeOEDDPN0g-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1.012;entryY=0.17;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="F9z4cHkh2gLeOEDDPN0g-6" target="F9z4cHkh2gLeOEDDPN0g-10">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
