@@ -1,0 +1,28 @@
+{
+  "users": {
+    "0@email.com": {
+      "email": "0@email.com",
+      "password": "Kevin Durant"
+    },
+    "1@email.com": {
+      "email": "1@email.com",
+      "password": "James Harden"
+    },
+    "2@email.com": {
+      "email": "2@email.com",
+      "password": "Zion Williamson"
+    },
+    "3@email.com": {
+      "email": "3@email.com",
+      "password": "Tracy McGrady"
+    },
+    "4@email.com": {
+      "email": "4@email.com",
+      "password": "Shaquille O'Neal"
+    },
+    "5@email.com": {
+      "email": "5@email.com",
+      "password": "Yao Ming"
+    }
+  }
+}
