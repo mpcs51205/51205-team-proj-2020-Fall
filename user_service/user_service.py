@@ -11,11 +11,11 @@ def create_user():
     users_db.insert({'email': request.json['name'], 'password': request.json['password']})
     return jsonify(Acknowledgement(True).serialize()), 200
 
-@app.route("/login", methods=['GET'])
+@app.route('/login', methods=['POST'])
 def login():
     User = Query()
-    results = users_db.search(User['email'] == request.json['email'] & 
-    User['password'] == request.json['password'])
+    results = users_db.search(User['email'] == request.form['email'] & 
+    User['password'] == request.form['password'])
     if len(results) == 1:
         return jsonify(Acknowledgement(True).serialize()), 200
     else:
