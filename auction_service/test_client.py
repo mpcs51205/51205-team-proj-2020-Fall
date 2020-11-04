@@ -20,6 +20,9 @@ pp.pprint(endpoints)
 
 dummy_item = {'name':args.item_name}
 #print(endpoints['auction'].get_prefix() + "create_auction_item")
-r= requests.put(endpoints['auction'].get_prefix() + "create_auction_item", data=json.dumps(dummy_item),headers={'Content-Type':'application/json'})
-print(r.text,r.status_code)
+r= requests.put(endpoints['mediator'].get_prefix() + "create_auction_item", data=json.dumps(dummy_item),headers={'Content-Type':'application/json'})
+print(r.json(),r.status_code)
+
+r=requests.get(endpoints['mediator'].get_prefix() + "get_all_auction_items", headers={'Content-Type':'application/json'})
+print(r.json())
 
