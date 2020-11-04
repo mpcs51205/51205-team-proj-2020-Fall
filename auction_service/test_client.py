@@ -6,7 +6,7 @@ import pprint
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("item_name")
+parser.add_argument("key")
 args = parser.parse_args()
 
 pp = pprint.PrettyPrinter(indent=4)
@@ -18,11 +18,14 @@ with open("endpoints.json") as endpoints_config:
         endpoints[ep['domain']] = Endpoint(ep['domain'],ep['ip'],ep['port'])
 pp.pprint(endpoints)
 
-dummy_item = {'name':args.item_name}
+#dummy_item = {'name':args.item_name}
 #print(endpoints['auction'].get_prefix() + "create_auction_item")
-r= requests.put(endpoints['mediator'].get_prefix() + "create_auction_item", data=json.dumps(dummy_item),headers={'Content-Type':'application/json'})
-print(r.json(),r.status_code)
+#r= requests.put(endpoints['mediator'].get_prefix() + "create_auction_item", data=json.dumps(dummy_item),headers={'Content-Type':'application/json'})
+#print(r.json(),r.status_code)
 
-r=requests.get(endpoints['mediator'].get_prefix() + "get_all_auction_items", headers={'Content-Type':'application/json'})
+r=requests.get(endpoints['mediator'].get_prefix() + "get_auction_items_by_key/" + args.key, headers={'Content-Type':'application/json'})
 print(r.json())
+
+#r=requests.get(endpoints['mediator'].get_prefix() + "get_all_auction_items", headers={'Content-Type':'application/json'})
+#print(r.json())
 
