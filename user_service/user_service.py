@@ -14,7 +14,7 @@ def create_user():
 @app.route('/login', methods=['POST'])
 def login():
     User = Query()
-    results = users_db.search(User['email'] == request.json['email'] & 
+    results = users_db.search(User['email'] == request.json['email'] and 
     User['password'] == request.json['password'])
     if len(results) == 1:
         return jsonify(Acknowledgement(True).serialize()), 200
