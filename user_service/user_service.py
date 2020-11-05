@@ -8,14 +8,14 @@ users_db = TinyDB('users.json')
 
 @app.route("/create_user", methods=['PUT'])
 def create_user():
-    users_db.insert({'email': request.json['name'], 'password': request.json['password']})
+    users_db.insert({'email': request.json['email'], 'password': request.json['password']})
     return jsonify(Acknowledgement(True).serialize()), 200
 
 @app.route('/login', methods=['POST'])
 def login():
     User = Query()
-    results = users_db.search(User['email'] == request.form['email'] & 
-    User['password'] == request.form['password'])
+    results = users_db.search(User['email'] == request.json['email'] & 
+    User['password'] == request.json['password'])
     if len(results) == 1:
         return jsonify(Acknowledgement(True).serialize()), 200
     else:
