@@ -14,12 +14,12 @@ def create_user():
 @app.route('/login', methods=['POST'])
 def login():
     User = Query()
-    results = users_db.search(User['email'] == request.json['email'] and 
+    results = users_db.search(User['email'] == request.json['email'] and
     User['password'] == request.json['password'])
     if len(results) == 1:
         return jsonify(Acknowledgement(True).serialize()), 200
     else:
         return jsonify(Acknowledgement(False).serialize()), 404
-    
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=6662, debug=True)

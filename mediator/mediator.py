@@ -16,7 +16,7 @@ with open("endpoints.json") as endpoints_config:
 
 @app.route("/create_auction_item", methods=['PUT'])
 def create_auction_item():
-    r=requests.put(endpoints['auction'].get_prefix() + "create_auction_item", data=json.dumps(request.json), headers=headers)
+    r=requests.put(endpoints['auction'].get_prefix() + "create_auction_item", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
 @app.route("/get_all_auction_items", methods=['GET'])
@@ -27,6 +27,16 @@ def get_all_auction_items():
 @app.route("/get_auction_items_by_key/<string:key>", methods=['GET'])
 def get_auction_items_by_key(key):
     r=requests.get(endpoints['auction'].get_prefix() + "get_auction_items_by_key/" + key, headers=headers)
+    return jsonify(r.json())
+
+@app.route("/create_user", methods=['PUT'])
+def create_user():
+    r=requests.put(endpoints['user'].get_prefix() + "create_user", data=json.dumps(request.json), headers=headers)
+    return jsonify(r.json())
+
+@app.route('/login', methods=['POST'])
+def login():
+    r=requests.post(endpoints['user'].get_prefix() + "login", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
 
