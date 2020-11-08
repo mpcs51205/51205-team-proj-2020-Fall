@@ -1,4 +1,13 @@
-class User(object):
+class User_Base(object):
+    def __init__(self, email):
+        self.email_ = email
+
+    def serialize(self):
+        return {
+            'email': self.email_,
+        }
+
+class User(User_Base):
     def __init__(self, email, password):
         self.email_ = email
         self.password_ = password
@@ -19,6 +28,25 @@ class Item_base(object):
             'name': self.name_,
     }
 
+class Item_Auction(Item_base):
+    def __init__(self, key):
+        self.key_ = key
+        # adding proproties for item of auction domain
+        self.start_time_ = None
+        self.end_time_ = None
+        self.category_ = None
+        self.bidding_info_ = None
+        self.seller = None # base User object
+        self.winning_bidder_ = None #base User object
+        self.auction_state_ = None
+
+class Bidding_Info(object):
+    def __init__(self):
+        self.start_bidding_price_ = None
+        self.highest_bidding_price_ = None
+        self.buyout_price_ = None
+
+
 class Acknowledgement(object):
     def __init__(self, success):
         self.success_ = success
@@ -26,6 +54,17 @@ class Acknowledgement(object):
     def serialize(self):
         return{
             'success':self.success_
+        }
+
+class Item_Ack(Acknowledgement):
+    def __init__(self, success, item_key):
+        self.success_ = success
+        self.item_key_ = item_key
+
+    def serialize(self):
+        return{
+            'success':self.success_,
+            'item_key':self.item_key_,
         }
 
 class Endpoint(object):
