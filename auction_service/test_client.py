@@ -18,7 +18,7 @@ with open("endpoints.json") as endpoints_config:
         endpoints[ep['domain']] = Endpoint(ep['domain'],ep['ip'],ep['port'])
 pp.pprint(endpoints)
 
-dummy_item = {'name':'Ben Simmons'}
+dummy_item = {'name':'Michael Jordan'}
 #print(endpoints['auction'].get_prefix() + "create_auction_item")
 r= requests.put(endpoints['mediator'].get_prefix() + "create_auction_item", data=json.dumps(dummy_item),headers={'Content-Type':'application/json'})
 print(r.json(),r.status_code)

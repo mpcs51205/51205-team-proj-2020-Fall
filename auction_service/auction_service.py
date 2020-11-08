@@ -1,5 +1,5 @@
 from flask import Flask,request,jsonify
-from class_types import Item_base, Acknowledgement
+from class_types import Item_base, Acknowledgement, Item_Auction, Item_Ack
 from tinydb import TinyDB, Query
 
 app = Flask(__name__)

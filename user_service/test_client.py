@@ -18,7 +18,7 @@ with open("endpoints.json") as endpoints_config:
         endpoints[ep['domain']] = Endpoint(ep['domain'],ep['ip'],ep['port'])
 pp.pprint(endpoints)
 
-dummy_user = {'email':"bensimmons@email.com", 'password':"Ben Simmons"}
+dummy_user = {'email':"michaeljordan@email.com", 'password':"Michael Jordan"}
 r = requests.put(endpoints['mediator'].get_prefix() + "create_user", data = json.dumps(dummy_user),headers={'Content-Type':'application/json'})
 print(r.json(),r.status_code)
 r = requests.post(endpoints['mediator'].get_prefix() + "login", data=json.dumps(dummy_user),headers={'Content-Type':'application/json'})
