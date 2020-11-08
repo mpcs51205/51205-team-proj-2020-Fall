@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-11-08T20:05:10.553Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="4uzeIV2CPsMj6WsT9tcp" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-08T22:27:24.251Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="C-LTdTQTWxDx8iBnaXmA" version="13.9.2" type="github">
   <diagram id="CkghXBPRaOvDLqNdj3G4" name="Page-1">
-    <mxGraphModel dx="810" dy="1699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="891" dy="1699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -239,6 +239,9 @@
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-38" value="get_all_auction_items&#xa;get_all_auction_items_by_key&#xa;get_all_auction_items_by_category&#xa;create_auction_item&#xa;update_auction_item&#xa;remove_auction_item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qm4FGj7v6DZkzzpuAIpe-35" vertex="1">
           <mxGeometry y="58" width="210" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="6jNHIQa5SbUW5T_YebQE-1" value="&lt;span&gt;User Stories :&lt;br&gt;&lt;br&gt;get_all_auction_items: provide all the current items with details that during auction window to the calling service.&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;get_all_auction_items_by_key:&amp;nbsp;&lt;/span&gt;provide the item details that matches the key (no matter the item start auction or not or already end) to the calling service.&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;get_all_auction_items_by_category:&amp;nbsp;&lt;/span&gt;provide all the item details that matches the category and during its auction window&amp;nbsp;to the calling service.&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;create_auction_item: auction service will create an auction item, usually called by user service, with item details provided from frontend.&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;update_auction_item:&amp;nbsp;&lt;/span&gt;auction service will update an auction item details, usually called by user/Admin service, with item details provided from frontend.&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;remove_auction_item:&amp;nbsp;&lt;/span&gt;auction service will erase an auction item record from database, usually called by Admin service, with item key provided from frontend." style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="3" width="590" height="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
