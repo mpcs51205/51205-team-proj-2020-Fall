@@ -36,6 +36,8 @@ chats = {
      }
 }
 
+mediator_addr = "http://127.0.0.1:6666/"
+
 @app.route("/")
 def add_item():
     return render_template("add_item.html")
@@ -44,8 +46,14 @@ def add_item():
 def add():
     data = json.loads(request.data.decode())
     dummy_item = {'name':data['item_name']}
-    r= requests.put("http://127.0.0.1:6664/" + "create_auction_item", data=json.dumps(dummy_item),headers={'Content-Type':'application/json'})
+    r= requests.put("http://127.0.0.1:6666/" + "create_auction_item", data=json.dumps(dummy_item),headers={'Content-Type':'application/json'})
 
+@app.route("/api/get_all_auction_items", methods = ['POST'])
+def get():
+    print("get auction items")
+    r= requests.get(mediator_addr + "get_all_auction_items", headers={'Content-Type':'application/json'})
+    print(r.json())
+    return jsonify(r.json())
 
 @app.route("/create")
 def create_chat():
