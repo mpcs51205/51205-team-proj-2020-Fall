@@ -8,14 +8,18 @@ class User_Base(object):
         }
 
 class User(User_Base):
-    def __init__(self, email, password):
+    def __init__(self, email, password, login, suspend):
         self.email_ = email
         self.password_ = password
+        self.login_ = False
+        self.suspend_ = False
 
     def serialize(self):
         return {
             'email': self.email_,
-            'password': self.password_
+            'password': self.password_,
+            'login': self.login_,
+            'suspend': self.suspend_
         }
 
 class Item_base(object):

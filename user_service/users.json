@@ -1,1 +1,1 @@
-{"_default": {"1": {"email": "0@email.com", "password": "Kevin Durant"}, "2": {"email": "michaeljordan@email.com", "password": "Michael Jordan"}, "3": {"email": "michaeljordan@email.com", "password": "Michael Jordan"}}}
+{"_default": {"1": {"email": "michaeljordan@email.com", "password": "Michael Jordan", "login": true, "suspend": false}}}
