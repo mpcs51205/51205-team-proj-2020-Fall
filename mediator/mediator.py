@@ -34,10 +34,10 @@ def update_auction_item(key):
     r=requests.put(endpoints['auction'].get_prefix() + "update_auction_item/"+str(key), data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
-#only user/admin service should call remove_auction_item
+# only user/admin service should call remove_auction_item
 @app.route("/remove_auction_item/<int:key>", methods=['PUT'])
 def remove_auction_item(key):
-    r=requests.put(endpoints['auction'].get_prefix() + "remove_auction_item/"+str(key), data=json.dumps(request.json),headers=headers)
+    r=requests.put(endpoints['auction'].get_prefix() + "remove_auction_item/"+str(key), headers=headers)
     return jsonify(r.json())
 
 # fronend can directly call get_all_auction_items either for user or admin

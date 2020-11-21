@@ -19,12 +19,12 @@ with open("endpoints.json") as endpoints_config:
 #pp.pprint(endpoints)
 
 headers = {'Content-Type':'application/json'}
-dummy_item = {'name':'giannis antetokounmpo', 'start_time':'2020-11-21 11:30:05', 'end_time':'2020-11-21 12:30:05', 'category':'nba_draft', 'start_bidding_price':'100000', 'buyout_price':'1000000', 'user_key':'0'}
+#dummy_item = {'name':'giannis antetokounmpo', 'start_time':'2020-11-21 11:30:05', 'end_time':'2020-11-21 12:30:05', 'category':'nba_draft', 'start_bidding_price':'100000', 'buyout_price':'1000000', 'user_key':'0'}
 
 #r= requests.put(endpoints['mediator'].get_prefix() + "create_auction_item", data=json.dumps(dummy_item),headers=headers)
 #print(r.json(),r.status_code)
 
-dummy_item_update = {'name':'ben simmons', 'start_time':'2020-11-21 11:30:05', 'end_time':'2020-11-21 12:30:05', 'category':'nba_draft_2016', 'start_bidding_price':'6666666', 'buyout_price':'29000000', 'user_key':'0'}
+#dummy_item_update = {'name':'ben simmons', 'start_time':'2020-11-21 11:30:05', 'end_time':'2020-11-21 12:30:05', 'category':'nba_draft_2016', 'start_bidding_price':'6666666', 'buyout_price':'29000000', 'user_key':'0'}
 
 #r=requests.put(endpoints['mediator'].get_prefix() + "update_auction_item/"+args.key, data=json.dumps(dummy_item_update), headers=headers)
 #print(r.json())
