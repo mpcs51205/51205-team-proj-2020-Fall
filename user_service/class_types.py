@@ -51,7 +51,7 @@ class Bidding_Info(object):
         self.buyout_price_ = None
 
 
-class Acknowledgement(object):
+class Acknowledgement_base(object):
     def __init__(self, success):
         self.success_ = success
 
@@ -60,9 +60,8 @@ class Acknowledgement(object):
             'success':self.success_
         }
 
-class Item_Ack(Acknowledgement):
+class Item_Ack(Acknowledgement_base):
     def __init__(self, success, item_key):
-        self.success_ = success
         self.item_key_ = item_key
 
     def serialize(self):

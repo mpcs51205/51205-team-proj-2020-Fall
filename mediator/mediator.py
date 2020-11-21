@@ -1,5 +1,5 @@
 from flask import Flask,request,jsonify
-from class_types import Item_base, Acknowledgement, Endpoint, User
+from class_types import Item_base, Acknowledgement_base, Endpoint, User
 from tinydb import TinyDB, Query
 import requests
 import json
@@ -15,6 +15,14 @@ with open("endpoints.json") as endpoints_config:
         endpoints[ep['domain']] = Endpoint(ep['domain'],ep['ip'],ep['port'])
 
 #only user service should call create_auction_item
+# request json should have append the following fields attached:
+# ['name']
+# ['start_time']
+# ['end_time']
+# ['category']
+# ['start_bidding_price']
+# ['buyout_price']
+# ['user_key']
 @app.route("/create_auction_item", methods=['PUT'])
 def create_auction_item():
     r=requests.put(endpoints['auction'].get_prefix() + "create_auction_item", data=json.dumps(request.json),headers=headers)
