@@ -4,6 +4,7 @@
     {"domain":"admin", "ip": "http://127.0.0.1", "port": 6663},
     {"domain":"auction", "ip": "http://127.0.0.1", "port": 6664},
     {"domain":"mediator", "ip": "http://127.0.0.1", "port": 6666},
+    {"domain":"email", "ip": "http://127.0.0.1", "port": 6667},
     {"domain":"add new domain and port", "ip": "http://127.0.0.1", "port": 6665}
 ]
 }

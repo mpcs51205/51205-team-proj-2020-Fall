@@ -14,16 +14,19 @@ with open("endpoints.json") as endpoints_config:
     for idx,ep in enumerate(data['services']):
         endpoints[ep['domain']] = Endpoint(ep['domain'],ep['ip'],ep['port'])
 
+#only user service should call create_auction_item
 @app.route("/create_auction_item", methods=['PUT'])
 def create_auction_item():
     r=requests.put(endpoints['auction'].get_prefix() + "create_auction_item", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
+# fronend can directly call get_all_auction_items either for user or admin
 @app.route("/get_all_auction_items", methods=['GET'])
 def get_all_auction_items():
     r=requests.get(endpoints['auction'].get_prefix() + "get_all_auction_items", headers=headers)
     return jsonify(r.json())
 
+# only user/admin should call get_auction_items_by_key to get details of an item
 @app.route("/get_auction_items_by_key/<string:key>", methods=['GET'])
 def get_auction_items_by_key(key):
     r=requests.get(endpoints['auction'].get_prefix() + "get_auction_items_by_key/" + key, headers=headers)
