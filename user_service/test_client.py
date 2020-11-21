@@ -21,5 +21,13 @@ pp.pprint(endpoints)
 dummy_user = {'email':"michaeljordan@email.com", 'password':"Michael Jordan"}
 r = requests.put(endpoints['mediator'].get_prefix() + "create_user", data = json.dumps(dummy_user),headers={'Content-Type':'application/json'})
 print(r.json(),r.status_code)
+
 r = requests.post(endpoints['mediator'].get_prefix() + "login", data=json.dumps(dummy_user),headers={'Content-Type':'application/json'})
 print(r.json(),r.status_code)
+
+user_id = {'id':1}
+r = requests.post(endpoints['mediator'].get_prefix() + "logout", data=json.dumps(user_id),headers={'Content-Type':'application/json'})
+print(r.json(), r.status_code)
+
+r = requests.post(endpoints['mediator'].get_prefix() + "suspend", data=json.dumps(user_id),headers={'Content-Type':'application/json'})
+print(r.json(), r.status_code)

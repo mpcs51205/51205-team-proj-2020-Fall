@@ -42,14 +42,15 @@ def login():
     r=requests.post(endpoints['user'].get_prefix() + "login", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
-# @app.route('/logout', methods=['POST'])
-# def logout():
-#     r=requests.post(endpoints['user'].get_prefix() + "logout", data=json.dumps(request.json),headers=headers)
-#     return jsonify(r.json())
+@app.route('/logout', methods=['POST'])
+def logout():
+    r=requests.post(endpoints['user'].get_prefix() + "logout", data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
 
-# @app.route('/suspend', methods=['POST'])
-# def suspend():
-
+@app.route('/suspend', methods=['POST'])
+def suspend():
+    r=requests.post(endpoints['user'].get_prefix() + "suspend", data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=6666, debug=True)
