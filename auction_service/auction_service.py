@@ -12,16 +12,21 @@ def create_auction_item():
     items_db.update({'key':key}, doc_ids=[key])
     return jsonify(Item_Ack(True, key).serialize())
 
-@app.route("/update_auction_item", methods=['POST'])
-def update_auction_item():
-    item_key = request.json['key']
-    # TODO find the item from db using key and update its properties
-    return jsonify(Item_Ack(True, item_key).serialize())
+@app.route("/update_auction_item/<int:key>", methods=['PUT'])
+def update_auction_item(key):
+    if items_db.contains(doc_id=key):
+        # find the item from db using key and update its properties
+        items_db.update(request.json, doc_ids=[key])
+        return jsonify(Item_Ack(True, key).serialize())
+    return jsonify(Item_Ack(False, key).serialize())
 
-@app.route("/remove_auction_item/<string:key>", methods=['POST'])
+@app.route("/remove_auction_item/<int:key>", methods=['PUT'])
 def remove_auction_item(key):
-    # TODO find the item from db using key and delete the record from db
-    return jsonify(Item_Ack(True, item_key).serialize())
+    # find the item from db using key and delete the record from db
+    if items_db.contains(doc_id=key):
+        items_db.remove(doc_ids=[key])
+        return jsonify(Item_Ack(True, key).serialize())
+    return jsonify(Item_Ack(False, key).serialize())
 
 @app.route("/get_all_auction_items", methods=['GET'])
 def get_all_auction_items():
@@ -31,10 +36,10 @@ def get_all_auction_items():
     #return jsonify([item.serialize() for item in item_list])
     return jsonify(items_db.all())
 
-@app.route("/get_auction_items_by_key/<string:key>", methods=['GET'])
+@app.route("/get_auction_items_by_key/<int:key>", methods=['GET'])
 def get_auction_items_by_key(key):
     query = Query()
-    ret = items_db.search(query.key == int(key))
+    ret = items_db.search(query.key == key)
     #item_list = []
     #for item in ret:
         #item_list.append(Item_base(item['key'],item['name']))
