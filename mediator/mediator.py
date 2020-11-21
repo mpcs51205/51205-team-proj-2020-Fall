@@ -28,13 +28,13 @@ def create_auction_item():
     r=requests.put(endpoints['auction'].get_prefix() + "create_auction_item", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
-# frontend can directly call update_auction_item/key
+# only user/admin service should call update_auction_item
 @app.route("/update_auction_item/<int:key>", methods=['PUT'])
 def update_auction_item(key):
     r=requests.put(endpoints['auction'].get_prefix() + "update_auction_item/"+str(key), data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
-# frontend can directly call remove_auction_item/key if only current login session is admin
+#only user/admin service should call remove_auction_item
 @app.route("/remove_auction_item/<int:key>", methods=['PUT'])
 def remove_auction_item(key):
     r=requests.put(endpoints['auction'].get_prefix() + "remove_auction_item/"+str(key), data=json.dumps(request.json),headers=headers)
