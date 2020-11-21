@@ -63,7 +63,7 @@ class Acknowledgement_base(object):
 class Item_Ack(Acknowledgement_base):
     def __init__(self, success, item_key):
         self.item_key_ = item_key
-
+        self.success_ = success
     def serialize(self):
         return{
             'success':self.success_,
