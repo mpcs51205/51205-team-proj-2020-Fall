@@ -60,5 +60,15 @@ def suspend():
     r=requests.post(endpoints['user'].get_prefix() + "suspend", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
+@app.route('/remove_account', methods=['POST'])
+def remove_account():
+    r=requests.post(endpoints['user'].get_prefix() + "remove_account", data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
+
+@app.route('/create_item_for_user/<int:user_key>', methods=['POST'])
+def create_item_for_user(user_key):
+    r=requests.post(endpoints['user'].get_prefix() + "create_item_for_user/" + str(user_key), data=json.dumps(request.json), headers=headers)
+    return jsonify(r.json())
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=6666, debug=True)
