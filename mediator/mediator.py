@@ -28,10 +28,29 @@ def create_auction_item():
     r=requests.put(endpoints['auction'].get_prefix() + "create_auction_item", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
+# only user/admin service should call update_auction_item
+@app.route("/update_auction_item/<int:key>", methods=['PUT'])
+def update_auction_item(key):
+    r=requests.put(endpoints['auction'].get_prefix() + "update_auction_item/"+str(key), data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
+
+# only user/admin service should call remove_auction_item
+@app.route("/remove_auction_item/<int:key>", methods=['PUT'])
+def remove_auction_item(key):
+    r=requests.put(endpoints['auction'].get_prefix() + "remove_auction_item/"+str(key), headers=headers)
+    return jsonify(r.json())
+
 # fronend can directly call get_all_auction_items either for user or admin
 @app.route("/get_all_auction_items", methods=['GET'])
 def get_all_auction_items():
     r=requests.get(endpoints['auction'].get_prefix() + "get_all_auction_items", headers=headers)
+    return jsonify(r.json())
+
+# only user/admin should call get_auction_items_by_category to get details of items of one category
+# category field should only contain alphabet letters or numbers, no special charactor(such as space) allowed.
+@app.route("/get_auction_items_by_category/<string:category>", methods=['GET'])
+def get_auction_items_by_category(category):
+    r=requests.get(endpoints['auction'].get_prefix() + "get_auction_items_by_category/" + category, headers=headers)
     return jsonify(r.json())
 
 # only user/admin should call get_auction_items_by_key to get details of an item
