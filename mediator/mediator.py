@@ -59,31 +59,37 @@ def get_auction_items_by_key(key):
     r=requests.get(endpoints['auction'].get_prefix() + "get_auction_items_by_key/" + key, headers=headers)
     return jsonify(r.json())
 
+# front end can directly call create user, return 200 or 404
 @app.route("/create_user", methods=['PUT'])
 def create_user():
     r=requests.put(endpoints['user'].get_prefix() + "create_user", data=json.dumps(request.json), headers=headers)
     return jsonify(r.json())
 
+# only user can call login, return 200 or 404
 @app.route('/login', methods=['POST'])
 def login():
     r=requests.post(endpoints['user'].get_prefix() + "login", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
+# only user can call logout, return 200
 @app.route('/logout', methods=['POST'])
 def logout():
     r=requests.post(endpoints['user'].get_prefix() + "logout", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
+# user and admin can call suspend, return 200
 @app.route('/suspend', methods=['POST'])
 def suspend():
     r=requests.post(endpoints['user'].get_prefix() + "suspend", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
+# user and admin can call remove_account, return 200
 @app.route('/remove_account', methods=['POST'])
 def remove_account():
     r=requests.post(endpoints['user'].get_prefix() + "remove_account", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
+# user can call create_item_for_user and it will return acknoledgement
 @app.route('/create_item_for_user/<int:user_key>', methods=['POST'])
 def create_item_for_user(user_key):
     r=requests.post(endpoints['user'].get_prefix() + "create_item_for_user/" + str(user_key), data=json.dumps(request.json), headers=headers)
