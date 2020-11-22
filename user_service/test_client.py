@@ -5,9 +5,9 @@ from tinydb import TinyDB, Query
 import pprint
 import argparse
 
-# parser = argparse.ArgumentParser()
-# parser.add_argument("user")
-# args = parser.parse_args()
+parser = argparse.ArgumentParser()
+parser.add_argument("key")
+args = parser.parse_args()
 
 pp = pprint.PrettyPrinter(indent=4)
 endpoints = {}
@@ -25,9 +25,17 @@ print(r.json(),r.status_code)
 r = requests.post(endpoints['mediator'].get_prefix() + "login", data=json.dumps(dummy_user),headers={'Content-Type':'application/json'})
 print(r.json(),r.status_code)
 
-user_id = {'id':1}
-r = requests.post(endpoints['mediator'].get_prefix() + "logout", data=json.dumps(user_id),headers={'Content-Type':'application/json'})
-print(r.json(), r.status_code)
+# user_id = {'id':1}
+# r = requests.post(endpoints['mediator'].get_prefix() + "logout", data=json.dumps(user_id),headers={'Content-Type':'application/json'})
+# print(r.json(), r.status_code)
 
-r = requests.post(endpoints['mediator'].get_prefix() + "suspend", data=json.dumps(user_id),headers={'Content-Type':'application/json'})
+# r = requests.post(endpoints['mediator'].get_prefix() + "suspend", data=json.dumps(user_id),headers={'Content-Type':'application/json'})
+# print(r.json(), r.status_code)
+
+# r = requests.post(endpoints['mediator'].get_prefix() + "remove_account", data=json.dumps(user_id),headers={'Content-Type':'application/json'})
+# print(r.json(), r.status_code)
+
+dummy_item = {'name':'kevin garnett', 'start_time':'2020-11-21 11:30:05', 'end_time':  '2020-11-21 12:30:05', 'category':'nba_draft', 'start_bidding_price':100000, 'buyout_price':   1000000, 'user_key':1}
+
+r = requests.post(endpoints['mediator'].get_prefix() + "create_item_for_user/" + args.key, data=json.dumps(dummy_item), headers={'Content-Type':'application/json'})
 print(r.json(), r.status_code)
