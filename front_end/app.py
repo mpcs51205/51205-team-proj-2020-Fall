@@ -37,24 +37,48 @@ chats = {
 }
 
 mediator_addr = "http://127.0.0.1:6666/"
+headers = {'Content-Type':'application/json'}
 
 @app.route("/")
-def add_item():
-    return render_template("add_item.html")
+def login_page():
+    return render_template("login.html")
+
+@app.route("/api/login", methods = ['POST'])
+def login():
+    print(request.data.decode())
+    data = json.loads(request.data.decode())
+    dummy_item = {'email':data['email'], 'password':data['password']}
+    r= requests.post(mediator_addr + "login", data=json.dumps(dummy_item),headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
+@app.route("/api/register", methods = ['PUT'])
+def register():
+    print(request.data.decode())
+    data = json.loads(request.data.decode())
+    dummy_item = {'email':data['email'], 'password':data['password']}
+    r= requests.put(mediator_addr + "create_user", data=json.dumps(dummy_item),headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
+@app.route("/main_page")
+def main_page():
+    return render_template("main_page.html")
+
 
 @app.route("/api/add_item", methods = ['POST'])
 def add():
     data = json.loads(request.data.decode())
     dummy_item = {'name':data['item_name']}
-    r= requests.put("http://127.0.0.1:6666/" + "create_auction_item", data=json.dumps(dummy_item),headers={'Content-Type':'application/json'})
+    r= requests.put(mediator_addr + "create_auction_item", data=json.dumps(dummy_item),headers=headers)
 
-@app.route("/api/get_all_auction_items", methods = ['POST'])
+@app.route("/api/get_all_auction_items", methods = ['GET'])
 def get():
     print("get auction items")
-    r= requests.get(mediator_addr + "get_all_auction_items", headers={'Content-Type':'application/json'})
+    r= requests.get(mediator_addr + "get_all_auction_items", headers=headers)
     print(r.json())
     return jsonify(r.json())
-
+    
 @app.route("/create")
 def create_chat():
     if "magic_key" in request.args :
@@ -64,9 +88,7 @@ def create_chat():
                 return render_template("chat_project.html", chat_id = chat[0], magic_key = request.args["magic_key"])
     return render_template("chat_project.html")
 
-@app.route("/chat/<req_chat_id>")
-def chat(req_chat_id):
-    return render_template("chat_project.html", chat_id = req_chat_id)
+
 
 @app.route("/api/create", methods = ['POST'])
 def create():
