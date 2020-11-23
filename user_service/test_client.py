@@ -7,6 +7,7 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("key")
+parser.add_argument("item_key")
 args = parser.parse_args()
 
 pp = pprint.PrettyPrinter(indent=4)
@@ -39,3 +40,12 @@ dummy_item = {'name':'kevin garnett', 'start_time':'2020-11-21 11:30:05', 'end_t
 
 r = requests.post(endpoints['mediator'].get_prefix() + "create_item_for_user/" + args.key, data=json.dumps(dummy_item), headers={'Content-Type':'application/json'})
 print(r.json(), r.status_code)
+
+# updated_dummy_item = {'name':'kevin garnett', 'start_time':'2020-11-21 11:30:05', 'end_time':  '2020-11-21 12:30:05', 'category':'nba_draft', 'start_bidding_price':100000, 'buyout_price':   1000000, 'user_key':1}
+
+# r = requests.post(endpoints['mediator'].get_prefix() + "update_item_for_user/" + args.key + args.item_key, data=json.dumps(updated_dummy_item), headers={'Content-Type':'application/json'})
+# print(r.json(), r.status_code)
+
+# key = {'item_key': 1}
+# r = requests.post(endpoints['mediator'].get_prefix() + "remove_item_for_user/" + args.key, data=json.dumps(key), headers={'Content-Type':'application/json'})
+# print(r.json(), r.status_code)
