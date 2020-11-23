@@ -95,17 +95,17 @@ def create_item_for_user(user_key):
     r=requests.post(endpoints['user'].get_prefix() + "create_item_for_user/" + str(user_key), data=json.dumps(request.json), headers=headers)
     return jsonify(r.json())
 
-# # user can call update_item_for_user and it will return acknowledgement
-# @app.route('/update_item_for_user/<int:user_key>/<int:item_key>', methods=['POST'])
-# def update_item_for_user(user_key, item_key):
-#     r=requests.post(endpoints['user'].get_prefix() + "update_auction_item/" + str(user_key) + str(item_key), data=json.dumps(request.json), headers=headers)
-#     return jsonify(r.json())
+# user can call update_item_for_user and it will return acknowledgement
+@app.route('/update_item_for_user/<int:user_key>/<int:item_key>', methods=['POST'])
+def update_item_for_user(user_key, item_key):
+    r=requests.post(endpoints['user'].get_prefix() + "update_item_for_user/" + str(user_key) + "/" + str(item_key), data=json.dumps(request.json), headers=headers)
+    return jsonify(r.json())
 
-# # user can remove_item_for_user and it will return acknowledgement
-# @app.route('/remove_item_for_user/<int:user_key>', methods=['POST'])
-# def remove_item_for_user(user_key):
-#     r=requests.post(endpoints['user'].get_prefix() + "remove_item_for_user/" + str(user_key), data=json.dumps(request.json), headers=headers)
-#     return jsonify(r.json())
+# user can remove_item_for_user and it will return acknowledgement
+@app.route('/remove_item_for_user/<int:user_key>/<int:item_key>', methods=['POST'])
+def remove_item_for_user(user_key, item_key):
+    r=requests.post(endpoints['user'].get_prefix() + "remove_item_for_user/" + str(user_key) + "/" + str(item_key), data=json.dumps(request.json), headers=headers)
+    return jsonify(r.json())
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=6666, debug=True)

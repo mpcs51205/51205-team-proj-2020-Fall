@@ -65,17 +65,16 @@ def create_item_for_user(user_key):
 
 @app.route('/update_item_for_user/<int:user_key>/<int:item_key>', methods=['POST'])
 def update_item_for_user(user_key, item_key):
-    r = requests.put(endpoints['mediator'].get_prefix() + "update_auction_item", data=json.dumps(request.json),headers=headers)
-    record = users_db.get(doc_id=user_key)
-    new_items = record['items']
-    new_items.remove(item_key)
-    new_items.append(r.json()['item_key'])
-    users_db.update({'items': new_items}, doc_ids=[user_key])
-    return jsonify(Acknowledgement_base(True).serialize()), 200
+    r = requests.put(endpoints['mediator'].get_prefix() + "update_auction_item/" + str(item_key), data=json.dumps(request.json),headers=headers)
+    return jsonify(Acknowledgement_base(r.json()['success']).serialize()), 200
 
 @app.route('/remove_item_for_user/<int:user_key>/<int:item_key>', methods=['POST'])
 def remove_item_for_user(user_key, item_key):
-    r = requests.put(endpoints['mediator'].get_prefix() + "remove_auction_item", data=json.dumps(request.json), headers=headers)
+    r = requests.put(endpoints['mediator'].get_prefix() + "remove_auction_item/" + str(item_key), data=json.dumps(request.json), headers=headers)
+    
+    if r.json()['success'] == False:
+        return jsonify(Acknowledgement_base(False).serialize()), 404
+    
     record = users_db.get(doc_id=user_key)
     new_items = record['items']
     if (r.json()['item_key'] in new_items):
