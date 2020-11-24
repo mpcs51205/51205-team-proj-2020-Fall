@@ -10,9 +10,12 @@
             <label for="add_item">item name: </label>
             <input id="add_item"></input>
             <button onclick="add_item();">add_item</button>
-            <div id="add_item_success"> </div>
+			<div id="add_item_success"> </div>	
+            <button onclick="get_all_auction_items();">get_all_auction_items</button>
         </div>
-      </body>
+		<div id="show_auction_items">
+		</div>
+	</body>
 
 <script type="text/javascript" src="{{ url_for('static', filename='add_item.js') }}"></script>
 </html>
