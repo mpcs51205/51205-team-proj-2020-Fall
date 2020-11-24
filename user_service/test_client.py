@@ -20,11 +20,19 @@ with open("endpoints.json") as endpoints_config:
 # pp.pprint(endpoints)
 
 dummy_user = {'email':"michaeljordan@email.com", 'password':"Michael Jordan"}
-# r = requests.put(endpoints['mediator'].get_prefix() + "create_user", data = json.dumps(dummy_user),headers={'Content-Type':'application/json'})
+r = requests.put(endpoints['mediator'].get_prefix() + "create_user", data = json.dumps(dummy_user),headers={'Content-Type':'application/json'})
+print(r.json(),r.status_code)
+
+r = requests.post(endpoints['mediator'].get_prefix() + "login", data=json.dumps(dummy_user),headers={'Content-Type':'application/json'})
+print(r.json(),r.status_code)
+
+# new_email_updated_user = {'email':"newmichaeljordan@email.com", 'id':1}
+# r = requests.post(endpoints['mediator'].get_prefix() + "update_email", data=json.dumps(new_email_updated_user),headers={'Content-Type':'application/json'})
 # print(r.json(),r.status_code)
 
-# r = requests.post(endpoints['mediator'].get_prefix() + "login", data=json.dumps(dummy_user),headers={'Content-Type':'application/json'})
-# print(r.json(),r.status_code)
+new_password_updated_user = {'password':"new Michael Jordan", 'id':1}
+r = requests.post(endpoints['mediator'].get_prefix() + "update_password", data=json.dumps(new_password_updated_user),headers={'Content-Type':'application/json'})
+print(r.json(),r.status_code)
 
 # user_id = {'id':1}
 # r = requests.post(endpoints['mediator'].get_prefix() + "logout", data=json.dumps(user_id),headers={'Content-Type':'application/json'})
@@ -46,6 +54,6 @@ dummy_user = {'email':"michaeljordan@email.com", 'password':"Michael Jordan"}
 # r = requests.post(endpoints['mediator'].get_prefix() + "update_item_for_user/" + args.key + "/" + args.item_key, data=json.dumps(updated_dummy_item), headers={'Content-Type':'application/json'})
 # print(r.json(), r.status_code)
 
-key = {'item_key': 3}
-r = requests.post(endpoints['mediator'].get_prefix() + "remove_item_for_user/" + args.key + "/" + args.item_key, data=json.dumps(key), headers={'Content-Type':'application/json'})
-print(r.json(), r.status_code)
+# key = {'item_key': 3}
+# r = requests.post(endpoints['mediator'].get_prefix() + "remove_item_for_user/" + args.key + "/" + args.item_key, data=json.dumps(key), headers={'Content-Type':'application/json'})
+# print(r.json(), r.status_code)
