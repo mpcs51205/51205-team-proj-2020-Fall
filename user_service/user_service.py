@@ -44,6 +44,16 @@ def logout():
     users_db.update({'login': False}, doc_ids=[request.json['id']])
     return jsonify(Acknowledgement_base(True).serialize()), 200
 
+@app.route('/update_email', methods=['POST'])
+def update_email():
+    users_db.update({'email': request.json['email']}, doc_ids=[request.json['id']])
+    return jsonify(Acknowledgement_base(True).serialize()), 200
+
+@app.route('/update_password', methods=['POST'])
+def update_password():
+    users_db.update({'password': request.json['password']}, doc_ids=[request.json['id']])
+    return jsonify(Acknowledgement_base(True).serialize()), 200
+
 @app.route('/suspend', methods=['POST'])
 def suspend():
     users_db.update({'suspend': True}, doc_ids=[request.json['id']])

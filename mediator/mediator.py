@@ -77,6 +77,18 @@ def logout():
     r=requests.post(endpoints['user'].get_prefix() + "logout", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
+# only user or admin can call update_email, return 200
+@app.route('/update_email', methods=['POST'])
+def update_email():
+    r=requests.post(endpoints['user'].get_prefix() + "update_email", data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
+
+# only user or admin can call update_password, return 200
+@app.route('/update_password', methods=['POST'])
+def update_password():
+    r=requests.post(endpoints['user'].get_prefix() + "update_password", data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
+
 # user and admin can call suspend, return 200
 @app.route('/suspend', methods=['POST'])
 def suspend():
