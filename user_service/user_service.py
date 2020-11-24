@@ -29,9 +29,9 @@ def create_user():
 @app.route('/login', methods=['POST'])
 def login():
     User = Query()
-    results = users_db.search(User['email'] == request.json['email'] and
-                              User['password'] == request.json['password'] and
-                              User['suspend'] == False)
+    results = users_db.search((User['email'] == request.json['email']) &
+                              (User['password'] == request.json['password']) &
+                              (User['suspend'] == False))
     if len(results) == 1:
         id = results[0].doc_id
         users_db.update({'login': True}, doc_ids=[id])
