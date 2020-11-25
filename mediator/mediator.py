@@ -59,6 +59,11 @@ def get_auction_items_by_key(key):
     r=requests.get(endpoints['auction'].get_prefix() + "get_auction_items_by_key/" + key, headers=headers)
     return jsonify(r.json())
 
+@app.route("/get_auction_items_by_keyword/<string:keyword>", methods=['GET'])
+def get_auction_items_by_keyword(keyword):
+    r=requests.get(endpoints['auction'].get_prefix() + "get_auction_items_by_keyword/" + keyword, headers=headers)
+    return jsonify(r.json())
+
 # front end can directly call create user, return 200 or 404
 @app.route("/create_user", methods=['PUT'])
 def create_user():

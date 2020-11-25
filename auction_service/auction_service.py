@@ -1,19 +1,20 @@
 from flask import Flask,request,jsonify
 from class_types import Item_base, Acknowledgement_base, Item_Auction, Item_Ack
-from tinydb import TinyDB, Query
+from tinydb import TinyDB, Query, where
+import re
 
 app = Flask(__name__)
 
 items_db = TinyDB('items.json')
 
 
-@app.route("/bid_item", methods=['POST'])
-def bid_item():
-    item_key = request.json['item_key']
-    user_key = request.json['user_key']
-    bid_price = request.json['bid_price']
-    if items_db.contains(doc_id=item_key):
-        itemsdb.get(doc_id=item_key)
+#TODO @app.route("/bid_item", methods=['POST'])
+#def bid_item():
+    #item_key = request.json['item_key']
+    #user_key = request.json['user_key']
+    #bid_price = request.json['bid_price']
+    #if items_db.contains(doc_id=item_key):
+        #itemsdb.get(doc_id=item_key)
 
 @app.route("/create_auction_item", methods=['PUT'])
 def create_auction_item():
@@ -53,6 +54,13 @@ def get_auction_items_by_key(key):
     #for item in ret:
         #item_list.append(Item_base(item['key'],item['name']))
     #return jsonify([item.serialize() for item in item_list])
+    return jsonify(ret)
+
+@app.route("/get_auction_items_by_keyword/<string:keyword>", methods=['GET'])
+def get_auction_items_by_keyword(keyword):
+    query = Query()
+    regex = ".*" + keyword + ".*" #any string contains a substring of keyword
+    ret = items_db.search(query.name.matches(regex, flags=re.IGNORECASE))
     return jsonify(ret)
 
 @app.route("/get_auction_items_by_category/<string:category>", methods=['GET'])
