@@ -52,6 +52,15 @@ def login():
     print(r.json())
     return jsonify(r.json())
 
+@app.route("/api/logout", methods = ['POST'])
+def logout():
+    print(request.data.decode())
+    data = json.loads(request.data.decode())
+    dummy_item = {'id':data['id']}
+    r= requests.post(mediator_addr + "logout", data=json.dumps(dummy_item),headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
 @app.route("/api/register", methods = ['PUT'])
 def register():
     print(request.data.decode())
@@ -66,11 +75,47 @@ def main_page():
     return render_template("main_page.html")
 
 
-@app.route("/api/add_item", methods = ['POST'])
-def add():
+@app.route("/api/add_item", methods = ['PUT'])
+def add_item():
+    print(request.data.decode())
     data = json.loads(request.data.decode())
-    dummy_item = {'name':data['item_name']}
-    r= requests.put(mediator_addr + "create_auction_item", data=json.dumps(dummy_item),headers=headers)
+    dummy_item = {'name':data['name'], 'start_time':data['start_time'], 
+                  'end_time':data['end_time'], 'category':data['category'],
+                  'start_bidding_price':data['start_bidding_price'], 'buyout_price':data['buyout_price'], 
+                  'user_key':data['user_key']}
+    r= requests.post(mediator_addr + "create_item_for_user/" + data['user_key'], data=json.dumps(dummy_item),headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
+@app.route("/api/get_auction_items_by_category", methods = ['POST'])
+def search_item_category():
+    print(request.data.decode())
+    data = json.loads(request.data.decode())
+    r= requests.get(mediator_addr + "get_auction_items_by_category/" + data['category'], headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
+@app.route("/api/update_item_for_user", methods = ['PUT'])
+def modify_item():
+    print(request.data.decode())
+    data = json.loads(request.data.decode())
+    dummy_item = {'name':data['name'], 'start_time':data['start_time'], 
+                  'end_time':data['end_time'], 'category':data['category'],
+                  'start_bidding_price':data['start_bidding_price'], 'buyout_price':data['buyout_price'], 
+                  'user_key':data['user_key']}
+    r= requests.post(mediator_addr + "update_item_for_user/" + str(data['user_key']) + "/" + str(data['item_key']), data=json.dumps(dummy_item),headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
+@app.route("/api/remove_item_for_user", methods = ['PUT'])
+def delete_item():
+    print(request.data.decode())
+    data = json.loads(request.data.decode())
+    dummy_item = {'item_key':data['item_key']}
+    r= requests.post(mediator_addr + "remove_item_for_user/" + str(data['user_key']) + "/" + data['item_key'], data=json.dumps(dummy_item),headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
 
 @app.route("/api/get_all_auction_items", methods = ['GET'])
 def get():
@@ -78,7 +123,25 @@ def get():
     r= requests.get(mediator_addr + "get_all_auction_items", headers=headers)
     print(r.json())
     return jsonify(r.json())
-    
+
+@app.route("/api/update_email", methods = ['POST'])
+def update_email():
+    print(request.data.decode())
+    data = json.loads(request.data.decode())
+    dummy_item = {'email':data['email'], 'id':data['id']}
+    r= requests.post(mediator_addr + "update_email", data=json.dumps(dummy_item),headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
+@app.route("/api/update_password", methods = ['POST'])
+def update_password():
+    print(request.data.decode())
+    data = json.loads(request.data.decode())
+    dummy_item = {'password':data['password'], 'id':data['id']}
+    r= requests.post(mediator_addr + "update_password", data=json.dumps(dummy_item),headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
 @app.route("/create")
 def create_chat():
     if "magic_key" in request.args :
