@@ -4,6 +4,7 @@ import os
 import pika
 import json
 from email.message import EmailMessage
+import psycopg2
 
 gmail_user = 'mpcs.uchicago.51205@gmail.com'
 gmail_password = 'donkeykong51205'
@@ -32,6 +33,46 @@ except:
     print("gmail server failed")
     quit()
 
+""" Connect to the PostgreSQL database server """
+conn = None
+try:
+  # connect to the PostgreSQL server
+  print('Connecting to the PostgreSQL database...')
+  conn = psycopg2.connect(host="localhost",
+                database="emails",
+                user="postgres",
+                password="Abcd1234")
+
+  # create a cursor
+  cur = conn.cursor()
+
+# execute a statement
+  cur.execute("SELECT EXISTS ( \
+   SELECT FROM information_schema.tables \
+   WHERE table_name   = 'emails' \
+   )")
+
+  # display the PostgreSQL database server version
+  table_exists = cur.fetchone()
+  print(table_exists)
+  if table_exists[0] == False:
+    print("emails table does not exist, now trying to create one ...")
+    sql ="""
+    CREATE TABLE emails (
+             email_id SERIAL PRIMARY KEY,
+             to_email_addr VARCHAR(255) NOT NULL,
+             subject VARCHAR(255) NOT NULL,
+             body TEXT default NULL);
+    """
+    cur.execute(sql)
+    conn.commit() #fuck this ...
+  else:
+    print("emails table already exists, ok to proceed ..")
+
+except (Exception, psycopg2.DatabaseError) as error:
+  print(error)
+  quit()
+
 #server.sendmail(sent_from, to, email_text)
 
 connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
@@ -46,8 +87,15 @@ def callback(ch, method, properties, body):
     msg['Subject'] = email['subject']
     msg['From'] = sent_from
     msg['To'] = email['to']
-    #server.sendmail(sent_from, email['to'], email_text)
+
+    #TODO call insert postgress here
+    sql = """
+    INSERT INTO emails(to_email_addr,subject,body) VALUES(%s,%s,%s) RETURNING email_id;
+    """
     server.send_message(msg)
+    cur.execute(sql, (email['to'],email['subject'],email['body']))
+    print("new generated email id is ---> ",cur.fetchone()[0])
+    conn.commit()
     print (msg)
 
 channel.basic_consume(queue='email_queue',
