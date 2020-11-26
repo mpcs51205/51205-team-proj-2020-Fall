@@ -46,14 +46,16 @@ def get_all_auction_items():
     #return jsonify([item.serialize() for item in item_list])
     return jsonify(items_db.all())
 
-@app.route("/get_auction_items_by_key/<int:key>", methods=['GET'])
-def get_auction_items_by_key(key):
+@app.route("/get_auction_items_by_key/<int:item_key>", methods=['GET'])
+def get_auction_items_by_key(item_key):
     query = Query()
-    ret = items_db.search(query.key == key)
-    #item_list = []
-    #for item in ret:
-        #item_list.append(Item_base(item['key'],item['name']))
-    #return jsonify([item.serialize() for item in item_list])
+    ret = items_db.search(query.key == item_key)
+    return jsonify(ret)
+
+@app.route("/get_auction_items_by_user/<int:user_key>", methods=['GET'])
+def get_auction_items_by_user(user_key):
+    query = Query()
+    ret = items_db.search(query.user_key == user_key)
     return jsonify(ret)
 
 @app.route("/get_auction_items_by_keyword/<string:keyword>", methods=['GET'])

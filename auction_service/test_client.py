@@ -19,7 +19,7 @@ with open("endpoints.json") as endpoints_config:
 #pp.pprint(endpoints)
 
 headers = {'Content-Type':'application/json'}
-dummy_item = {'name':'lebron james', 'start_time':'2020-11-21 11:30:05', 'end_time':'2020-11-21 12:30:05', 'category':'nba_draft', 'start_bidding_price':100000, 'buyout_price':1000000, 'user_key':1}
+dummy_item = {'name':'Kevin Durant ', 'start_time':'2020-11-21 11:30:05', 'end_time':'2020-11-21 12:30:05', 'category':'nba_draft', 'start_bidding_price':800000, 'buyout_price':88000000, 'user_key':2}
 
 #r= requests.put(endpoints['mediator'].get_prefix() + "create_auction_item", data=json.dumps(dummy_item),headers=headers)
 #print(r.json(),r.status_code)
@@ -41,5 +41,8 @@ dummy_item = {'name':'lebron james', 'start_time':'2020-11-21 11:30:05', 'end_ti
 #r=requests.get(endpoints['mediator'].get_prefix() + "get_auction_items_by_category/nba_draft", headers=headers)
 #print(r.json())
 
-r=requests.get(endpoints['mediator'].get_prefix() + "get_auction_items_by_keyword/james",   headers=headers)
+#r=requests.get(endpoints['mediator'].get_prefix() + "get_auction_items_by_keyword/james",   headers=headers)
+#print(r.json())
+
+r=requests.get(endpoints['mediator'].get_prefix() + "get_auction_items_by_user/1",   headers=headers)
 print(r.json())

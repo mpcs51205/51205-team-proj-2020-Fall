@@ -59,14 +59,19 @@ def get_auction_items_by_category(category):
     return jsonify(r.json())
 
 # only user/admin should call get_auction_items_by_key to get details of an item
-@app.route("/get_auction_items_by_key/<string:key>", methods=['GET'])
-def get_auction_items_by_key(key):
-    r=requests.get(endpoints['auction'].get_prefix() + "get_auction_items_by_key/" + key, headers=headers)
+@app.route("/get_auction_items_by_key/<string:item_key>", methods=['GET'])
+def get_auction_items_by_key(item_key):
+    r=requests.get(endpoints['auction'].get_prefix() + "get_auction_items_by_key/" + item_key, headers=headers)
     return jsonify(r.json())
 
 @app.route("/get_auction_items_by_keyword/<string:keyword>", methods=['GET'])
 def get_auction_items_by_keyword(keyword):
     r=requests.get(endpoints['auction'].get_prefix() + "get_auction_items_by_keyword/" + keyword, headers=headers)
+    return jsonify(r.json())
+
+@app.route("/get_auction_items_by_user/<string:user_key>", methods=['GET'])
+def get_auction_items_by_user(user_key):
+    r=requests.get(endpoints['auction'].get_prefix() + "get_auction_items_by_user/" + user_key, headers=headers)
     return jsonify(r.json())
 
 # front end can directly call create user, return 200 or 404
