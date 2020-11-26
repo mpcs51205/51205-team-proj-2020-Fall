@@ -5,6 +5,7 @@ import requests
 import json
 import pprint
 import argparse
+import pika
 
 app = Flask(__name__)
 endpoints = {}
@@ -13,6 +14,10 @@ with open("endpoints.json") as endpoints_config:
     data = json.load(endpoints_config)
     for idx,ep in enumerate(data['services']):
         endpoints[ep['domain']] = Endpoint(ep['domain'],ep['ip'],ep['port'])
+
+connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+channel = connection.channel()
+channel.queue_declare(queue='email_queue')
 
 #only user service should call create_auction_item
 # request json should have append the following fields attached:
@@ -123,6 +128,15 @@ def update_item_for_user(user_key, item_key):
 def remove_item_for_user(user_key, item_key):
     r=requests.post(endpoints['user'].get_prefix() + "remove_item_for_user/" + str(user_key) + "/" + str(item_key), data=json.dumps(request.json), headers=headers)
     return jsonify(r.json())
+
+# whoever service calling this api should append json with 3 fields:
+# 'to':<dest email addr>
+# 'subject':<email subject>
+# 'body' : <email body>
+@app.route('/send_email', methods=['POST'])
+def send_email():
+    channel.basic_publish(exchange='',routing_key='email_queue',body=json.dumps(request.json))
+    return jsonify({'success':True})
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=6666, debug=True)
