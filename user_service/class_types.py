@@ -8,14 +8,19 @@ class User_Base(object):
         }
 
 class User(User_Base):
-    def __init__(self, email, password):
+    def __init__(self, email, password, login, suspend, items):
         self.email_ = email
         self.password_ = password
+        self.login_ = False
+        self.suspend_ = False
+        self.items_ = []
 
     def serialize(self):
         return {
             'email': self.email_,
-            'password': self.password_
+            'password': self.password_,
+            'login': self.login_,
+            'suspend': self.suspend_
         }
 
 class Item_base(object):
@@ -47,7 +52,7 @@ class Bidding_Info(object):
         self.buyout_price_ = None
 
 
-class Acknowledgement(object):
+class Acknowledgement_base(object):
     def __init__(self, success):
         self.success_ = success
 
@@ -56,15 +61,24 @@ class Acknowledgement(object):
             'success':self.success_
         }
 
-class Item_Ack(Acknowledgement):
+class Item_Ack(Acknowledgement_base):
     def __init__(self, success, item_key):
-        self.success_ = success
         self.item_key_ = item_key
-
+        self.success_ = success
     def serialize(self):
         return{
             'success':self.success_,
             'item_key':self.item_key_,
+        }
+
+class User_Ack(Acknowledgement_base):
+    def __init__(self, success, user_key):
+        self.user_key_ = user_key
+        self.success_ = success
+    def serialize(self):
+        return{
+            'success':self.success_,
+            'user_key':self.user_key_,
         }
 
 class Endpoint(object):
