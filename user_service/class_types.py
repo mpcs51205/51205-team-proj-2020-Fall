@@ -53,12 +53,13 @@ class Bidding_Info(object):
 
 
 class Acknowledgement_base(object):
-    def __init__(self, success):
+    def __init__(self, success, reason=""):
         self.success_ = success
-
+        self.reason_ = reason
     def serialize(self):
         return{
-            'success':self.success_
+            'success':self.success_,
+            'reason':self.reason_
         }
 
 class Item_Ack(Acknowledgement_base):
