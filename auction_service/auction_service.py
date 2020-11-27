@@ -1,13 +1,31 @@
 from flask import Flask,request,jsonify
-from class_types import Item_base, Acknowledgement_base, Item_Auction, Item_Ack
+from class_types import Item_base, Acknowledgement_base, Item_Auction, Item_Ack, Endpoint
 from tinydb import TinyDB, Query, where
 import re
 from datetime import datetime
+import time
+import json
+import requests
+import threading
+
 
 app = Flask(__name__)
-
+endpoints = {}
+with open("endpoints.json") as endpoints_config:
+    data = json.load(endpoints_config)
+    for idx,ep in enumerate(data['services']):
+        endpoints[ep['domain']] = Endpoint(ep['domain'],ep['ip'],ep['port'])
 items_db = TinyDB('items.json')
 
+headers = {'Content-Type':'application/json'}
+def thread_function():
+    time.sleep(2)
+    while 1:
+        r= requests.put(endpoints['auction'].get_prefix() + "update_auction_items_state",headers=headers)
+        time.sleep(1)
+
+item_state_updater_thread = threading.Thread(target=thread_function)
+item_state_updater_thread.start()
 
 @app.route("/bid_item", methods=['POST'])
 def bid_item():
