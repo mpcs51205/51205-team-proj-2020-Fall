@@ -95,7 +95,17 @@ def search_item_category():
     print(r.json())
     return jsonify(r.json())
 
-@app.route("/api/update_item_for_user", methods = ['PUT'])
+@app.route("/api/get_auction_items_by_keyword", methods = ['POST'])
+def search_item_keyword():
+    print(request.data.decode())
+    data = json.loads(request.data.decode())
+    r= requests.get(mediator_addr + "get_auction_items_by_keyword/" + data['keyword'], headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
+
+
+@app.route("/api/update_item_for_user", methods = ['POST'])
 def modify_item():
     print(request.data.decode())
     data = json.loads(request.data.decode())
@@ -107,12 +117,12 @@ def modify_item():
     print(r.json())
     return jsonify(r.json())
 
-@app.route("/api/remove_item_for_user", methods = ['PUT'])
+@app.route("/api/remove_item_for_user", methods = ['POST'])
 def delete_item():
     print(request.data.decode())
     data = json.loads(request.data.decode())
     dummy_item = {'item_key':data['item_key']}
-    r= requests.post(mediator_addr + "remove_item_for_user/" + str(data['user_key']) + "/" + data['item_key'], data=json.dumps(dummy_item),headers=headers)
+    r= requests.post(mediator_addr + "remove_item_for_user/" + str(data['user_key']) + "/" + str(data['item_key']), data=json.dumps(dummy_item),headers=headers)
     print(r.json())
     return jsonify(r.json())
 
@@ -121,6 +131,15 @@ def delete_item():
 def get():
     print("get auction items")
     r= requests.get(mediator_addr + "get_all_auction_items", headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
+
+@app.route("/api/get_auction_items_by_user", methods = ['POST'])
+def get_my():
+    print(request.data.decode())
+    data = json.loads(request.data.decode())
+    r= requests.get(mediator_addr + "get_auction_items_by_user/" + str(data['id']), headers=headers)
     print(r.json())
     return jsonify(r.json())
 
@@ -141,6 +160,29 @@ def update_password():
     r= requests.post(mediator_addr + "update_password", data=json.dumps(dummy_item),headers=headers)
     print(r.json())
     return jsonify(r.json())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @app.route("/create")
 def create_chat():

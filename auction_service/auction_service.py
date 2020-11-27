@@ -18,7 +18,7 @@ items_db = TinyDB('items.json')
 
 @app.route("/create_auction_item", methods=['PUT'])
 def create_auction_item():
-    key = items_db.insert({'name': request.json['name'], 'start_time':request.json['start_time'], 'end_time': request.json['end_time'], 'category': request.json['category'], 'start_bidding_price': request.json['start_bidding_price'], 'buyout_price': request.json['buyout_price'], 'user_key': request.json['user_key'], 'winning_bidder_key':-1, 'highest_bidding_price':-1, 'auction_state':'created'})
+    key = items_db.insert({'name': request.json['name'], 'start_time':request.json['start_time'], 'end_time': request.json['end_time'], 'category': request.json['category'], 'start_bidding_price': request.json['start_bidding_price'], 'buyout_price': request.json['buyout_price'], 'user_key':int(request.json['user_key']), 'winning_bidder_key':-1, 'highest_bidding_price':-1, 'auction_state':'created'})
     items_db.update({'key':key}, doc_ids=[key])
     return jsonify(Item_Ack(True, key).serialize())
 
@@ -54,8 +54,10 @@ def get_auction_items_by_key(item_key):
 
 @app.route("/get_auction_items_by_user/<int:user_key>", methods=['GET'])
 def get_auction_items_by_user(user_key):
+    print(user_key)
     query = Query()
     ret = items_db.search(query.user_key == user_key)
+    print(ret)
     return jsonify(ret)
 
 @app.route("/get_auction_items_by_keyword/<string:keyword>", methods=['GET'])
