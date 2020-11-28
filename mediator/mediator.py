@@ -19,6 +19,13 @@ connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
 channel.queue_declare(queue='email_queue')
 
+# front end (user login) can directly this to bid an item, 3 fields need to be provoded from json
+# item_key , user_key, bid_price
+@app.route("/bid_item", methods=['PUT'])
+def bid_item():
+    r=requests.put(endpoints['auction'].get_prefix() + "bid_item", data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
+
 #only user_service should call create_auction_item
 # request json should have append the following fields attached:
 # ['name']

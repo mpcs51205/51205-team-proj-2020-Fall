@@ -27,7 +27,7 @@ def thread_function():
 item_state_updater_thread = threading.Thread(target=thread_function)
 item_state_updater_thread.start()
 
-@app.route("/bid_item", methods=['POST'])
+@app.route("/bid_item", methods=['PUT'])
 def bid_item():
     item_key = int(request.json['item_key'])
     user_key = int(request.json['user_key'])

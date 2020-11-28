@@ -19,7 +19,7 @@ with open("endpoints.json") as endpoints_config:
 #pp.pprint(endpoints)
 
 headers = {'Content-Type':'application/json'}
-dummy_item = {'name':'Yao Ming', 'start_time':'2020-11-21 11:30:05', 'end_time':'2020-11-27 13:30:05', 'category':'nba_draft', 'start_bidding_price':666, 'buyout_price':233333, 'user_key':2}
+dummy_item = {'name':'Zion Williamson', 'start_time':'2020-12-21 11:30:05', 'end_time':'2021-01-27 13:30:05', 'category':'nba_draft', 'start_bidding_price':777, 'buyout_price':12000, 'user_key':1}
 
 r= requests.put(endpoints['mediator'].get_prefix() + "create_auction_item", data=json.dumps(dummy_item),headers=headers)
 print(r.json(),r.status_code)
