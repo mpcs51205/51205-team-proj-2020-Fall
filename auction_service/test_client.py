@@ -62,7 +62,7 @@ test_bid = {'user_key':77, 'item_key':1, 'bid_price':666}
 r=requests.put(endpoints['mediator'].get_prefix() + "bid_item", data=json.dumps(test_bid),headers=headers)
 print(r.json())
 
-item started, starting_bid_px < bid < highest_bidding_px
+#item started, starting_bid_px < bid < highest_bidding_px
 test_bid = {'user_key':77, 'item_key':1, 'bid_price':900}
 r=requests.put(endpoints['mediator'].get_prefix() + "bid_item", data=json.dumps(test_bid),headers=headers)
 print(r.json())
