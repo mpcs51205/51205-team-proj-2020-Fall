@@ -127,6 +127,15 @@ def delete_item():
     return jsonify(r.json())
 
 
+@app.route("/api/bid_item", methods = ['PUT'])
+def bid_item():
+    print(request.data.decode())
+    data = json.loads(request.data.decode())
+    dummy_item = {'item_key':data['item_key'], 'user_key':data['user_key'], 'bid_price':int(data['bid_price']) }
+    r= requests.put(mediator_addr + "bid_item", data=json.dumps(dummy_item),headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
 @app.route("/api/get_all_auction_items", methods = ['GET'])
 def get():
     print("get auction items")
