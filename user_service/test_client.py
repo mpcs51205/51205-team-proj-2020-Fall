@@ -12,7 +12,7 @@ args = parser.parse_args()
 
 pp = pprint.PrettyPrinter(indent=4)
 endpoints = {}
-users_db = TinyDB('users.json')
+
 with open("endpoints.json") as endpoints_config:
     data = json.load(endpoints_config)
     for idx,ep in enumerate(data['services']):
