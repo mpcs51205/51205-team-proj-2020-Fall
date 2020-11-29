@@ -63,16 +63,15 @@ function get_all_auction_items_message() {
         var wrapper = document.createElement('div');
 
         wrapper.setAttribute('class','container darker');
-
+        var bid_item = "bid_item" + one_row["key"]; 
         var p = document.createElement('p');
         p.innerHTML = "name: " + one_row["name"] + "<br></br>start_bidding_price: " +  one_row["start_bidding_price"] + 
                       "<br></br>buyout_price: " + one_row["buyout_price"] + 
                       "<br></br>start_time: " +  one_row["start_time"] + "<br></br>end_time: " +  one_row["end_time"] +
-                      "<br></br>category: " +  one_row["category"] + "<br></br>user key: " +  one_row["user_key"];
+                      "<br></br>category: " +  one_row["category"] + "<br></br>user key: " +  one_row["user_key"]
+                      + "<br></br> <input id=\""+ bid_item +"\"></input> <button onclick=\"bid_item(" + one_row["key"] + ");\">bid item</button>";
         
         // If the user key equals to current user key, the user can modify or delete the item
-
-
         wrapper.appendChild(p);
         all_auction_items.appendChild(wrapper);
     }
@@ -191,6 +190,25 @@ function modify_email() {
     oReq.send(JSON.stringify({'email':email, 'id':parseInt(user_key)}));
     localStorage.setItem("user_email",email);
     show_user_information();
+}
+
+function bid_item(key) {
+    console.log("bid_item()");
+    var oReq = new XMLHttpRequest();
+    oReq.open("PUT", "/api/bid_item");
+    // var user_key = localStorage.getItem("user_key");
+    var user_key = localStorage.getItem("user_key");
+    oReq.addEventListener("load", bid_item_message);
+    console.log("item_name" + key);
+    var price = document.getElementById("bid_item" + key).value;
+
+    oReq.send(JSON.stringify({'item_key':key,
+                            "bid_price": price,
+                            "user_key": parseInt(user_key)}));
+}
+
+function bid_item_message() {
+    console.log(this.responseText);
 }
 
 function modify_email_message() {
