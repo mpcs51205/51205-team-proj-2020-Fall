@@ -37,7 +37,7 @@ function add_item() {
     console.log("user key is: " + user_key);
     var oReq = new XMLHttpRequest();
     oReq.open("PUT", "/api/add_item");
-    // oReq.addEventListener("load", add_item_);
+    oReq.addEventListener("load", add_item_message);
     oReq.send(JSON.stringify({
                 "name": item_name,
                 "start_time": item_start_time,
@@ -46,6 +46,11 @@ function add_item() {
                 "start_bidding_price": item_start_bidding_price,
                 "buyout_price": item_buyout_price,
                 "user_key": user_key}));
+}
+
+function add_item_message() {
+    console.log(this.responseText);
+
 }
 
 function get_all_auction_items_message() {

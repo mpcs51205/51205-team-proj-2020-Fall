@@ -81,8 +81,8 @@ def add_item():
     data = json.loads(request.data.decode())
     dummy_item = {'name':data['name'], 'start_time':data['start_time'], 
                   'end_time':data['end_time'], 'category':data['category'],
-                  'start_bidding_price':data['start_bidding_price'], 'buyout_price':data['buyout_price'], 
-                  'user_key':data['user_key']}
+                  'start_bidding_price':int(data['start_bidding_price']), 'buyout_price':int(data['buyout_price']), 
+                  'user_key':int(data['user_key'])}
     r= requests.post(mediator_addr + "create_item_for_user/" + data['user_key'], data=json.dumps(dummy_item),headers=headers)
     print(r.json())
     return jsonify(r.json())
