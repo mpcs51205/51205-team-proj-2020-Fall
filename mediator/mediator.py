@@ -19,6 +19,13 @@ connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
 channel.queue_declare(queue='email_queue')
 
+# front end (user login) can directly this to bid an item, 3 fields need to be provoded from json
+# item_key , user_key, bid_price
+@app.route("/bid_item", methods=['PUT'])
+def bid_item():
+    r=requests.put(endpoints['auction'].get_prefix() + "bid_item", data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
+
 #only user_service should call create_auction_item
 # request json should have append the following fields attached:
 # ['name']
@@ -39,13 +46,13 @@ def update_auction_item(key):
     r=requests.put(endpoints['auction'].get_prefix() + "update_auction_item/"+str(key), data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
-# only user/admin service should call remove_auction_item
+# only user/admin service should call remove_auction_item, can only be removed if an item hasn't started auction
 @app.route("/remove_auction_item/<int:key>", methods=['PUT'])
 def remove_auction_item(key):
     r=requests.put(endpoints['auction'].get_prefix() + "remove_auction_item/"+str(key), headers=headers)
     return jsonify(r.json())
 
-# fronend can directly call get_all_auction_items either for user or admin
+# fronend can directly call get_all_auction_items either for user or admin, return all items that currectly in 'started' auction state
 @app.route("/get_all_auction_items", methods=['GET'])
 def get_all_auction_items():
     r=requests.get(endpoints['auction'].get_prefix() + "get_all_auction_items", headers=headers)
@@ -53,6 +60,7 @@ def get_all_auction_items():
 
 # frontend user/admin should call get_auction_items_by_category to get details of items of one category
 # category field should only contain alphabet letters or numbers, no special charactor(such as space) allowed.
+#returning items are all currectly in 'started' auction state
 @app.route("/get_auction_items_by_category/<string:category>", methods=['GET'])
 def get_auction_items_by_category(category):
     r=requests.get(endpoints['auction'].get_prefix() + "get_auction_items_by_category/" + category, headers=headers)
@@ -65,6 +73,7 @@ def get_auction_items_by_key(item_key):
     return jsonify(r.json())
 
 # expose to frontend user/admin
+#returning items are all currectly in 'started' auction state
 @app.route("/get_auction_items_by_keyword/<string:keyword>", methods=['GET'])
 def get_auction_items_by_keyword(keyword):
     r=requests.get(endpoints['auction'].get_prefix() + "get_auction_items_by_keyword/" + keyword, headers=headers)

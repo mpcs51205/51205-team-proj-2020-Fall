@@ -1,170 +1,171 @@
-<mxfile host="app.diagrams.net" modified="2020-11-21T03:04:28.245Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="O1d6RlZNzuJoQavVt0d7" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-27T22:03:52.186Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="o53ClmbFnTeH0qTgLzfp" version="13.10.0" type="github">
   <diagram id="CkghXBPRaOvDLqNdj3G4" name="Page-1">
-    <mxGraphModel dx="1351" dy="1989" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1372" dy="2067" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Wp9SVrj0tU1h-vnS6O2c-1" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
-          <mxGeometry x="50" y="90" width="200" height="280" as="geometry" />
+          <mxGeometry x="60" y="347" width="200" height="280" as="geometry" />
         </mxCell>
         <mxCell id="Wp9SVrj0tU1h-vnS6O2c-2" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Auction&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="75" y="100" width="150" height="30" as="geometry" />
+          <mxGeometry x="85" y="357" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Wp9SVrj0tU1h-vnS6O2c-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="Wp9SVrj0tU1h-vnS6O2c-2" target="Wp9SVrj0tU1h-vnS6O2c-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Wp9SVrj0tU1h-vnS6O2c-5" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
-          <mxGeometry x="60" y="130" width="180" height="30" as="geometry" />
+          <mxGeometry x="70" y="387" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Wp9SVrj0tU1h-vnS6O2c-6" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
-          <mxGeometry x="60" y="160" width="180" height="30" as="geometry" />
+          <mxGeometry x="70" y="417" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Wp9SVrj0tU1h-vnS6O2c-7" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Point-to-Point&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
-          <mxGeometry x="60" y="190" width="180" height="30" as="geometry" />
+          <mxGeometry x="70" y="447" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Wp9SVrj0tU1h-vnS6O2c-8" value="TinyDB:&lt;br&gt;Items Inventory&lt;br&gt;Items Update&lt;br&gt;Items Search&lt;br&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
-          <mxGeometry x="55" y="230" width="190" height="120" as="geometry" />
+          <mxGeometry x="65" y="487" width="190" height="120" as="geometry" />
         </mxCell>
         <mxCell id="JUK2bO1f_9fNUvEL-GUI-24" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;Auction Service&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;owner: Yifei Xu&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;usage: create an auction item,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;search items by keyword/category, update/delete existing auction items.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;operation: use &#39;python3&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;auction_service.py&lt;/span&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&#39; to start the service.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;host: localhost:6664&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;api:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;get_all_auction_items,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;get_all_auction_items_by_key,&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;get_all_auction_items_by_category,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;create_auction_item,&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;update_auction_item,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;remove_auction_item&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;synchronicity: auction service uses synchronous communication through REST api and flask framework, to provide/create/modify/delete auction items info to frontend user/admin.&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="270" y="90" width="330" height="280" as="geometry" />
+          <mxGeometry x="280" y="347" width="330" height="280" as="geometry" />
         </mxCell>
         <mxCell id="74homY8sXIHZhCgM_SFn-1" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
-          <mxGeometry x="50" y="420" width="200" height="280" as="geometry" />
+          <mxGeometry x="60" y="677" width="200" height="280" as="geometry" />
         </mxCell>
         <mxCell id="74homY8sXIHZhCgM_SFn-2" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;User&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="75" y="430" width="150" height="30" as="geometry" />
+          <mxGeometry x="85" y="687" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="74homY8sXIHZhCgM_SFn-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="74homY8sXIHZhCgM_SFn-2" target="74homY8sXIHZhCgM_SFn-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="74homY8sXIHZhCgM_SFn-4" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
-          <mxGeometry x="60" y="460" width="180" height="30" as="geometry" />
+          <mxGeometry x="70" y="717" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="74homY8sXIHZhCgM_SFn-5" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
-          <mxGeometry x="60" y="490" width="180" height="30" as="geometry" />
+          <mxGeometry x="70" y="747" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="74homY8sXIHZhCgM_SFn-6" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Point-to-Point&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
-          <mxGeometry x="60" y="520" width="180" height="30" as="geometry" />
+          <mxGeometry x="70" y="777" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="74homY8sXIHZhCgM_SFn-7" value="TinyDB:&lt;br&gt;Users Inventory&lt;br&gt;Users Update&lt;br&gt;Users bids" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
-          <mxGeometry x="55" y="560" width="190" height="120" as="geometry" />
+          <mxGeometry x="65" y="817" width="190" height="120" as="geometry" />
         </mxCell>
         <mxCell id="74homY8sXIHZhCgM_SFn-8" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;User Service&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;owner: Tian Ma&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;usage: create a new user, log in existing users, list / update / delete / bid / flag / categorize items, see all bids, add an item to cart, and checkout carts.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;operation: use &#39;python3&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;user_service.py&lt;/span&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&#39; to start the service.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;host: localhost:6662&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;api:create_user, login, list_item, update_item, delete_item, bid_item, flag_item, cagegotize_item, see_all_bids, add_to_cart, checkout_cart&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;synchronicity: user service uses synchronous communication through REST api and flask framework.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="270" y="420" width="290" height="280" as="geometry" />
+          <mxGeometry x="280" y="677" width="290" height="280" as="geometry" />
         </mxCell>
         <mxCell id="F-H8I83qR2iQKJAT4e8l-9" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
-          <mxGeometry x="55" y="900" width="200" height="280" as="geometry" />
+          <mxGeometry x="65" y="1157" width="200" height="280" as="geometry" />
         </mxCell>
         <mxCell id="F-H8I83qR2iQKJAT4e8l-10" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Front End&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="80" y="910" width="150" height="30" as="geometry" />
+          <mxGeometry x="90" y="1167" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="F-H8I83qR2iQKJAT4e8l-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="F-H8I83qR2iQKJAT4e8l-10" target="F-H8I83qR2iQKJAT4e8l-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="F-H8I83qR2iQKJAT4e8l-12" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
-          <mxGeometry x="65" y="940" width="180" height="30" as="geometry" />
+          <mxGeometry x="75" y="1197" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="F-H8I83qR2iQKJAT4e8l-13" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python,HTML,JavaScript&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
-          <mxGeometry x="65" y="970" width="180" height="30" as="geometry" />
+          <mxGeometry x="75" y="1227" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="F-H8I83qR2iQKJAT4e8l-14" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Point-to-Point&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
-          <mxGeometry x="65" y="1000" width="180" height="30" as="geometry" />
+          <mxGeometry x="75" y="1257" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="F-H8I83qR2iQKJAT4e8l-15" value="&lt;span&gt;TinyDB:&lt;br&gt;Services address(ip and port)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
-          <mxGeometry x="60" y="1040" width="190" height="120" as="geometry" />
+          <mxGeometry x="70" y="1297" width="190" height="120" as="geometry" />
         </mxCell>
         <mxCell id="F-H8I83qR2iQKJAT4e8l-16" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;div&gt;&lt;font face=&quot;times&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;Front End&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;owner: Kun Qian&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;usage:&amp;nbsp;create an auction item,&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;search items by keyword/category, update/delete existing auction items.create a new user, log in existing users, list / update / delete / bid / flag / categorize items, see all bids, add an item to cart, and checkout carts. Manage users, items and auctions.&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;operation: use &#39;flask run --host=127.0.0.1 --port=6663&#39; to start the service. Need to run other services first for full functionality of front end.&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;host: localhost: 6663&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;api: create_user, login, list_item, update_item, delete_item, bid_item, flag_item, cagegotize_item, see_all_bids,add_to_cart,checkout_cart,&amp;nbsp;create_auction_item, get_all_auction_items,get_auction_items_by_keyword, update_auction_item, manage_users, manage_items , manage auctions&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;synchronicity: front end uses synchronous communication through REST api and flask framework.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;glass=1;" parent="1" vertex="1">
-          <mxGeometry x="285" y="900" width="380" height="290" as="geometry" />
+          <mxGeometry x="295" y="1157" width="380" height="290" as="geometry" />
         </mxCell>
         <mxCell id="gWZFwjgjEJ7MYpCEvtoA-1" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
-          <mxGeometry x="55" y="1260" width="200" height="280" as="geometry" />
+          <mxGeometry x="65" y="1517" width="200" height="280" as="geometry" />
         </mxCell>
         <mxCell id="gWZFwjgjEJ7MYpCEvtoA-2" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Admin&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="80" y="1270" width="150" height="30" as="geometry" />
+          <mxGeometry x="90" y="1527" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gWZFwjgjEJ7MYpCEvtoA-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="gWZFwjgjEJ7MYpCEvtoA-2" target="gWZFwjgjEJ7MYpCEvtoA-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gWZFwjgjEJ7MYpCEvtoA-4" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
-          <mxGeometry x="65" y="1300" width="180" height="30" as="geometry" />
+          <mxGeometry x="75" y="1557" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gWZFwjgjEJ7MYpCEvtoA-5" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
-          <mxGeometry x="65" y="1330" width="180" height="30" as="geometry" />
+          <mxGeometry x="75" y="1587" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gWZFwjgjEJ7MYpCEvtoA-6" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Point-to-Point&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
-          <mxGeometry x="65" y="1360" width="180" height="30" as="geometry" />
+          <mxGeometry x="75" y="1617" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gWZFwjgjEJ7MYpCEvtoA-7" value="SQLite:&lt;br&gt;Items/Auctions&lt;br&gt;Users" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
-          <mxGeometry x="60" y="1400" width="190" height="120" as="geometry" />
+          <mxGeometry x="70" y="1657" width="190" height="120" as="geometry" />
         </mxCell>
         <mxCell id="gWZFwjgjEJ7MYpCEvtoA-8" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;Admin Service&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span&gt;Owner: Anirudh Sriram&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span&gt;Usage: Stop auction early, Add/Modify/Remove Categories, View all/current auctions, Sort auctions, View Metrics, View Flagged Items, Remove/Block users, View/respond to user emails, Monitor buyer/seller disputes, Process refund requests.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;Operation: use &#39;python3 admin&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;_service.py&lt;/span&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&#39; to start the service.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;API: list_auctions, stop_auction, add_category, remove_category, modify_category, sort_auctions, list_metrics, list_flagged_items, remove_user, block_user, view_emails, respond_to_email, list_disputes, process_refund&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span&gt;Synchronicity: Admin service uses synchronous communication through REST api and the Flask framework.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="275" y="1260" width="290" height="280" as="geometry" />
+          <mxGeometry x="285" y="1517" width="290" height="280" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-1" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&lt;b&gt;User Service&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&amp;nbsp;list_of_users&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;create_user&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;find_user&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;delete_user&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="610" y="500" width="160" height="110" as="geometry" />
+          <mxGeometry x="620" y="757" width="160" height="110" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-2" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Item_base&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;item_key&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;item_name&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1100" y="450" width="140" height="70" as="geometry" />
+          <mxGeometry x="1110" y="707" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-3" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;" parent="1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="1000" y="494.5" as="sourcePoint" />
-            <mxPoint x="1100" y="494.5" as="targetPoint" />
+            <mxPoint x="1010" y="751.5" as="sourcePoint" />
+            <mxPoint x="1110" y="751.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-4" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="902" y="780" as="sourcePoint" />
-            <mxPoint x="902" y="710" as="targetPoint" />
+            <mxPoint x="912" y="1037" as="sourcePoint" />
+            <mxPoint x="912" y="967" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-5" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Front End&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;item_properties&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;item_bidding_price&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="850" y="780" width="140" height="90" as="geometry" />
+          <mxGeometry x="860" y="1037" width="140" height="90" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-6" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&lt;b&gt;User : public User_Base&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;email&lt;br&gt;password&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;own_listing (list of keys)&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;watchlist (list of keys)&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;cart (list of keys)&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;login / logout&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;update_user_info&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;suspend_user&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;list_item_for_auction&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;update_item_properties&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;flag_inappropriate&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;categorize_item&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;delete_item&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;bid_item&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;see_all_bids&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;buy_now&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;checkout_cart&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="840" y="410" width="160" height="300" as="geometry" />
+          <mxGeometry x="850" y="667" width="160" height="300" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-7" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;" parent="1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="840" y="560.5" as="sourcePoint" />
-            <mxPoint x="770" y="560" as="targetPoint" />
+            <mxPoint x="850" y="817.5" as="sourcePoint" />
+            <mxPoint x="780" y="817" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-8" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="1000" y="650" as="sourcePoint" />
-            <mxPoint x="1100" y="650" as="targetPoint" />
+            <mxPoint x="1010" y="907" as="sourcePoint" />
+            <mxPoint x="1110" y="907" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-9" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Auction Service&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;create_item&lt;br&gt;update_item&lt;br&gt;remove_item&lt;br&gt;start_item_auction&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1100" y="610" width="140" height="100" as="geometry" />
+          <mxGeometry x="1110" y="867" width="140" height="100" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-10" value="send" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1030" y="630" width="40" height="20" as="geometry" />
+          <mxGeometry x="1040" y="887" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-11" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=-0.014;exitY=0.69;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="qm4FGj7v6DZkzzpuAIpe-9" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="1080" y="680" as="sourcePoint" />
-            <mxPoint x="1000" y="680" as="targetPoint" />
+            <mxPoint x="1090" y="937" as="sourcePoint" />
+            <mxPoint x="1010" y="937" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-12" value="acknowledge" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="935" y="740" width="70" height="20" as="geometry" />
+          <mxGeometry x="945" y="997" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-13" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="930" y="710" as="sourcePoint" />
-            <mxPoint x="930" y="780" as="targetPoint" />
+            <mxPoint x="940" y="967" as="sourcePoint" />
+            <mxPoint x="940" y="1037" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-14" value="acknowledge" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1015" y="680" width="70" height="20" as="geometry" />
+          <mxGeometry x="1025" y="937" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.092;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="qm4FGj7v6DZkzzpuAIpe-36" target="qm4FGj7v6DZkzzpuAIpe-19" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="800" y="-15" />
-              <mxPoint x="800" y="27" />
+              <mxPoint x="800" y="158" />
+              <mxPoint x="800" y="170" />
+              <mxPoint x="850" y="170" />
             </Array>
             <mxPoint x="770" y="9" as="sourcePoint" />
           </mxGeometry>
@@ -174,14 +175,14 @@
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="qm4FGj7v6DZkzzpuAIpe-24" target="qm4FGj7v6DZkzzpuAIpe-29" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1120" y="193" as="targetPoint" />
+            <mxPoint x="1130" y="450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.115;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="qm4FGj7v6DZkzzpuAIpe-33" target="qm4FGj7v6DZkzzpuAIpe-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-19" value="Item_Auction : public Item_base" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="840" y="3" width="200" height="294" as="geometry" />
+          <mxGeometry x="850" y="260" width="200" height="294" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-20" value="key" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qm4FGj7v6DZkzzpuAIpe-19" vertex="1">
           <mxGeometry y="26" width="200" height="24" as="geometry" />
@@ -214,13 +215,13 @@
           <mxGeometry y="242" width="200" height="52" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-29" value="User_Base" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="1060" y="223" width="140" height="52" as="geometry" />
+          <mxGeometry x="1070" y="480" width="140" height="52" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-30" value="email" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qm4FGj7v6DZkzzpuAIpe-29" vertex="1">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-31" value="Bidding_Info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="690" y="290" width="140" height="104" as="geometry" />
+          <mxGeometry x="700" y="547" width="140" height="104" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-32" value="start_bidding_price_" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qm4FGj7v6DZkzzpuAIpe-31" vertex="1">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
@@ -232,25 +233,25 @@
           <mxGeometry y="78" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-35" value="Auction" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="580" y="-47" width="210" height="192" as="geometry" />
+          <mxGeometry x="570" y="120" width="230" height="220" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-36" value="all_items_list" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qm4FGj7v6DZkzzpuAIpe-35" vertex="1">
-          <mxGeometry y="26" width="210" height="24" as="geometry" />
+          <mxGeometry y="26" width="230" height="24" as="geometry" />
         </mxCell>
         <mxCell id="qm4FGj7v6DZkzzpuAIpe-37" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="qm4FGj7v6DZkzzpuAIpe-35" vertex="1">
-          <mxGeometry y="50" width="210" height="8" as="geometry" />
+          <mxGeometry y="50" width="230" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="qm4FGj7v6DZkzzpuAIpe-38" value="get_all_auction_items&#xa;get_all_auction_items_by_key&#xa;get_all_auction_items_by_category&#xa;create_auction_item&#xa;update_auction_item&#xa;remove_auction_item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qm4FGj7v6DZkzzpuAIpe-35" vertex="1">
-          <mxGeometry y="58" width="210" height="134" as="geometry" />
+        <mxCell id="qm4FGj7v6DZkzzpuAIpe-38" value="get_all_auction_items&#xa;get_all_auction_items_by_key&#xa;get_all_auction_items_by_keyword&#xa;get_all_auction_items_by_category&#xa;get_auction_items_by_user&#xa;create_auction_item&#xa;update_auction_item&#xa;remove_auction_item&#xa;update_auction_items_state&#xa;bid_item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qm4FGj7v6DZkzzpuAIpe-35" vertex="1">
+          <mxGeometry y="58" width="230" height="162" as="geometry" />
         </mxCell>
-        <mxCell id="6jNHIQa5SbUW5T_YebQE-1" value="&lt;span&gt;User Stories :&lt;br&gt;&lt;br&gt;get_all_auction_items: provide all the current items with details that during auction window to the calling service.&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;get_all_auction_items_by_key:&amp;nbsp;&lt;/span&gt;provide the item details that matches the key (no matter the item start auction or not or already end) to the calling service.&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;get_all_auction_items_by_category:&amp;nbsp;&lt;/span&gt;provide all the item details that matches the category and during its auction window&amp;nbsp;to the calling service.&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;create_auction_item: auction service will create an auction item, usually called by user service, with item details provided from frontend.&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;update_auction_item:&amp;nbsp;&lt;/span&gt;auction service will update an auction item details, usually called by user/Admin service, with item details provided from frontend.&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;remove_auction_item:&amp;nbsp;&lt;/span&gt;auction service will erase an auction item record from database, usually called by Admin service, with item key provided from frontend." style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1250" y="3" width="590" height="290" as="geometry" />
+        <mxCell id="6jNHIQa5SbUW5T_YebQE-1" value="&lt;span&gt;User Stories :&lt;br&gt;&lt;br&gt;get_all_auction_items: provide all the current items with details that during auction window to the calling service.&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;get_all_auction_items_by_key:&amp;nbsp;&lt;/span&gt;provide the item details that matches the key (no matter the item start auction or not or already end) to the calling service.&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;get_all_auction_items_by_category:&amp;nbsp;&lt;/span&gt;provide all the item details that matches the category and during its auction window&amp;nbsp;to the calling service.&lt;br&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;get_all_auction_items_by_keyword:&amp;nbsp;provide all the item details that matches the keyword in its name and during its auction window&amp;nbsp;to the calling service.&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;create_auction_item: auction service will create an auction item, usually called by user service, with item details provided from frontend.&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;update_auction_item:&amp;nbsp;&lt;/span&gt;auction service will update an auction item details, usually called by user/Admin service, with item details provided from frontend.&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;remove_auction_item:&amp;nbsp;&lt;/span&gt;auction service will erase an auction item record from database, usually called by Admin service, with item key provided from frontend&lt;br&gt;&lt;br&gt;bid_item: place a bid to an item if it is in auction state.&lt;br&gt;&lt;br&gt;&lt;span&gt;update_auction_items_state: an external process will periodically calling this api to update each item&#39;s state, which could be &#39;created&#39;, &#39;started&#39; or &#39;closed&#39;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1260" y="167" width="590" height="410" as="geometry" />
         </mxCell>
         <mxCell id="ZTThWDhNKIMtXnUZklwk-1" value="&lt;span&gt;User Stories :&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;create_user: allow a new user to create an account &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;find_user: allow an existing user to find their own account and perform actions later&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;delete_user: allow an existing user to delete their account&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;login / logout: allow users to log in and log out&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;update_user_info: allow an user to update their own account information&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;suspend_user: allow an user to suspend their account for some certain time&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;list_item_for_auction: allow the user to list their items for auction with details provided by front end&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;update_item_properties: allow the user to update item properties such as price, quantity, color, etc with details provided by front end&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;flag_inappropriate: allow the user to flag an listing as inappropriate for further admin review&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;categorize_item: allow the user to modify or give a correct category for a listing&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;delete_item: allow the user to delete an item&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;bid_item: allow the user to place a bid on an item&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;see_all_bids: provide the user with all the bid they have placed before&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;buy_now: allow the user to make a purchase at a pre-set price without bidding&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;checkout_cart: allow the user to pay for everything in their cart&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1260" y="430" width="590" height="470" as="geometry" />
+          <mxGeometry x="1270" y="687" width="590" height="470" as="geometry" />
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-16" value="Front End Server" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="950" y="910" width="200" height="190" as="geometry" />
+          <mxGeometry x="960" y="1167" width="200" height="190" as="geometry" />
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-17" value="list_of_items&#xa;current_user_information" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uwGOv-cmQex5pZ4uQRNK-16" vertex="1">
           <mxGeometry y="26" width="200" height="50" as="geometry" />
@@ -265,13 +266,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-20" value="Mediator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="1235" y="1066" width="210" height="34" as="geometry" />
+          <mxGeometry x="1245" y="1323" width="210" height="34" as="geometry" />
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="uwGOv-cmQex5pZ4uQRNK-20" vertex="1">
           <mxGeometry y="26" width="210" height="8" as="geometry" />
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-24" value="static" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="950" y="1120" width="210" height="120" as="geometry" />
+          <mxGeometry x="960" y="1377" width="210" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="uwGOv-cmQex5pZ4uQRNK-24" vertex="1">
           <mxGeometry y="26" width="210" height="8" as="geometry" />
@@ -280,7 +281,7 @@
           <mxGeometry y="34" width="210" height="86" as="geometry" />
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-27" value="templates" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="710" y="990" width="170" height="150" as="geometry" />
+          <mxGeometry x="720" y="1247" width="170" height="150" as="geometry" />
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-28" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="uwGOv-cmQex5pZ4uQRNK-27" vertex="1">
           <mxGeometry y="26" width="170" height="8" as="geometry" />
@@ -290,17 +291,17 @@
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="uwGOv-cmQex5pZ4uQRNK-17" target="uwGOv-cmQex5pZ4uQRNK-20" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1193" y="955" as="sourcePoint" />
+            <mxPoint x="1203" y="1212" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-36" value="&lt;span&gt;User Stories :&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;show_login_page: shows the login page to user, allow user to login&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;show_all_auction_items: display all items of an auction, including all item information and the remaining time&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;show_create_user_page: shows the create account page to user, allow user to create accounts&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;show_user_info_page: allow users to see and modify their own account information&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;refresh_all_auction_items: get the latest auction items information and show on page&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;refresh_user_info: allow the user to get their latest information&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;verify_user: allow the user to check whether their accounts information are correct&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;create _user: allow the user to register their account&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;get_all_auction_items: allow the user to get all auction items from the mediator&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;get_user_info: allow the user to get their basic information&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;add_item&amp;nbsp;&lt;span&gt;: allow the user to add an item in au auction&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;align=left;" parent="1" vertex="1">
           <mxGeometry x="1460" y="940" width="580" height="390" as="geometry" />
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-41" value="send" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1235" y="940" width="40" height="20" as="geometry" />
+          <mxGeometry x="1245" y="1197" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-49" value="response" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1240" y="970" width="40" height="20" as="geometry" />
+          <mxGeometry x="1250" y="1227" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uwGOv-cmQex5pZ4uQRNK-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uwGOv-cmQex5pZ4uQRNK-29" target="uwGOv-cmQex5pZ4uQRNK-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -309,91 +310,91 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-1" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&lt;b&gt;User Service&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&amp;nbsp;list_of_users&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;remove_user&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;block_user&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;unblock_user&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;process_refund_request&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="665" y="1340" width="160" height="120" as="geometry" />
+          <mxGeometry x="675" y="1597" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-2" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Item_base&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;item_key&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;item_name&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;is_flagged&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1205" y="1376" width="140" height="80" as="geometry" />
+          <mxGeometry x="1215" y="1633" width="140" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-3" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.989;entryY=0.324;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="3Y6gV0z0oBQoXBk9bf7f-2" target="3Y6gV0z0oBQoXBk9bf7f-6" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="1100" y="1414.5" as="sourcePoint" />
-            <mxPoint x="1140" y="1450" as="targetPoint" />
+            <mxPoint x="1110" y="1671.5" as="sourcePoint" />
+            <mxPoint x="1150" y="1707" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-4" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.386;entryY=1.01;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" target="3Y6gV0z0oBQoXBk9bf7f-6" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="1002" y="1700" as="sourcePoint" />
-            <mxPoint x="1002" y="1630" as="targetPoint" />
+            <mxPoint x="1012" y="1957" as="sourcePoint" />
+            <mxPoint x="1012" y="1887" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-5" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Front End&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;show_login_page&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;get_user_info&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="950" y="1700" width="140" height="80" as="geometry" />
+          <mxGeometry x="960" y="1957" width="140" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-6" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&lt;b&gt;Admin: public Admin_Base&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;email&lt;br&gt;password&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;adminID&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;login / logout&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;remove_user&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;block_user&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;unblock_user&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;view_disputes&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;process_refund_request&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;respond_user_email&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;view_flagged_items&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;view_metrics&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;add_category&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;modify_category&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;delete_category&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="940" y="1330" width="160" height="270" as="geometry" />
+          <mxGeometry x="950" y="1587" width="160" height="270" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-8" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3Y6gV0z0oBQoXBk9bf7f-6" target="3Y6gV0z0oBQoXBk9bf7f-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="830" y="1440" as="sourcePoint" />
-            <mxPoint x="825" y="1400" as="targetPoint" />
+            <mxPoint x="840" y="1697" as="sourcePoint" />
+            <mxPoint x="835" y="1657" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-9" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Auction Service&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;get_all_auction_items&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;get_all_auction_items_by_key&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;get_all_auction_items_by_category&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1165" y="1480" width="190" height="160" as="geometry" />
+          <mxGeometry x="1175" y="1737" width="190" height="160" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-10" value="send" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="860" y="1400" width="40" height="20" as="geometry" />
+          <mxGeometry x="870" y="1657" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-15" value="&lt;span&gt;&lt;b&gt;User Stories :&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;add_category: Enables an admin to add a category to the auctions&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;modify_category: Enables an admin to change a category name&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;delete_category: Enables an admin to delete a category from the auctions&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;view_metrics: Enables an admin to view metrics on platform sales&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;view_flagged_items: Enables an admin to view all auction items flagged by users&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;remove_user: Enables an admin to remove a user from the platform&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;block_user: Enables an admin to block a user from the platform temporarily&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;unblock_user: Enables an admin to unblock a blocked user&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;view_emails: Enables an admin to view all user emails&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;respond_email: Enables an admin to respond to a user_email&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;view_disputes:&amp;nbsp; Allows an admin to view all current buyer-seller disputes&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;process_refund_request: Allows an admin to process user refund request and delete a dispute&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;login / logout: Allow admin to log in and log out of the system&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1360" y="1350" width="590" height="520" as="geometry" />
+          <mxGeometry x="1370" y="1607" width="590" height="520" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-17" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&lt;b&gt;Email Service&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&amp;nbsp;&lt;span&gt;view_emails&lt;/span&gt;&lt;br&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;respond_email&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="710" y="1480" width="160" height="70" as="geometry" />
+          <mxGeometry x="720" y="1737" width="160" height="70" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-18" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;" parent="1" edge="1">
           <mxGeometry x="-0.4442" width="160" relative="1" as="geometry">
-            <mxPoint x="935" y="1514.9099999999996" as="sourcePoint" />
-            <mxPoint x="935" y="1514" as="targetPoint" />
+            <mxPoint x="945" y="1771.9099999999996" as="sourcePoint" />
+            <mxPoint x="945" y="1771" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="860" y="1514" />
+              <mxPoint x="870" y="1771" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-20" value="acknowledge" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="845.56" y="1426.22" width="70" height="20" as="geometry" />
+          <mxGeometry x="855.56" y="1683.22" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-21" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=-0.018;entryY=0.352;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="3Y6gV0z0oBQoXBk9bf7f-1" target="3Y6gV0z0oBQoXBk9bf7f-6" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="840" y="1370.0000000000002" as="sourcePoint" />
-            <mxPoint x="840.56" y="1466.22" as="targetPoint" />
+            <mxPoint x="850" y="1627.0000000000002" as="sourcePoint" />
+            <mxPoint x="850.56" y="1723.22" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-27" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="1163" y="1520" as="sourcePoint" />
-            <mxPoint x="1100" y="1521" as="targetPoint" />
+            <mxPoint x="1173" y="1777" as="sourcePoint" />
+            <mxPoint x="1110" y="1778" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-28" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Auction Service&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;add_category&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;modify_category&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;delete_category&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="650" y="1630" width="190" height="130" as="geometry" />
+          <mxGeometry x="660" y="1887" width="190" height="130" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-29" value="send" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="880" y="1620" width="40" height="20" as="geometry" />
+          <mxGeometry x="890" y="1877" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-30" value="acknowledge" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="885" y="1650" width="70" height="20" as="geometry" />
+          <mxGeometry x="895" y="1907" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-31" value="" style="endArrow=open;endFill=1;endSize=12;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="940" y="1590" as="sourcePoint" />
-            <mxPoint x="837.5" y="1650" as="targetPoint" />
+            <mxPoint x="950" y="1847" as="sourcePoint" />
+            <mxPoint x="847.5" y="1907" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3Y6gV0z0oBQoXBk9bf7f-32" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=1;exitY=0.385;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="3Y6gV0z0oBQoXBk9bf7f-28" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="863.94" y="1660" as="sourcePoint" />
-            <mxPoint x="970" y="1600" as="targetPoint" />
+            <mxPoint x="873.94" y="1917" as="sourcePoint" />
+            <mxPoint x="980" y="1857" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Ii6krPt-sOYrCmV5l2Vu-1" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
@@ -537,29 +538,35 @@
             <mxPoint x="615" y="-700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bpnSOMNnt8PHhEBflUuz-1" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" vertex="1" parent="1">
-          <mxGeometry x="55" y="1810" width="200" height="280" as="geometry" />
+        <mxCell id="bpnSOMNnt8PHhEBflUuz-1" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
+          <mxGeometry x="65" y="2067" width="200" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="bpnSOMNnt8PHhEBflUuz-2" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Email&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="80" y="1820" width="150" height="30" as="geometry" />
+        <mxCell id="bpnSOMNnt8PHhEBflUuz-2" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Email&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="2077" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="bpnSOMNnt8PHhEBflUuz-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="bpnSOMNnt8PHhEBflUuz-2" target="bpnSOMNnt8PHhEBflUuz-2">
+        <mxCell id="bpnSOMNnt8PHhEBflUuz-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="bpnSOMNnt8PHhEBflUuz-2" target="bpnSOMNnt8PHhEBflUuz-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bpnSOMNnt8PHhEBflUuz-4" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;AMQP/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" vertex="1" parent="1">
-          <mxGeometry x="65" y="1850" width="180" height="30" as="geometry" />
+        <mxCell id="bpnSOMNnt8PHhEBflUuz-4" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;AMQP/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="75" y="2107" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="bpnSOMNnt8PHhEBflUuz-5" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" vertex="1" parent="1">
-          <mxGeometry x="65" y="1880" width="180" height="30" as="geometry" />
+        <mxCell id="bpnSOMNnt8PHhEBflUuz-5" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="75" y="2137" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="bpnSOMNnt8PHhEBflUuz-6" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Async&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" vertex="1" parent="1">
-          <mxGeometry x="65" y="1910" width="180" height="30" as="geometry" />
+        <mxCell id="bpnSOMNnt8PHhEBflUuz-6" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Async&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="75" y="2167" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="bpnSOMNnt8PHhEBflUuz-7" value="TinyDB:&lt;br&gt;emails inventory" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" vertex="1" parent="1">
-          <mxGeometry x="60" y="1950" width="190" height="120" as="geometry" />
+        <mxCell id="bpnSOMNnt8PHhEBflUuz-7" value="TinyDB:&lt;br&gt;emails inventory" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
+          <mxGeometry x="70" y="2207" width="190" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="bpnSOMNnt8PHhEBflUuz-8" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;Email Service&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;owner: Yifei Xu&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;usage: send email to specific email addr, subject, and body&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;operation: use &#39;python3 email&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;_service.py&lt;/span&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&#39; to start the service.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;host: localhost:6667&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;api: under_construction&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;synchronicity: email service uses asynchronous communication through rabbitmq. provide email services to all requested services.&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="285" y="1810" width="395" height="280" as="geometry" />
+        <mxCell id="bpnSOMNnt8PHhEBflUuz-8" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;Email Service&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;owner: Yifei Xu&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;usage: send email to specific email addr, subject, and body&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;operation: use `&#39;python3 email&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;_service.py&lt;/span&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&#39; to start the service.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;host: localhost:6667&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;api: send_email&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;synchronicity: email service uses asynchronous communication through rabbitmq. provide email services to all requested services.&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="295" y="2067" width="395" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="WINDE-Hn4d8TUSb0pBHK-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="WINDE-Hn4d8TUSb0pBHK-1" target="Ii6krPt-sOYrCmV5l2Vu-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WINDE-Hn4d8TUSb0pBHK-1" value="&lt;font style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;&lt;i&gt;item_state_updater service&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" y="-90" width="170" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
