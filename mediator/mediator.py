@@ -157,24 +157,24 @@ def remove_item_for_user(user_key, item_key):
 # admin sign up
 @app.route('/admin/sign_up', methods=['POST'])
 def admin_signup(username,password):
-    r = requests.post(endpoints['admin_signup'], json={'username': username, 'password': password}))
+    r = requests.post(endpoints['admin_signup'], json={'username': username, 'password': password})
     return jsonify(r.json())
 
 # admin login
 @app.route('/admin/login', methods=['POST'])
-def admin_signup(username,password):
-    r = requests.post(endpoints['admin_login'], json={'username': username, 'password': password}))
+def admin_login(username,password):
+    r = requests.post(endpoints['admin_login'], json={'username': username, 'password': password})
     return jsonify(r.json())
 
 # admin logout
 @app.route('/admin/logout', methods=['POST'])
-def admin_signup(username):
-    r = requests.post(endpoints['admin_logout'], json={'username': username}))
+def admin_logout(username):
+    r = requests.post(endpoints['admin_logout'], json={'username': username})
     return jsonify(r.json())
 
 # admin change username
 @app.route('/admin/change_username', methods=['POST'])
-def admin_signup(new_username, old_username):
+def admin_username(new_username, old_username):
     r = requests.post(endpointdict['admin_changeusername'],
                                 json={'old_username': old_username, 'new_username': new_username})
     return jsonify(r.json())
