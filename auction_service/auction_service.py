@@ -15,6 +15,7 @@ with open("endpoints.json") as endpoints_config:
     data = json.load(endpoints_config)
     for idx,ep in enumerate(data['services']):
         endpoints[ep['domain']] = Endpoint(ep['domain'],ep['ip'],ep['port'])
+TinyDB.DEFAULT_TABLE_KWARGS = {'cache_size': 0}
 items_db = TinyDB('items.json', indent=4, separators=(',', ': '))
 
 headers = {'Content-Type':'application/json'}

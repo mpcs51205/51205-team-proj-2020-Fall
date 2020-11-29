@@ -5,7 +5,7 @@ import json
 import requests
 
 app = Flask(__name__)
-
+TinyDB.DEFAULT_TABLE_KWARGS = {'cache_size': 0}
 users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
 
 endpoints = {}
