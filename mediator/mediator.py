@@ -19,6 +19,15 @@ connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
 channel.queue_declare(queue='email_queue')
 
+
+APIBaseURL = 'http://127.0.0.1:6666'
+endpointdict = {
+        'admin_login': f'{APIBaseURL}/admin/login',
+        'admin_signup': f'{APIBaseURL}/admin/sign_up',
+        'admin_logout': f'{APIBaseURL}/admin/logout',
+        'admin_changeusername': f'{APIBaseURL}/admin/change_username'
+    }
+
 # front end (user login) can directly this to bid an item, 3 fields need to be provoded from json
 # item_key , user_key, bid_price
 @app.route("/bid_item", methods=['PUT'])
@@ -144,6 +153,32 @@ def update_item_for_user(user_key, item_key):
 def remove_item_for_user(user_key, item_key):
     r=requests.post(endpoints['user'].get_prefix() + "remove_item_for_user/" + str(user_key) + "/" + str(item_key), data=json.dumps(request.json), headers=headers)
     return jsonify(r.json())
+
+# admin sign up
+@app.route('/admin/sign_up', methods=['POST'])
+def admin_signup(username,password):
+    r = requests.post(endpoints['admin_signup'], json={'username': username, 'password': password}))
+    return jsonify(r.json())
+
+# admin login
+@app.route('/admin/login', methods=['POST'])
+def admin_signup(username,password):
+    r = requests.post(endpoints['admin_login'], json={'username': username, 'password': password}))
+    return jsonify(r.json())
+
+# admin logout
+@app.route('/admin/logout', methods=['POST'])
+def admin_signup(username):
+    r = requests.post(endpoints['admin_logout'], json={'username': username}))
+    return jsonify(r.json())
+
+# admin change username
+@app.route('/admin/change_username', methods=['POST'])
+def admin_signup(new_username, old_username):
+    r = requests.post(endpointdict['admin_changeusername'],
+                                json={'old_username': old_username, 'new_username': new_username})
+    return jsonify(r.json())
+
 
 # backend user/admin service calling this api should append json with 3 fields:
 # 'to':<dest email addr>
