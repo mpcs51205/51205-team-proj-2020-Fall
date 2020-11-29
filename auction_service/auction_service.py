@@ -33,7 +33,7 @@ def bid_item():
     user_key = int(request.json['user_key'])
     bid_price = float(request.json['bid_price'])
     if items_db.contains(doc_id=item_key):
-        item = itemsdb.get(doc_id=item_key)
+        item = items_db.get(doc_id=item_key)
         if item['auction_state'] != 'started':
             return jsonify(Acknowledgement_base(False,"item is not in bidding state").serialize())
         else:
@@ -84,13 +84,17 @@ def update_auction_items_state():
         #print (now)
         # hit buyout, auction close
         if item['highest_bidding_price'] >= item['buyout_price']:
-            items_db.update({'auction_state':'closed'}, doc_ids=[item.doc_id])
+            # new owner is the winning bidder
+            items_db.update({'auction_state':'closed','user_key':item['winning_bidder_key']}, doc_ids=[item.doc_id])
             #TODO notify user_service ?
         # check auction window and determine state
         if item['auction_state'] == 'created' and now >= start_time:
             items_db.update({'auction_state':'started'}, doc_ids=[item.doc_id])
         if now>=end_time:
             items_db.update({'auction_state':'closed'}, doc_ids=[item.doc_id])
+            if int(item['winning_bidder_key'])!= -1:
+                #item auction closed without hitting buyout, new owner is the last winning bidder
+                items_db.update({'user_key':item['winning_bidder_key']},doc_ids=[item.doc_id])
             #TODO notify user_service ?
     return jsonify({'refresh_timestamp':now.strftime("%Y-%m-%d %H:%M:%S")})
 
