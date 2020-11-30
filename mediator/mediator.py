@@ -174,7 +174,7 @@ def admin_logout(username):
 
 # admin change username
 @app.route('/admin/change_username', methods=['POST'])
-def admin_username(new_username, old_username):
+def admin_changeusername(new_username, old_username):
     r = requests.post(endpointdict['admin_changeusername'],
                                 json={'old_username': old_username, 'new_username': new_username})
     return jsonify(r.json())
