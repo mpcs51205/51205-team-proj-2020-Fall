@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-30T20:43:22.940Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="Ny61w5iRyF7KOlpU4vn4" version="13.10.4" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-30T20:43:42.832Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="EYyA5pJMk9dkRcgUyLoo" version="13.10.4" type="github">
   <diagram id="ra_u-0NkldRPlMPbjJgr" name="Page-1">
     <mxGraphModel dx="823" dy="553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -529,7 +529,7 @@
         <mxCell id="rHMyBTxWZAd2S1Fpcz72-324" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Async&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
           <mxGeometry x="950" y="1440" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="rHMyBTxWZAd2S1Fpcz72-325" value="TinyDB:&lt;br&gt;emails inventory" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-325" value="PostgresSQL:&lt;br&gt;emails inventory" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
           <mxGeometry x="945" y="1480" width="190" height="120" as="geometry" />
         </mxCell>
         <mxCell id="rHMyBTxWZAd2S1Fpcz72-326" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.464;exitY=-0.03;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-315" target="rHMyBTxWZAd2S1Fpcz72-305" edge="1">
