@@ -52,6 +52,15 @@ def login():
     print(r.json())
     return jsonify(r.json())
 
+@app.route("/api/admin/login", methods = ['POST'])
+def admin_login():
+    print(request.data.decode())
+    data = json.loads(request.data.decode())
+    dummy_item = {'username':data['username'], 'password':data['password']}
+    r= requests.post(mediator_addr + "admin/login", data=json.dumps(dummy_item),headers=headers)
+    print(r.json())
+    return jsonify(r.json())
+
 @app.route("/api/logout", methods = ['POST'])
 def logout():
     print(request.data.decode())

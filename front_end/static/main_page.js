@@ -69,12 +69,22 @@ function get_all_auction_items_message() {
 
         wrapper.setAttribute('class','container darker');
         var bid_item = "bid_item" + one_row["key"]; 
+        var bid_item_show_result = "bid_item_result" + one_row["key"]; 
+        
         var p = document.createElement('p');
+        var highest_bidding_price;
+        if( one_row["highest_bidding_price"] == -1)
+            highest_bidding_price = "N/A";
+        else
+            highest_bidding_price = one_row["highest_bidding_price"]; 
+
         p.innerHTML = "name: " + one_row["name"] + "<br></br>start_bidding_price: " +  one_row["start_bidding_price"] + 
                       "<br></br>buyout_price: " + one_row["buyout_price"] + 
                       "<br></br>start_time: " +  one_row["start_time"] + "<br></br>end_time: " +  one_row["end_time"] +
-                      "<br></br>category: " +  one_row["category"] + "<br></br>user key: " +  one_row["user_key"]
-                      + "<br></br> <input id=\""+ bid_item +"\"></input> <button onclick=\"bid_item(" + one_row["key"] + ");\">bid item</button>";
+                      "<br></br>category: " +  one_row["category"] + "<br></br>user key: " +  one_row["user_key"] + 
+                      "<br></br>highest_bidding_price: " +  highest_bidding_price +
+                      "<br></br><input id=\""+ bid_item +"\"></input> <button onclick=\"bid_item(" + one_row["key"] + ");\">bid item</button>"+
+                      "<br></br><div id=\""+ bid_item_show_result +"\"></div>";
         
         // If the user key equals to current user key, the user can modify or delete the item
         wrapper.appendChild(p);
@@ -206,7 +216,7 @@ function bid_item(key) {
     oReq.addEventListener("load", bid_item_message);
     console.log("item_name" + key);
     var price = document.getElementById("bid_item" + key).value;
-
+    localStorage.setItem("temp_item_key",key);
     oReq.send(JSON.stringify({'item_key':key,
                             "bid_price": price,
                             "user_key": parseInt(user_key)}));
@@ -214,6 +224,17 @@ function bid_item(key) {
 
 function bid_item_message() {
     console.log(this.responseText);
+    var text =  this.responseText;
+    var obj = JSON.parse(text);
+   
+    var bid_item_show_result = "bid_item_result" + localStorage.getItem("temp_item_key"); 
+    var bid  = document.getElementById(bid_item_show_result);
+
+    if(obj["success"] == true) {
+        bid.innerHTML = "Succeed! "; 
+    } else {
+        bid.innerHTML = "Failed! Reason is: " + obj["reason"]; 
+    }
 }
 
 function modify_email_message() {

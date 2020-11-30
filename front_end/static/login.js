@@ -74,3 +74,28 @@ function register() {
     //      document.getElementById("register_error").innerText = "This email has been registered, please use another email or login";
     //  }
 }
+
+function admin_login() {
+    var getReq = new XMLHttpRequest();
+    getReq.open("POST", "/api/admin/login");
+    getReq.addEventListener("load", admin_login_message);
+    var email = document.getElementById("login_email").value;
+    var password = document.getElementById("login_password").value;
+    localStorage.setItem("user_email", email);
+    console.log("admin_login: ");
+    console.log(email);
+    console.log(password);
+    getReq.send(JSON.stringify({
+        "username": email,
+        "password": password}));
+}
+
+function admin_login_message() {
+
+
+}
+
+function admin_register() {
+
+
+}
