@@ -119,18 +119,21 @@ def remove_auction_item(key):
 
 @app.route("/get_all_auction_items", methods=['GET'])
 def get_all_auction_items():
+    items_db = TinyDB('items.json', indent=4, separators=(',', ': '))
     query = Query()
     ret = items_db.search(query.auction_state == 'started')
     return jsonify(ret)
 
 @app.route("/get_auction_items_by_key/<int:item_key>", methods=['GET'])
 def get_auction_items_by_key(item_key):
+    items_db = TinyDB('items.json', indent=4, separators=(',', ': '))
     query = Query()
     ret = items_db.search(query.key == item_key)
     return jsonify(ret)
 
 @app.route("/get_auction_items_by_user/<int:user_key>", methods=['GET'])
 def get_auction_items_by_user(user_key):
+    items_db = TinyDB('items.json', indent=4, separators=(',', ': '))
     print(user_key)
     query = Query()
     ret = items_db.search(query.user_key == user_key)
@@ -139,6 +142,7 @@ def get_auction_items_by_user(user_key):
 
 @app.route("/get_auction_items_by_keyword/<string:keyword>", methods=['GET'])
 def get_auction_items_by_keyword(keyword):
+    items_db = TinyDB('items.json', indent=4, separators=(',', ': '))
     query = Query()
     regex = ".*" + keyword + ".*" #any string contains a substring of keyword
     matched = items_db.search(query.name.matches(regex, flags=re.IGNORECASE))
@@ -150,6 +154,7 @@ def get_auction_items_by_keyword(keyword):
 
 @app.route("/get_auction_items_by_category/<string:category>", methods=['GET'])
 def get_auction_items_by_category(category):
+    items_db = TinyDB('items.json', indent=4, separators=(',', ': '))
     query = Query()
     ret = items_db.search( (query.category == category) & (query.auction_state == 'started') )
     return jsonify(ret)
