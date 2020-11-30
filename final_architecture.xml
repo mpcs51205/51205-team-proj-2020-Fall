@@ -1,4 +1,574 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2020-11-30T20:33:14.235Z" agent="5.0 (Macintosh)" etag="4dt8jZvONK6-4yMikSH_" version="13.10.4">
-    <diagram id="ra_u-0NkldRPlMPbjJgr" name="Page-1">7T1Ze9tGkr+Gn5MH6cNBgsSjZFsbZ62JE9k7yb7oA4EmiRgEGBySOb9++sTR3SBAChdJzM6OxUYT7K6qrq67Jvr77Y//Ca3d5jFwgDfRFOfHRP8w0TRVVafwHzSyJyNzdUYG1qHr0EnZwJP7H0AHFTqauA6IChPjIPBid1cctAPfB3ZcGLPCMHgtTlsFXvFXd9YaCANPtuWJo/92nXhDRhczJRv/BbjrDftlVaFPthabTAeijeUEr7kh/eNEfx8GQUz+2v54DzwEPAYX8r2HkqfpwkLgx3W+EP7yuL//+uPf/3/naE/qw87+z1y7UQ2TvOfF8hK6ZbrceM9gEAaJ7wD0GnWi379u3Bg87SwbPX2FWIdjm3jr0cdRHAbfU1jp6cj7wAtC/D79451xbxjwCf1pEMbgR+mu1BRWkMhAsAVxuIdT2BcYJih9aYo5JwOvGbo0hpRNDlXagg5alETW6cszKMI/KCCPAepckQDV8OAP368CuC9Ergwaxj8JogAICx1YxhLCJTekROxAsDE1/9hY03/xq5cFrLFZ6AdvyGvu4ARtuvshvuIusWM38Nmb4K6X/NvhGFk7G+aIBKIwllECw7sf+AAtx/U8bsjy3LUPP9oQ5QCO3yOCcOERvKMPtq7joJ+Rkl5GnEpDFDWfFSlKVUSKSskuT1F6ewSlCvAGDuRT9GMQxptgHfiW9zEb5SCTzfkcBDuKor9BHO8p07WSOCgiEPxw4z9zf/+FXnU7o58+/KBvxh/27IMPN5x+CX0g35rP2Ofse/jTvoA5tKvDeINACJLQBgfBRRERW+EaxNUzRVoIgWfF7ktxLS3gVWuIUZBD+QkdoBU+HncpVwjZ0z8+Pn2Fy/z16bd/1T3URRI6ivOLHAAufA5Z/8emzqnBcX5Vl5zTRbfnVG8Yny8QGAFa2cMTsEJ7I0Xslz082r44fplYNvrH8rRRLD/tfXsTBn6QRHL0Bi68wuPgBv9xmUiVCG1dI3UmIPWr6+8/3Etx8ikG2wjOzp3Qsinfdo4Vg/Ln9GBLTi+HUahA7NCf9t5zIWpDvRqvS0IEn5fpgGV/X2PS+C2J4WsAQzeRAdSZQAyajBgM4+GhOQmek7c0GR83JcSgau1Rg1F6xB33RSpoIwH4hsqySNL+O4lid7Uvl9ejneWXi+wra+t6e/Iq+Mja7ggX0afot9wtVIr5UTQT/y8n86v6rQ7/c1Dwh2QYvrg2yLEXsj7hKsH7L46WgaTFjdAJDQO9FsyCVx+pKWjWX+4KuPDfP5MRbpVwSyJsa0Gz7BBgnqjgl1opEUJmtp1o79ON+ctoV4TiCFw5cCN6i2AQomtliVjsd7B/DUIHAsiG8F7jewpCV0nonfTgAA9gREAlDi7SXwvoiG5H6FezhB0ILQw0PDOJEEjf7bBcrh9JzW+4FrbA94L6oFNlW6HYf47IfXC7279pvbXA9w6hLcAvsUIkP8cbBEC2hJEAKyG4CaKYTPIC2/LoR8MwpiPwKoFn7Vwi5Hd0TDfAewHIwlkfTtoBEHlgFYubWoP42fK8Z3ae6b1w7N16ltt8Xu6f4dV3/G6R9iXZ685yHHQ34nUouTVurXDt+uL4QIBz9kgsSC0XRbdEAi7smGzynDc1yu3DwgcR8yVEdkknKQTb4IXf5GXSXUQtxa7txnQxmbIWMQMOUj+QBhjl7MrIJL3dJvCbFp0ew0fJGmmMxC+kICkIKeQOWrJnRd/Rv6G1BVCD/E7URiyj78LgxXWQ8si0+Idt4OD1Zuokp0Oif/1VwF6xgquKAf4luFZ45z5Yztb1b88eQQ0KpXmRRCDfOlR9qf55fc45D2QRH7ousRe3GfExl9iLzzmMZqoNIIxm0ZCfraswmm+YmY0xNGIMzVTm0+k4hsYU4D3G0FQfvhoxNAs5LXQUQ8P4zxhD04Ajftp/dMVCbRifYwyNgOX+wy0WzUa+jTE02kwisXWNVDH87UAMDZKWKmJo2JSyGBr2fOk6kYC9a4mXmcl4dsfxMovykLiLipchEv4YLHNKsMxXF7/t0RrBdlqsDPx/H7xOmNEMWeS8AEVsuOjnchEcCWGLeAIcxEB5mGRhH/Rjaq0jHyETTf9eedY6/UC9MGjdqT0PvTsCeFmYPRAOjEYtB73GysJ5iM3Pxp59PAEb/uwNsL8HSUwf4TCT0Xlw5OG6nLATRLJjzMlZUV9pzIk2Aq9mzAn1Ahf4OWLmjHNnLjvKu3MDhHvnBiALzn1CHDz30Yb3yTqI4dJyg5CBY797gXk/x8FzxqwZm6ZDl4lXiV+NoKRdp1qpv+tSzcKC60bqZZCpLi16GRZi4scBQ8AQXTecPmhK8lW7dt0syvMnhum6eQjJsj6iozp6cDLLUUpVau8enMVcgPfowak+g9UeHDKzPw9OU37eq/Tg8Nx/2r8ZWFZTpDMPzvtfvj5+hv/8ar1YT3bo7mJx7mVift475pnoNnp1GkKqrsiKj3SM1HKHbF4LPODpoebyiCiYIYiin9xdqhft4KX8c/kZPW1EUFGvxDnEeQV1RXYddOwcMst9vY05hySGB8pxiCSQfzc1K7Rn3JErEyUmkyKvOkDPw7CtHHDw/G+CAPc7dvMMfNWZf6VoJD89MXmY+2wxLfh6/FLKo+UjcilsgAGUfIsCJyo16Q2GIuQ+I2abDPERvrkhxvwPqja/VeD/qXgQXdRw0DAMvdJ7ovwLAIdNIm8N4JycTRUBb+WGmAxWAXqwSjDKVomPgQnZf4yoNVhNaMoAoibfGT6M5Z4R+BGBbvCrZ+mwyrC8E0XXBOeXEDhzWX6dUpYXi8clSaSEUeb2KL5yi9nDc4450BHGI/KDOWYxeEqQ+EVy53DSrVPkjFwla7ipiP5+A0K9vqhh4ddlSmHqS2lBqJeVujtjt4muScLounabmE1VluuscCzK28udzdFhktGTzBzXrcPEnAnwHh0m1aev2mFCZvbmMDGb8q6ODhOUKdq/hVWWPTqmvDSK5f6LA5vNujlH54iu95+tZoq+zqffP0OoSXFCa74+3HEaoJDRcqXeiqmMF3frrUhF/ktPZaGi+3XlspCx3zKfxZ3vhomDjBNPoRtaF1s6RgaGb1mSyVMcYIdsauOHYoNHvQJ3yHD+8MhqvPyB6+3A8ffU/A6o0ev/XOwEwHb3BzsJMRfIW7vQpKcgFAfpNx/hAXbt4tiDZ63X2JL8KTPwsyU83HuBjaxHOdMb+d5DCKJd4KcWaBrOC7aW69GJj4HvxtjuvEz2uAhNBNkDnua40S6J2b6+hIENogiL96sEvzME/yQgiitrow7Yj9dj7Ptvh9NWFIszKgwwXWVMVTkrirv78on6Y5Dbosh8Isj6nlPGx5Igio5RWmOsOEiqXnGDEeRv3A/g39zmeRseWRHOlivMyX4mc7gsEX/LfX6BzO05z8Qom0OOETyce3+Rie0IE3tmLOwaSKaoJ+WcGEz0aTK7g5zJh0PujNNuiEs1mOrzOgb4bpNBIPGVCv87KfGXVYAl4zdIrMLPpgfImSKklJpdgWjy2uJEJsLL7PDlr6n44o4f22A3fj0PQ8ErixlTsGKu0uPfdjomcPHIDBX8uwu+7vKdt/HTK6jSF35YyhM6WQr12pdDgWNGPAfB5J4yGvJj9/BKC1cebn2JuBK9Maj7QNXo5wd6gXz4JS0aWuByDXCcuVo0N2gzmbnBkJkb1PY4TnlwZH8cJ+UCSOl6XlrRQd5Sj14HccyRsEVKg/d91PBKfCglDB5mdWF11rxBTe1+aW7qTMIcphLmMG+PN4gxFt/QUeR9ur5zh1odw0/BDkDo3sORPAwdK9qkYRgC3KqdpyLUZAyztvOTvo76JVIMqDwGZop6Oyu+hjhx6Tcz8IovE9ApeRnx8wovw7hK9/oW9InRHI2iL3WaU+86c5unz0p85sxBnznl/8o9kTvoh0UqCrs1GXbnLDf0aEIRX6XOOyYTWQL6YCSAmonR5yYD7EIUCB1j43UPF//SxR1F4DJyelvjMDzrG9nkS1KnZ7zqQm4t6FFTygNvBmweIK/ZJUvPteEfaPT5vkKm781e0Nq5o/ZR/qjtrCgiMd7dsoHg1X/20syYn2g+DM51gPpJdCAhsqsVvlqxvaHrGuL6SOT/m5c2COKkmRU0sQl+whlI3cKT5jfgSmykW0e3vx8lERR/h2IKSxNcnldBmPmHekFJzxILSdbxrR1aQujmKvF2d9RZph/f36dLs2gfP71M9s8+lMa6Bris7NtFG4BMJkmm9h9ZwSOZcVhnpoYW5E0xMPhyDUACBmbG/FT7z4KvNJcWye5Mq5dF+9bB2wM+BtSIU8DiUBEnWu6M2anmGMFuJ7yqdcSVVy8agDnmLo3Qq+H0bUkAHoTETB22+Ts5224hHZl/SKNs5A9xiBURuHqS+a7itpWcc9l1K7PuqO1dt8zLmzv6EU505mB9MTE4qqrzaJDkyciw0F78vSoLwWns4mS+jxvlVlGnk3yGomFODqYowg9fQOjCbSLMNZ19SO+dji5svrqncbL/RLz7+Ve1fWGrmkAwlv0dKk0eRszlHl5F5+oCzCXFvubdHt4aVQEuRepVeN4peA7rOyGFV3V+iERf9XUcIlXlDpEhcTN1fIjOL20//UC+pZjapCIGAX1q8zplckxlMr+mlly8x/EHyNKsfW7CDh3VqJx9LMzikVdNajEoNWkIX6AUWPYF3p7CfwHloeJFl/wel5ypzmdmLfbWHE8y+jwHSgPnQNUWfZ8DrfY50LU3noM3cr2zqe7eKHrq1hyhOexvZVMSi5vGyR4ar2C3LnssesF8SckZVa2qOdP+3dUdUbzxzIq2UhwxnlkpudiTXDw5h/Ho1d16FpEakU2KPlHriIzE1mVvXM/5bO2R61z/EMVQfmWf7jfIeQhfa2XiqhUyw5dmFGY8oW9SrIYA2Tm/MCSq3NCj9aMw8bOFy2aiATvwPGsXuct0G8T8dx/EcbBtToAVvCYKs2JV1jFj9Y6apwtNNKThoHu5FnGs6kCNmXIqiKDC4Prrz3jOh2k28gfd+bRoB91AdQMroWEQW7FF0IVwQwU4uNDZPfwv3NF7dDHMPqCEyhkyd7PP8L9oehi/D3y4F8vFmAOQFl5BFNdF83HCaaqt1MR1e6gWzXUkq2HEdcO4ntU91+3hWrS0ZdnPI74bxvd82ju+RWsevDfj8XA3j2xWHKxHZIsWQFYQZcR2w9hWGSftEd1i1gnxfbP61qhow4j65lE/7V9kE7MYUNztiPh2ET/vX34TwwlZIhIJ+B6R3jTSzf6FODEQ0Y1Y9aER5c2r5Gr/opwshJFDNKkAKinhejyWU48tRetXbIG9UQXU6yLqdQmaPWsJvC9B5JIacR9CMpdDf48YntaU3mZaWxjWRQNbLq2vnmlVebPNVEIq52pGVflatFnR4KqAxBaxLNrWaBbjyLWPPdNlnpJyQ6oU2WxeC8gWjWv3VDj7JBPOxlNdfarnJn+ozdpRxq3dzrrUqgY170JRgOfxkJ9wyLWhH3LRyLaBvws3PmK/beyze7pH7Is2t2WC+PKI9LaQPheVsa6RLlrb0vCIelf6GANRcc0bfKjiQmZr02Voby+KVxeNbajvJOktSWpWjKf96NNuHHvBy9HennBXI+13NL2cjGBZDIQMwYvW8Cua1ko6ysKN6D/uIDSkz2l32ZrTaIGiyqlZNEZxLj+Pllhhc6TNctOn0r636VOaTVv/u9EzjSFIJ2WtgUeG2PR5kdiiZedFNVozYk1FUyVLaC42oyGlzGPaUUaRNtASR+Snj0SdhsGL62S94EmJ/qwzDWvP/OrGqKi/A2LSWAFOtNBzJwlJda6sLc6r6zuoGgvpx0FfCN9O5vEdOaQp3GVdACSJ5DsLq4RlmeS58TqNEA7yIQzsQq32kiVnQCW7JwdXBN4WVQ8DUToPMzvlJz8gz3C1g+IrWHeTDNq4O48fxOxPy4OMykHvAb7zc10s1G67MDzMpPz8BPTkab4ukrL7g3a1SI+Ai3KZJAehuKgTT8VJGKq8L0WYvQ046T2s4FJtBCIk1rVFaA2femXSA35Dtv+s0cqriyFPvoMBV5hIcIEa1iRRAmGyp7DBHcCW+0naySt94/uMgQuIpPhG312FwXZC29dD5jFQFi0TtWof/QPgJu8tA3cGsWrAPwi9c96IgOHTt0zCbQIpIMTO2hKchMAmzIYCzkHCJ/7CISTVwA65iMsxU0foSiV2Imd5Ft6XhVbhOuxetnK7cVf4b/Q/EWOgOdAgheDAkTx8YxzQMQgbwv0Mf0CJw7e8SdoKK0PEDoRu4CBVIYUo4cXxBq+WtHkifQTZQQKWzWD6LmJboODeuPiZHSQeRgxub0c4nvOOzHmHhR38kYg272wviPDnEoLnVKMs/Q3p+hW9YK3QpmY+RVSTGrC/qTpXq1k1JdV8ZrJeTtP2OqtMy3s5NaF4VLCmXA+vfG8hQpGeh5UIdGB83OaS3mqYxri70YZ0hNWVg0so69dWY/WHv5p1JyounRyqtIBxfgPoK/j0ABeNBa/FfRBZCR66VRBu8RPaLE/xrLjQeKi1TeX7HNXeFvlSbmPpltpfsLQ+cGHltKUWWSqckHJZDG0yUCwq3NpihULCIojzcE15ahnBoHeEW4srxtba8gt1iA8vnU6V0YSywnw9CrB+YEP2amF8kOjqDihGWr+4sB2ieuT3Q0tps80wAwnZSl6d4QwmOWkCiyEr2jTioDjRAQnyhZMrtp9SIpVa8iWXIa7xrW6R/abC1T+J5ceosyT+ZGOLJP4TxPZZgEpS3bkCTOgb7DRkJewtItgVqkRTylklIXwLpiEqn4bgBfdp7mPDfDHpit1uaeNrIqet3Rcm6kL5HArpCHc5swk9KnnIdHad1dlNeonlpPP2F1jUF8pXJ2oSgd/1WiMAsF0J/r5gRy6smB7tvCmJaj8brGJtLEwqeE9ED4DE0QnvZ0XDqyjb+s6AvUtCe0PV0ZiNheAmAnHG7vCOsQyh0GClTo5roRR5FQFZ2SEEUKfZQxXOT2Uhdq9VFjVvajPDVtr4iOeppPanXGlrr+UdC63PKW2FDlS47LEkJ3UMnTmRChS+zZJMdZdmN6jt9VmaiiGyrHUw712n7rxM20g1hdGZfKwzmRy+NxcbmbVHF2L47Bhd0xyC5zUR3Fp0zVQMkK0TXZNvWcTGLcfhg1EQCwH+M5QLcGXGdBzV+H7GFhb+JfgJUQBozMzIVBqmuUXNBFmV9d5rger6rTN5q9VvwyovWoeKmeu9V5qc1q40SY55b1XrpmJk7iNwXCsORrmyMblS54qT68pcF0+6KjnpemvBudMxOPdtrHx+tHwoQ3B74oMYnIv8sqjy5His21EXdVWTqIsyrKvtpVrMZCGm47muf66PLzLZ6bmeiZ78EKzgIdgcVA3YHJl6AOGUCfV8IDw3Okr9jZOULpH6pSTVmtDPskFzNAXJZ4dCEKLxumjouliovHFRln8v666htmdEmtXoUTPeFlUn56gkexmG27stJIUsN8ErtfDsrHU+9wg/ybF96fP0ApE+PXQFjVdH4/QluTrkHERt7+44mwY9kybtO5Rv1rDvlOiJb25VYercdcKnrbXdkmYmJvMz32+3MaU8R8N+cTSY5auwmEHCs2iEE14YCk/Kxw2yp/QbfQTllHBSvC3HjaBctp+wWAsWlhagoPJi9DzamevbXuLQoKT0CxMujpAGRhJQhaislk+DvjsK0JPfPBI8ZvHAaWxhfZTyX0aXU1neQrtb5S7R8uDVCGQZVWnw1UBiQ8vVTryfNYiz44c0iWI+IyNcGSEiGE1ovBOVMjrbTUmkrhhek+4P4yLdoQQJ3XKPvDZfsQUcToTEhw2gMYlc6K4EQSE+hizcr5eYRXaMa+0xBGvk6pRsrp/VH8jRrqI1wsDFI0STlsjXtqn3ppu9nHhellaEmyB1zLNynnAp5y9IGhUbgu9id256qWL85JF0UIa5lui6GR9XZbBwqXx03ULm/2ovrmomej4vvME574bUTEmP5G4bnM9ELyS8hXdQkb7kPrs636fMnPeOCPNc1Piy/qJVnQqbVP+ZWa1a/Z+VkEJH4R0srPmM0Kr2iFa1tlWn36gdozydd1fANsvpF5L9C0UAbrDtFD2b5p4hfntDWSd6RrlnaZ0AV5Ba2AAzAbFE/FSEWUrEmvLXVHxxx49t0I9GhEizZavSHRSkQRZfTVXx4992OiaI1JWi4oiaDNRRe0jelIqRAtjaWPfSC+zv/BI7+eXE7++3aXWF5xCsIEeF//yTYCOBbBUcl5Z7NzjZPOfHQFLPhHpkCY2qGv38YG1dD7HLX4D3AtBbi9y6AYlmbnABbrpEsky7CnQUCcPs4YNikinj+pR1/y3navUO7CA4E04vJlUce+Y1eCWkFlXHP5xrJTRwbNXF0llzJVVXeLa0EONupSWwF+1xJTHi4ptE2QW+cxeGGIjBDjuo4Ugeho4VbVIDjyyUfnKKSnVrLsxJQf7Wtemk52B6xsirxXLDkBOE7BZ6swNWKSrx+lRTb2fF15S4YCUvm/IvY+Yp9iqy+fa8uYYYKdIsXWY0pi+MPI2pt4paRWJpfsiR6SGnk+WwiE1VtCJ9zJX5iaQmvMrQuyY1MbNtQIJZIcX6IkQzmdIoRoENU3HsfwV8UmU72D9vQUvIhEjZU4+CVnl40hBtZKRaJamxkiw97BzFY7SP4QBtZq0dOdrYjz9qOyuKaPX/TjkALtT06cPgwSYtjNcxrOTGyJ5sjP1dGn1aHVE1sWcUJ5jg9I3hmjzbpELkQyZlC58L3KRTJFBrUBoJ3/0K0F3q2p3/tkziRKE3uZ4swxY386uiNS9qrr3PldLadwNdaf9YHVdwDis4c1WIt+TpkkpyUleY1l4lOUOMdatn2XvAwKQGvIKdr9LkrA0/3oOpiDVsfSVYb8HWZ+ocAU2nJ5r6TI1zf0x5o2Hrlj5ZkZG+dfBM5U4jqWtEprRk7xuE4lhWV2yQ10PHYMiaE47QEBorXhlIhryCmqmUg4LTeUt6Gh/0NF1IJD1ZzeBUVGhB0pOUfbrorAbT4MUlieuh21h6JsdXJEYL8shxmdK1hZSK7GnZ0gq2GnzOP/qoNgLuAIWTnGjvgnwi1KRQ/D/X0I/eIIfSbWtbgVrLDOOtPJW7tjeWvwbixvORZ91ugTf/VG4ha4BQ3EIhoTCHvdZ3ULBZVi6ftM1QUhsnTRiG2hftphRZHuhu3UVrb93VlyZ1skjCrONgJ1vJO3Aq90AmUwKiuZEF4smQ0f7Kcx6XyoXjubXWraBKWEFohUie6GAXBc9R5T7obLoT/DemGep3krLbjtPR0dHALphjzwTFC/1uJ6RPvEbEYVSD+PH09BakSxb8Te2CNnX0YVmBQ7hyh7KXa8A6awS+TPYgvImgnIOhL/EjtrafEt8hRsSBjWQ9LCnFkO/jP6j3kfUkzt93dGddbKy8Y90d66aW39ChjnWk0AthUtE+aqcPEKcrDCuZfMoL/PpMFPilrVpmLYr855WQ95GwqPPJyGMvyOsJ+ZvlWE2izaCDXuINDh7uSzG58CU05RYXmW+tPdfaXBNOfqNx83X9XaVAu1Fup1PWSqqN2HSFr24/09Rbk3tP7fB02dtqOa0geEldNDqNFnAs97Px9wj7oYwcyCu5r7P3B6sV7gjXgttsLuYIWfZ3P3j1MB1cri1vOrtlVQXTI67rt6gLCvuPmMAlK3jZ4k1fo+3S213pxcoJ85qudNT7RE17n9D8rZk2qUiuaT1/a4gpNaYQpzE/1c0+VUSqnUuptiu/+1zMsOk9yfD0i6yV7D2Wh5lx/1MTqoREwBlfz7l1dA8x1SFVCMYwC5lXZaD6QXsrKA+jvRIAlEfnXgkAhryCMXyiY11+zqcMGrI4WWn0hN6ecH9tNSHNBY8FSQurjqMnxJjR61B+F5zhw5DYtTvWdcVgoiZ13ZYjwLtRJIR4/5l5qh6pz2/LSKArTYKxgy6tG/qiwrwBP7Rpnph3aHQw9FtzyuHYOFXxVOY88+46vn8hc3tx5HKU97DYZEoXuPlE0z/eGfeG0QzPnarFA5dV5q1qwdxi4YKF5Mh12YL5hA7MLNsnLenTEAuvc3xZSa9K66Ku9lu0dSFa9ZlcvyIlZ+yUyjOVQAeWsUR20WzoKEPGUqqgoB+8Ia9Baogm1UPuhCL2MicvWXuJTnIx0tmUu+ZVfSZyirRRX6GEfXuMYtono2iiuPO8y2y/2oyCzuyPUZTXxzqOUZBD+QkdoBU+HpJw8j8+Pn2Fy/z16bd/1T3URRI66kYXOQBc+Bxe6R+bOqcaf6MvJOdU2mqivXNabp4/DZ8vEBjYgvjwBKzQ3kgR+2UPj/bhHkSXg+Wp2j+WZTnWp2P5ae/bmzDwgySSoxcJ9TdxcEOl+0tEqkQY7xqpojHqq+vvP9xLcfKJxu7nTmjZlG87x4oleSLsOT3YktPLYTTaWDv0p733XIjaUK/G65IQwedlOmDZ39eYNH5LYtLul6CbqvEzgRg0GTEYxsNDY5qZxslbUxkfl5qH27OHLXptknKaZjZpxbZWR95iyBm8YmbWMHoN2YqhznjdZABWDFNmGhqytvutWKrtelVddc6L0P2rumavNrGzU3XZ4atWdc1++1OZTdnErlDVVQ2e7fev6jLnxqjqtoblAai6ZrMGqutTdUWk9q/qmqKV6oCq+412KT+g6rIpZaoue750nUjA3oWqteqMt3EMQK01a1QHHLL+YyyGqP8sepFYM4+ssSi4ZJVbM+3sc0wiSARlyJjFe9ieFaG+3XQ4F/TRqPRq1pReezccyOKjhqzjkiYDo5KLAukGp+TqjEONSm6zbILO7ItN6EpTprArVHINc3BKrs4aaI1KbmtY7l/J1ZVmTVPXp+SKSO1dydUV0T719PtnCLVD/tyHO64EnqDDXofyaiyGp7ymLV7PVXmdzTUu6n8ukUQ71l51pamQpa40m5pdG69Gv5mZfDLJ3OhfwZkLAB8VnOpDWG0HUUpSWLpScMrbPIwKTtVBXQj83+xfTGrKsHWShvP+l6+Pn+E/v1ov1pMdurtYnHuZqF9ovaOeKV6j2tMcVmWmxY6xWm6CyhdMPODwo7VbcAlWxwlBFP3kouIHpELpDt7LP5ef0pPrLRSrOV6HmjWb86LbQnYjdKxnqaJaNXTZLRfu+lf+WQeiG8srreHC6tc2rep9olW5VLTSmOL+0NpramCu+d9fuUeXgNd+UwPThXZp7TLsBViuOKsHHHcssFjZDd15XC8lVZVIwhorDVu48pT2rrxzM4I9Ase1oJ41WsDgE4NPJ1Nl7gdVSlKtUdRoADuKLdc2gKn9GsDUHgxgd4+/f7kkO5jJq82qOu9fb65RAWvI3iW+yvEQQiN1rSkTU1f36keuo8P1XqomL6cNIGwuvU/GS7XOpcpOX/WlqvWrwzJW28mlemG3qSmkBPcfNqc1net39WFzApYHEDanNZsBWOU/uovghGvBbv/xc5pofzrgM2LNuRQ3O6scAi7Uh2NOBxgqp8nsWbzklBV35ZJ9xGF53tFRhSAzi/HUmOYkKdTJRj8sS7VbFfYID45SkoSUb0coQTQbe2NJWYPPKBQMonXryQopMcqMe1PL5WR17cwTEfnsTn2hiiW8O9e2m7JNjdp255VY+Or8C0l1/q617V5rYJ2ftr2oe42Qmb1p23pTRrkr1LZVg+f7ktYNHUvqetNJh1evbYtYlnWf7RjLzdrIrljbFrBrSmS3rrErWsxGbbtGOR3dlPHfjrVtvdwQ5rgvUvGYb7H4dxLF7mpfLmWT8NgyQXtFu3ihV01YQ3UIeh1p2jHUnCNhdMI6lXGSuqrfQmrUD4jrkuaOslbscBjvvjhaBpAWt0EnNAzyWhALXn2kXKBZf7kr4MJ//0xGuFXCLYmsNZ1FurIpgNIeVBfg2A7Y7sq1c+MoUn2ivUcPk+XfwI7JBxKzvgyc/Qj1amrdgdDCfUDwzAT1EVYmhvJuh2U9PQP3QVC+gVVtge8F9aGmynbxHBH2dLurwnkDIHuXkiQynKIPG4CJlixhJLpKCG6CKCaTvMC2PPrRwL2yRuBVAM/auRmXfK5zOM8WahFVWFzbjeliGO+PmDyCWBZOW4py2g1SjLbbBH7Ros2pY/goWW/gX6G1XLrx9p9bJISGwYvrAPG9ETvjFpYFQ/BPAqIYOLkZt2cP3gaJ8qDWWIcmL9XIq/N9P2VOA92UxCm36DRgkfa9VS/sq52crteNOabND/sz2FZmJ1Qf19nBk8oPuGwAnortM5RtYvCc4OKuYZ7fpsfXlRxp4aX1bUY1/H1lGSrlOS0NHOCpXrQ+qIas0oasc+/8+PMLP4YBQlfmeIVQ2DwGDkAz/gs=</diagram>
+<mxfile host="app.diagrams.net" modified="2020-11-30T20:43:22.940Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="Ny61w5iRyF7KOlpU4vn4" version="13.10.4" type="github">
+  <diagram id="ra_u-0NkldRPlMPbjJgr" name="Page-1">
+    <mxGraphModel dx="823" dy="553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-169" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
+          <mxGeometry x="150" y="2097" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-170" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Auction&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="175" y="2107" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-171" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-170" target="rHMyBTxWZAd2S1Fpcz72-170" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-172" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="2137" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-173" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="2167" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-174" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Point-to-Point&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="2197" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-175" value="TinyDB:&lt;br&gt;Items Inventory&lt;br&gt;Items Update&lt;br&gt;Items Search&lt;br&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
+          <mxGeometry x="155" y="2237" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-176" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;Auction Service&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;owner: Yifei Xu&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;usage: create an auction item,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;search items by keyword/category, update/delete existing auction items.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;operation: use &#39;python3&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;auction_service.py&lt;/span&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&#39; to start the service.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;host: localhost:6664&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;api:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;get_all_auction_items,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;get_all_auction_items_by_key,&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;get_all_auction_items_by_category,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;create_auction_item,&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;update_auction_item,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: left&quot;&gt;remove_auction_item, etc&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;synchronicity: auction service uses synchronous communication through REST api and flask framework, to provide/create/modify/delete auction items info to frontend user/admin.&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="370" y="2097" width="330" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-177" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
+          <mxGeometry x="150" y="2427" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-178" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;User&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="175" y="2437" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-179" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-178" target="rHMyBTxWZAd2S1Fpcz72-178" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-180" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="2467" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-181" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="2497" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-182" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Point-to-Point&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="2527" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-183" value="TinyDB:&lt;br&gt;Users Inventory&lt;br&gt;Users Update&lt;br&gt;Users bids" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
+          <mxGeometry x="155" y="2567" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-184" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;User Service&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;owner: Tian Ma&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;usage: create a new user, log in existing users, list / update / delete / bid / flag / categorize items, see all bids, add an item to cart, and checkout carts.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;operation: use &#39;python3&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;user_service.py&lt;/span&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&#39; to start the service.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;host: localhost:6662&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;api:create_user, login, list_item, update_item, delete_item, bid_item, flag_item, cagegotize_item, see_all_bids, add_to_cart, checkout_cart&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;synchronicity: user service uses synchronous communication through REST api and flask framework.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="370" y="2427" width="290" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-185" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
+          <mxGeometry x="155" y="2907" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-186" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Front End&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="180" y="2917" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-186" target="rHMyBTxWZAd2S1Fpcz72-186" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-188" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="165" y="2947" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-189" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python,HTML,JavaScript&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="165" y="2977" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-190" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Point-to-Point&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="165" y="3007" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-191" value="&lt;span&gt;TinyDB:&lt;br&gt;Services address(ip and port)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
+          <mxGeometry x="160" y="3047" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-192" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;div&gt;&lt;font face=&quot;times&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;Front End&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;owner: Kun Qian&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;usage:&amp;nbsp;create an auction item,&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;search items by keyword/category, update/delete existing auction items.create a new user, log in existing users, list / update / delete / bid / flag / categorize items, see all bids, add an item to cart, and checkout carts. Manage users, items and auctions.&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;operation: use &#39;flask run --host=127.0.0.1 --port=6663&#39; to start the service. Need to run other services first for full functionality of front end.&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;host: localhost: 6663&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;api: create_user, login, list_item, update_item, delete_item, bid_item, flag_item, cagegotize_item, see_all_bids,add_to_cart,checkout_cart,&amp;nbsp;create_auction_item, get_all_auction_items,get_auction_items_by_keyword, update_auction_item, manage_users, manage_items , manage auctions&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;synchronicity: front end uses synchronous communication through REST api and flask framework.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;glass=1;" parent="1" vertex="1">
+          <mxGeometry x="385" y="2907" width="380" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-193" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
+          <mxGeometry x="155" y="3267" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-194" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Admin&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="180" y="3277" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-195" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-194" target="rHMyBTxWZAd2S1Fpcz72-194" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-196" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="165" y="3307" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-197" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="165" y="3337" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-198" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Point-to-Point&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="165" y="3367" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-199" value="SQLite:&lt;br&gt;Items/Auctions&lt;br&gt;Users" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
+          <mxGeometry x="160" y="3407" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-200" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;Admin Service&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span&gt;Owner: Anirudh Sriram&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span&gt;Usage: Stop auction early, Add/Modify/Remove Categories, View all/current auctions, Sort auctions, View Metrics, View Flagged Items, Remove/Block users, View/respond to user emails, Monitor buyer/seller disputes, Process refund requests.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;Operation: use &#39;python3 admin&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;_service.py&lt;/span&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&#39; to start the service.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;API: list_auctions, stop_auction, add_category, remove_category, modify_category, sort_auctions, list_metrics, list_flagged_items, remove_user, block_user, view_emails, respond_to_email, list_disputes, process_refund&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span&gt;Synchronicity: Admin service uses synchronous communication through REST api and the Flask framework.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="375" y="3267" width="290" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-201" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&lt;b&gt;User Service&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&amp;nbsp;list_of_users&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;create_user&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;find_user&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;delete_user&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="710" y="2507" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-202" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Item_base&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;item_key&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;item_name&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1200" y="2457" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-203" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1100" y="2501.5" as="sourcePoint" />
+            <mxPoint x="1200" y="2501.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-204" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1002" y="2787" as="sourcePoint" />
+            <mxPoint x="1002" y="2717" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-205" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Front End&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;item_properties&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;item_bidding_price&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="950" y="2787" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-206" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&lt;b&gt;User : public User_Base&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;email&lt;br&gt;password&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;own_listing (list of keys)&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;watchlist (list of keys)&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;cart (list of keys)&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;login / logout&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;update_user_info&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;suspend_user&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;list_item_for_auction&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;update_item_properties&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;flag_inappropriate&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;categorize_item&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;delete_item&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;buy_now&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;checkout_cart&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="940" y="2417" width="160" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-207" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="940" y="2567.5" as="sourcePoint" />
+            <mxPoint x="870" y="2567" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-208" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1100" y="2657" as="sourcePoint" />
+            <mxPoint x="1200" y="2657" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-209" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Auction Service&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;create_item&lt;br&gt;update_item&lt;br&gt;remove_item&lt;br&gt;start_item_auction&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1200" y="2617" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-210" value="send" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1130" y="2637" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-211" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=-0.014;exitY=0.69;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-209" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1180" y="2687" as="sourcePoint" />
+            <mxPoint x="1100" y="2687" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-212" value="acknowledge" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1035" y="2747" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-213" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1030" y="2717" as="sourcePoint" />
+            <mxPoint x="1030" y="2787" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-214" value="acknowledge" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1115" y="2687" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-215" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.092;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-237" target="rHMyBTxWZAd2S1Fpcz72-219" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="890" y="1908" />
+              <mxPoint x="890" y="1920" />
+              <mxPoint x="940" y="1920" />
+            </Array>
+            <mxPoint x="860" y="1759" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-216" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.128;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-227" target="rHMyBTxWZAd2S1Fpcz72-232" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-217" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-224" target="rHMyBTxWZAd2S1Fpcz72-230" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1220" y="2200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-218" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.115;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-234" target="rHMyBTxWZAd2S1Fpcz72-230" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-219" value="Item_Auction : public Item_base" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="940" y="2010" width="200" height="294" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-220" value="key" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-219" vertex="1">
+          <mxGeometry y="26" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-221" value="name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-219" vertex="1">
+          <mxGeometry y="50" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-222" value="category" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-219" vertex="1">
+          <mxGeometry y="74" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-223" value="state" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-219" vertex="1">
+          <mxGeometry y="98" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-224" value="seller" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-219" vertex="1">
+          <mxGeometry y="122" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-225" value="start_auction_time" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-219" vertex="1">
+          <mxGeometry y="146" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-226" value="end_auction_time" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-219" vertex="1">
+          <mxGeometry y="170" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-227" value="bidding_info" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-219" vertex="1">
+          <mxGeometry y="194" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-228" value="is_flagged" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-219" vertex="1">
+          <mxGeometry y="218" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-229" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-219" vertex="1">
+          <mxGeometry y="242" width="200" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-230" value="User_Base" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="2230" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-231" value="email" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-230" vertex="1">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-232" value="Bidding_Info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="790" y="2297" width="140" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-233" value="start_bidding_price_" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-232" vertex="1">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-234" value="highest_bidding_price_" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-232" vertex="1">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-235" value="buyout_price_" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-232" vertex="1">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-236" value="Auction" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="660" y="1870" width="230" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-237" value="all_items_list" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-236" vertex="1">
+          <mxGeometry y="26" width="230" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-238" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-236" vertex="1">
+          <mxGeometry y="50" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-239" value="get_all_auction_items&#xa;get_all_auction_items_by_key&#xa;get_all_auction_items_by_keyword&#xa;get_all_auction_items_by_category&#xa;get_auction_items_by_user&#xa;create_auction_item&#xa;update_auction_item&#xa;remove_auction_item&#xa;update_auction_items_state&#xa;bid_item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-236" vertex="1">
+          <mxGeometry y="58" width="230" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-240" value="&lt;span&gt;User Stories :&lt;br&gt;&lt;br&gt;get_all_auction_items: provide all the current items with details that during auction window to the calling service.&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;get_all_auction_items_by_key:&amp;nbsp;&lt;/span&gt;provide the item details that matches the key (no matter the item start auction or not or already end) to the calling service.&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;get_all_auction_items_by_category:&amp;nbsp;&lt;/span&gt;provide all the item details that matches the category and during its auction window&amp;nbsp;to the calling service.&lt;br&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;get_all_auction_items_by_keyword:&amp;nbsp;provide all the item details that matches the keyword in its name and during its auction window&amp;nbsp;to the calling service.&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;create_auction_item: auction service will create an auction item, usually called by user service, with item details provided from frontend.&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;update_auction_item:&amp;nbsp;&lt;/span&gt;auction service will update an auction item details, usually called by user/Admin service, with item details provided from frontend.&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;remove_auction_item:&amp;nbsp;&lt;/span&gt;auction service will erase an auction item record from database, usually called by Admin service, with item key provided from frontend&lt;br&gt;&lt;br&gt;bid_item: place a bid to an item if it is in auction state.&lt;br&gt;&lt;br&gt;&lt;span&gt;update_auction_items_state: an external process will periodically calling this api to update each item&#39;s state, which could be &#39;created&#39;, &#39;started&#39; or &#39;closed&#39;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1350" y="1917" width="590" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-241" value="&lt;span&gt;User Stories :&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;create_user: allow a new user to create an account &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;find_user: allow an existing user to find their own account and perform actions later&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;delete_user: allow an existing user to delete their account&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;login / logout: allow users to log in and log out&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;update_user_info: allow an user to update their own account information&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;suspend_user: allow an user to suspend their account for some certain time&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;list_item_for_auction: allow the user to list their items for auction with details provided by front end&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;update_item_properties: allow the user to update item properties such as price, quantity, color, etc with details provided by front end&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;flag_inappropriate: allow the user to flag an listing as inappropriate for further admin review&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;categorize_item: allow the user to modify or give a correct category for a listing&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;delete_item: allow the user to delete an item&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;bid_item: allow the user to place a bid on an item&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;see_all_bids: provide the user with all the bid they have placed before&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;buy_now: allow the user to make a purchase at a pre-set price without bidding&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;checkout_cart: allow the user to pay for everything in their cart&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1360" y="2437" width="590" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-242" value="Front End Server" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="2917" width="200" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-243" value="list_of_items&#xa;current_user_information" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-242" vertex="1">
+          <mxGeometry y="26" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-244" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-242" vertex="1">
+          <mxGeometry y="76" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-245" value="get_all_auction_items&#xa;get_user_info&#xa;add_item&#xa;listen_events&#xa;send_login_info&#xa;send_modify_user" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-242" vertex="1">
+          <mxGeometry y="84" width="200" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-246" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=-0.038;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-247" target="rHMyBTxWZAd2S1Fpcz72-245" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-247" value="Mediator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="1335" y="3073" width="210" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-248" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-247" vertex="1">
+          <mxGeometry y="26" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-249" value="static" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="3127" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-250" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-249" vertex="1">
+          <mxGeometry y="26" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-251" value="refresh_all_auction_items&#xa;refresh_user_info&#xa;verify_user&#xa;create_user&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-249" vertex="1">
+          <mxGeometry y="34" width="210" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-252" value="templates" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="810" y="2997" width="170" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-253" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-252" vertex="1">
+          <mxGeometry y="26" width="170" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-254" value="show_login_page&#xa;show_create_user_page&#xa;show_user_info_page&#xa;show_all_auction_items&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rHMyBTxWZAd2S1Fpcz72-252" vertex="1">
+          <mxGeometry y="34" width="170" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-255" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-243" target="rHMyBTxWZAd2S1Fpcz72-247" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1293" y="2962" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-256" value="&lt;span&gt;User Stories :&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;show_login_page: shows the login page to user, allow user to login&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;show_all_auction_items: display all items of an auction, including all item information and the remaining time&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;show_create_user_page: shows the create account page to user, allow user to create accounts&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;show_user_info_page: allow users to see and modify their own account information&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;refresh_all_auction_items: get the latest auction items information and show on page&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;refresh_user_info: allow the user to get their latest information&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;verify_user: allow the user to check whether their accounts information are correct&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;create _user: allow the user to register their account&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;get_all_auction_items: allow the user to get all auction items from the mediator&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;get_user_info: allow the user to get their basic information&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;add_item&amp;nbsp;&lt;span&gt;: allow the user to add an item in au auction&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1550" y="2690" width="580" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-257" value="send" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1335" y="2947" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-258" value="response" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="2977" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-259" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-254" target="rHMyBTxWZAd2S1Fpcz72-251" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-260" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-251" target="rHMyBTxWZAd2S1Fpcz72-245" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-261" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&lt;b&gt;User Service&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&amp;nbsp;list_of_users&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;remove_user&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;block_user&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;unblock_user&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;process_refund_request&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="765" y="3347" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-262" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Item_base&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;item_key&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;item_name&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;is_flagged&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1305" y="3383" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-263" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.989;entryY=0.324;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-262" target="rHMyBTxWZAd2S1Fpcz72-266" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1200" y="3421.5" as="sourcePoint" />
+            <mxPoint x="1240" y="3457" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-264" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.386;entryY=1.01;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" target="rHMyBTxWZAd2S1Fpcz72-266" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1102" y="3707" as="sourcePoint" />
+            <mxPoint x="1102" y="3637" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-265" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Front End&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;show_login_page&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;get_user_info&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="3707" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-266" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&lt;b&gt;Admin: public Admin_Base&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;email&lt;br&gt;password&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;adminID&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;login / logout&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;remove_user&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;block_user&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;unblock_user&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;view_disputes&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;process_refund_request&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;respond_user_email&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;view_flagged_items&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;view_metrics&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;add_category&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;modify_category&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;delete_category&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="3337" width="160" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-267" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-266" target="rHMyBTxWZAd2S1Fpcz72-261" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="930" y="3447" as="sourcePoint" />
+            <mxPoint x="925" y="3407" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-268" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Auction Service&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;get_all_auction_items&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;get_all_auction_items_by_key&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;get_all_auction_items_by_category&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1265" y="3487" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-269" value="send" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="960" y="3407" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-270" value="&lt;span&gt;&lt;b&gt;User Stories :&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;add_category: Enables an admin to add a category to the auctions&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;modify_category: Enables an admin to change a category name&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;delete_category: Enables an admin to delete a category from the auctions&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;view_metrics: Enables an admin to view metrics on platform sales&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;view_flagged_items: Enables an admin to view all auction items flagged by users&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;remove_user: Enables an admin to remove a user from the platform&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;block_user: Enables an admin to block a user from the platform temporarily&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;unblock_user: Enables an admin to unblock a blocked user&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;view_emails: Enables an admin to view all user emails&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;respond_email: Enables an admin to respond to a user_email&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;view_disputes:&amp;nbsp; Allows an admin to view all current buyer-seller disputes&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;process_refund_request: Allows an admin to process user refund request and delete a dispute&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;login / logout: Allow admin to log in and log out of the system&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1460" y="3357" width="590" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-271" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&lt;b&gt;Email Service&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&amp;nbsp;&lt;span&gt;view_emails&lt;/span&gt;&lt;br&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;respond_email&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="810" y="3487" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-272" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;" parent="1" edge="1">
+          <mxGeometry x="-0.4442" width="160" relative="1" as="geometry">
+            <mxPoint x="1035" y="3521.91" as="sourcePoint" />
+            <mxPoint x="1035" y="3521" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="960" y="3521" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-273" value="acknowledge" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="945.56" y="3433.2200000000003" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-274" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=-0.018;entryY=0.352;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-261" target="rHMyBTxWZAd2S1Fpcz72-266" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="940" y="3377" as="sourcePoint" />
+            <mxPoint x="940.56" y="3473.2200000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-275" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1263" y="3527" as="sourcePoint" />
+            <mxPoint x="1200" y="3528" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-276" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Auction Service&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;add_category&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;modify_category&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;delete_category&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="750" y="3637" width="190" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-277" value="send" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="980" y="3627" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-278" value="acknowledge" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="985" y="3657" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-279" value="" style="endArrow=open;endFill=1;endSize=12;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1040" y="3597" as="sourcePoint" />
+            <mxPoint x="937.5" y="3657" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-280" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=1;exitY=0.385;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-276" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="963.94" y="3667" as="sourcePoint" />
+            <mxPoint x="1070" y="3607" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-281" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
+          <mxGeometry x="415" y="1340" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-282" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-283" target="rHMyBTxWZAd2S1Fpcz72-315" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-283" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Auction&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="440" y="1350" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-284" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-283" target="rHMyBTxWZAd2S1Fpcz72-283" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-285" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="425" y="1380" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-286" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="425" y="1410" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-287" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Point-to-Point&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="425" y="1440" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-288" value="TinyDB:&lt;br&gt;Items Inventory&lt;br&gt;Items Update&lt;br&gt;Items Search&lt;br&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
+          <mxGeometry x="420" y="1480" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-289" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-290" target="rHMyBTxWZAd2S1Fpcz72-315" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-290" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
+          <mxGeometry x="150" y="1340" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-291" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;User&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="175" y="1350" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-292" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-291" target="rHMyBTxWZAd2S1Fpcz72-291" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-293" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="1380" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-294" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="1410" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-295" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Point-to-Point&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="1440" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-296" value="TinyDB:&lt;br&gt;Users Inventory&lt;br&gt;Users Update&lt;br&gt;Users bids" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
+          <mxGeometry x="155" y="1480" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-297" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
+          <mxGeometry x="680" y="1340" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-298" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.685;entryY=0.99;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-299" target="rHMyBTxWZAd2S1Fpcz72-315" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-299" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Admin&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="705" y="1350" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-300" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-299" target="rHMyBTxWZAd2S1Fpcz72-299" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-301" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="690" y="1380" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-302" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="690" y="1410" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-303" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Point-to-Point&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="690" y="1440" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-304" value="SQLite:&lt;br&gt;Items/Auctions&lt;br&gt;Users" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
+          <mxGeometry x="685" y="1480" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-305" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
+          <mxGeometry x="572.5" y="750" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-306" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Front End&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="597.5" y="760" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-307" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-306" target="rHMyBTxWZAd2S1Fpcz72-306" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-308" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="582.5" y="790" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-309" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python,HTML,JavaScript&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="582.5" y="820" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-310" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Point-to-Point&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="582.5" y="850" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-311" value="&lt;span&gt;TinyDB:&lt;br&gt;Services address(ip and port)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
+          <mxGeometry x="577.5" y="890" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-312" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-315" target="rHMyBTxWZAd2S1Fpcz72-319" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-313" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-315" target="rHMyBTxWZAd2S1Fpcz72-290" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-314" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-315" target="rHMyBTxWZAd2S1Fpcz72-283" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-315" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#6c8ebf;fillColor=#dae8fc;" parent="1" vertex="1">
+          <mxGeometry x="565" y="1120" width="235" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-316" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Mediator&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="625" y="1140" width="115" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-317" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-316" target="rHMyBTxWZAd2S1Fpcz72-316" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-318" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;REST/AMQP/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="592.5" y="1170" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-319" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
+          <mxGeometry x="940" y="1340" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-320" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Email&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="965" y="1350" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-321" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-320" target="rHMyBTxWZAd2S1Fpcz72-320" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-322" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;AMQP/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="950" y="1380" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-323" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="950" y="1410" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-324" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Async&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="950" y="1440" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-325" value="TinyDB:&lt;br&gt;emails inventory" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
+          <mxGeometry x="945" y="1480" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-326" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.464;exitY=-0.03;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-315" target="rHMyBTxWZAd2S1Fpcz72-305" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="655" y="1100" as="sourcePoint" />
+            <mxPoint x="705" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-327" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#EA6B66;" parent="1" vertex="1">
+          <mxGeometry x="155" y="3817" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-328" value="&lt;font color=&quot;#ea6b66&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 24px&quot;&gt;Email&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="180" y="3827" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-329" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-328" target="rHMyBTxWZAd2S1Fpcz72-328" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-330" value="&lt;font color=&quot;#ea6b66&quot;&gt;Interface:&lt;br&gt;AMQP/JSON&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="165" y="3857" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-331" value="&lt;font color=&quot;#ea6b66&quot;&gt;Inventory/Search:&lt;br&gt;Python&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="165" y="3887" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-332" value="&lt;font color=&quot;#ea6b66&quot;&gt;Synchronous:&lt;br&gt;Async&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="165" y="3917" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-333" value="TinyDB:&lt;br&gt;emails inventory" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;strokeColor=#66FF66;" parent="1" vertex="1">
+          <mxGeometry x="160" y="3957" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-334" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px&quot;&gt;Email Service&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;owner: Yifei Xu&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;usage: send email to specific email addr, subject, and body&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;operation: use &#39;python3 email&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;_service.py&lt;/span&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&#39; to start the service. (rabbitmq-server and postgresSQL server needs to be installed first)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;host: localhost:6667&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;api: send_email&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;synchronicity: email service uses asynchronous communication through rabbitmq. provide email services to all requested services.&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;times&amp;#34; ; font-size: 13.3333px ; text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 13.3333px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="385" y="3817" width="395" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-335" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="rHMyBTxWZAd2S1Fpcz72-336" target="rHMyBTxWZAd2S1Fpcz72-281" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHMyBTxWZAd2S1Fpcz72-336" value="&lt;font style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;&lt;i&gt;item_state_updater service&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="430" y="1660" width="170" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
 </mxfile>
