@@ -20,7 +20,7 @@ channel = connection.channel()
 channel.queue_declare(queue='email_queue')
 
 
-APIBaseURL = 'http://127.0.0.1:6666'
+APIBaseURL = 'http://127.0.0.1:6663'
 endpointdict = {
         'admin_login': f'{APIBaseURL}/admin/login',
         'admin_signup': f'{APIBaseURL}/admin/sign_up',
