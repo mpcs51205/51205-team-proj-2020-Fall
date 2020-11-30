@@ -30,6 +30,7 @@ item_state_updater_thread.start()
 
 @app.route("/bid_item", methods=['PUT'])
 def bid_item():
+    items_db = TinyDB('items.json', indent=4, separators=(',', ': '))
     item_key = int(request.json['item_key'])
     user_key = int(request.json['user_key'])
     bid_price = float(request.json['bid_price'])
@@ -58,12 +59,14 @@ def bid_item():
 
 @app.route("/create_auction_item", methods=['PUT'])
 def create_auction_item():
+    items_db = TinyDB('items.json', indent=4, separators=(',', ': '))
     key = items_db.insert({'name': request.json['name'], 'start_time':request.json['start_time'], 'end_time': request.json['end_time'], 'category': request.json['category'], 'start_bidding_price': request.json['start_bidding_price'], 'buyout_price': request.json['buyout_price'], 'user_key':int(request.json['user_key']), 'winning_bidder_key':-1, 'highest_bidding_price':-1, 'auction_state':'created'})
     items_db.update({'key':key}, doc_ids=[key])
     return jsonify(Item_Ack(True, key).serialize())
 
 @app.route("/update_auction_item/<int:key>", methods=['PUT'])
 def update_auction_item(key):
+    items_db = TinyDB('items.json', indent=4, separators=(',', ': '))
     if items_db.contains(doc_id=key):
         item = items_db.get(doc_id=key)
         if item['auction_state'] != 'created':
@@ -77,6 +80,7 @@ def update_auction_item(key):
 @app.route("/update_auction_items_state", methods=['PUT'])
 def update_auction_items_state():
     now = datetime.now()
+    items_db = TinyDB('items.json', indent=4, separators=(',', ': '))
     for item in items_db:
         start_time = datetime.strptime(item['start_time'], '%Y-%m-%d %H:%M:%S')
         end_time = datetime.strptime(item['end_time'], '%Y-%m-%d %H:%M:%S')
@@ -103,6 +107,7 @@ def update_auction_items_state():
 
 @app.route("/remove_auction_item/<int:key>", methods=['PUT'])
 def remove_auction_item(key):
+    items_db = TinyDB('items.json', indent=4, separators=(',', ': '))
     # find the item from db using key and delete the record from db
     if items_db.contains(doc_id=key):
         item = items_db.get(doc_id=key)

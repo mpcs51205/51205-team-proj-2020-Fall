@@ -17,6 +17,7 @@ with open("endpoints.json") as endpoints_config:
 
 @app.route("/create_user", methods=['PUT'])
 def create_user():
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
     User = Query()
     results = users_db.search(User['email'] == request.json['email'])
     if (len(results)) != 0:
@@ -28,6 +29,7 @@ def create_user():
 
 @app.route('/login', methods=['POST'])
 def login():
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
     User = Query()
     results = users_db.search((User['email'] == request.json['email']) &
                               (User['password'] == request.json['password']) &
@@ -41,31 +43,37 @@ def login():
 
 @app.route('/logout', methods=['POST'])
 def logout():
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
     users_db.update({'login': False}, doc_ids=[request.json['id']])
     return jsonify(Acknowledgement_base(True).serialize()), 200
 
 @app.route('/update_email', methods=['POST'])
 def update_email():
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
     users_db.update({'email': request.json['email']}, doc_ids=[request.json['id']])
     return jsonify(Acknowledgement_base(True).serialize()), 200
 
 @app.route('/update_password', methods=['POST'])
 def update_password():
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
     users_db.update({'password': request.json['password']}, doc_ids=[request.json['id']])
     return jsonify(Acknowledgement_base(True).serialize()), 200
 
 @app.route('/suspend', methods=['POST'])
 def suspend():
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
     users_db.update({'suspend': True}, doc_ids=[request.json['id']])
     return jsonify(Acknowledgement_base(True).serialize()), 200
 
 @app.route('/remove_account', methods=['POST'])
 def remove_account():
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
     users_db.remove(doc_ids=[request.json['id']])
     return jsonify(Acknowledgement_base(True).serialize()), 200
 
 @app.route('/create_item_for_user/<int:user_key>', methods=['POST'])
 def create_item_for_user(user_key):
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
     r = requests.put(endpoints['mediator'].get_prefix() + "create_auction_item", data=json.dumps(request.json),headers=headers)
     record = users_db.get(doc_id=user_key)
     new_items = record['items']
@@ -75,11 +83,13 @@ def create_item_for_user(user_key):
 
 @app.route('/update_item_for_user/<int:user_key>/<int:item_key>', methods=['POST'])
 def update_item_for_user(user_key, item_key):
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
     r = requests.put(endpoints['mediator'].get_prefix() + "update_auction_item/" + str(item_key), data=json.dumps(request.json),headers=headers)
     return jsonify(Acknowledgement_base(r.json()['success']).serialize()), 200
 
 @app.route('/remove_item_for_user/<int:user_key>/<int:item_key>', methods=['POST'])
 def remove_item_for_user(user_key, item_key):
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
     r = requests.put(endpoints['mediator'].get_prefix() + "remove_auction_item/" + str(item_key), data=json.dumps(request.json), headers=headers)
 
     if r.json()['success'] == False:
