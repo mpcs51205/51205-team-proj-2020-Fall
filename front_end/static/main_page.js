@@ -125,6 +125,7 @@ function get_my_auction_items_message() {
                       "<br></br>end_time: " +  one_row["end_time"] + "<input id=\""+ end_time +"\"></input>" + 
                       "<br></br>category: " +  one_row["category"] + "<input id=\""+ category +"\"></input>" + 
                       "<br></br>user key: " +  one_row["user_key"] + 
+                      "<br></br>item state: " +  one_row["auction_state"] +
                       "<br></br><button onclick=\"delete_item(" + one_row["key"] + ");\">delete</button>" + 
                       "<button onclick=\"modify_item(" + one_row["key"] + ");\">update</button>";
         
