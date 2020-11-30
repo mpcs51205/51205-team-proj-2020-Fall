@@ -95,4 +95,4 @@ def remove_item_for_user(user_key, item_key):
         jsonify(Acknowledgement_base(False).serialize()), 404
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=6662, debug=True)
+    app.run(host='127.0.0.1', port=6662, debug=True, threaded=True)

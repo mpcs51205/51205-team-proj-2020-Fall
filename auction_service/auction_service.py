@@ -92,6 +92,8 @@ def update_auction_items_state():
         if item['auction_state'] == 'created' and now >= start_time:
             items_db.update({'auction_state':'started'}, doc_ids=[item.doc_id])
         if now>=end_time:
+            if item['auction_state'] == 'closed':
+                continue
             items_db.update({'auction_state':'closed'}, doc_ids=[item.doc_id])
             if int(item['winning_bidder_key'])!= -1:
                 #item auction closed without hitting buyout, new owner is the last winning bidder
@@ -148,4 +150,4 @@ def get_auction_items_by_category(category):
     return jsonify(ret)
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=6664, debug=True)
+    app.run(host='127.0.0.1', port=6664, debug=True, threaded=True)
