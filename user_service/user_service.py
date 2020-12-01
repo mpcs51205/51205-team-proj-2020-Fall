@@ -103,6 +103,24 @@ def remove_item_for_user(user_key, item_key):
         return jsonify(Acknowledgement_base(True).serialize()), 200
     else:
         jsonify(Acknowledgement_base(False).serialize()), 404
+        
+@app.route('/add_to_cart', methods=['POST'])
+def add_to_cart():
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
+    record = users_db.get(doc_id=request.json['id'])
+    new_cart = record['cart']
+    new_cart.append(request.json['item_key'])
+    users_db.update({'cart': new_cart}, doc_ids=[request.json['id']])
+    return jsonify(Acknowledgement_base(True).serialize()), 200
+
+@app.route('/remove_from_cart', methods=['POST'])
+def remove_from_cart():
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
+    record = users_db.get(doc_id=request.json['id'])
+    new_cart = record['cart']
+    new_cart.remove(request.json['item_key'])
+    users_db.update({'cart': new_cart}, doc_ids=[request.json['id']])
+    return jsonify(Acknowledgement_base(True).serialize()), 200
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=6662, debug=True, threaded=True)
