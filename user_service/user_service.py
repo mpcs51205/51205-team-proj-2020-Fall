@@ -24,7 +24,7 @@ def create_user():
         return jsonify(Acknowledgement_base(False).serialize()), 500
     else:
         users_db.insert({'email': request.json['email'], 'password': request.json['password'],
-                         'login': False, 'suspend': False, 'items': []})
+                         'login': False, 'suspend': False, 'items': [], 'cart': []})
         return jsonify(Acknowledgement_base(True).serialize()), 200
 
 @app.route('/login', methods=['POST'])
