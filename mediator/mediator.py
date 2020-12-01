@@ -154,6 +154,18 @@ def remove_item_for_user(user_key, item_key):
     r=requests.post(endpoints['user'].get_prefix() + "remove_item_for_user/" + str(user_key) + "/" + str(item_key), data=json.dumps(request.json), headers=headers)
     return jsonify(r.json())
 
+# frontend user can add_to_cart and it will return acknowledgement
+@app.route('/add_to_cart', methods=['POST'])
+def add_to_cart():
+    r=requests.post(endpoints['user'].get_prefix() + "add_to_cart", data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
+
+# frontend user can remove_from_cart and it will return acknowledgement
+@app.route('/remove_from_cart', methods=['POST'])
+def remove_from_cart():
+    r=requests.post(endpoints['user'].get_prefix() + "remove_from_cart", data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
+
 # admin sign up
 @app.route('/admin/sign_up', methods=['POST'])
 def admin_signup(username,password):
