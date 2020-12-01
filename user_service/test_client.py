@@ -57,3 +57,11 @@ print(r.json(),r.status_code)
 # key = {'item_key': 3}
 # r = requests.post(endpoints['mediator'].get_prefix() + "remove_item_for_user/" + args.key + "/" + args.item_key, data=json.dumps(key), headers={'Content-Type':'application/json'})
 # print(r.json(), r.status_code)
+
+item_to_add = {'item_key': 1, 'id': 1}
+r = requests.post(endpoints['mediator'].get_prefix() + "add_to_cart", data=json.dumps(item_to_add),headers={'Content-Type':'application/json'})
+print(r.json(),r.status_code)
+
+item_to_remove = {'item_key': 1, 'id': 1}
+r = requests.post(endpoints['mediator'].get_prefix() + "remove_from_cart", data=json.dumps(item_to_remove),headers={'Content-Type':'application/json'})
+print(r.json(),r.status_code)
