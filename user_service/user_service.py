@@ -123,4 +123,4 @@ def remove_from_cart():
     return jsonify(Acknowledgement_base(True).serialize()), 200
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=6662, debug=True, threaded=True)
+    app.run(host='localhost', port=6662, debug=True, threaded=True)

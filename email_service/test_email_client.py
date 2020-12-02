@@ -18,7 +18,7 @@ headers = {'Content-Type':'application/json'}
 #channel.basic_publish(exchange='',
 #                      routing_key='email_queue',
 #                      body=json.dumps(dummy_email))
-r= requests.post(endpoints['mediator'].get_prefix() + "send_email", data=json.dumps(dummy_email),headers=headers)
+r= requests.post(endpoints['test_mediator'].get_prefix() + "send_email", data=json.dumps(dummy_email),headers=headers)
 print(r.json(),r.status_code)
 print(" [x] Sent 'dummy email!'")
 #connection.close()

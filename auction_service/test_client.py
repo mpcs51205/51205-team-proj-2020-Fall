@@ -21,54 +21,54 @@ with open("endpoints.json") as endpoints_config:
 headers = {'Content-Type':'application/json'}
 dummy_item = {'name':'Zion Williamson', 'start_time':'2020-12-21 11:30:05', 'end_time':'2021-01-27 13:30:05', 'category':'nba_draft', 'start_bidding_price':777, 'buyout_price':12000, 'user_key':1}
 
-#r= requests.put(endpoints['mediator'].get_prefix() + "create_auction_item", data=json.dumps(dummy_item),headers=headers)
+#r= requests.put(endpoints['test_mediator'].get_prefix() + "create_auction_item", data=json.dumps(dummy_item),headers=headers)
 #print(r.json(),r.status_code)
 
 #dummy_item_update = {'name':'ben simmons', 'start_time':'2020-11-21 11:30:05', 'end_time':'2020-11-21 12:30:05', 'category':'nba_draft_2016', 'start_bidding_price':'6666666', 'buyout_price':'29000000', 'user_key':'0'}
 
-#r=requests.put(endpoints['mediator'].get_prefix() + "update_auction_item/"+args.key, data=json.dumps(dummy_item_update), headers=headers)
+#r=requests.put(endpoints['test_mediator'].get_prefix() + "update_auction_item/"+args.key, data=json.dumps(dummy_item_update), headers=headers)
 #print(r.json())
 
-#r=requests.get(endpoints['mediator'].get_prefix() + "get_auction_items_by_key/" + args.key, headers=headers)
+#r=requests.get(endpoints['test_mediator'].get_prefix() + "get_auction_items_by_key/" + args.key, headers=headers)
 #print(r.json())
 
-#r=requests.get(endpoints['mediator'].get_prefix() + "get_all_auction_items", headers=headers)
+r=requests.get(endpoints['test_mediator'].get_prefix() + "get_all_auction_items", headers=headers)
+print(r.json())
+
+#r=requests.put(endpoints['test_mediator'].get_prefix() + "remove_auction_item/"+args.key, headers=headers)
 #print(r.json())
 
-#r=requests.put(endpoints['mediator'].get_prefix() + "remove_auction_item/"+args.key, headers=headers)
+#r=requests.get(endpoints['test_mediator'].get_prefix() + "get_auction_items_by_category/nba_draft", headers=headers)
 #print(r.json())
 
-#r=requests.get(endpoints['mediator'].get_prefix() + "get_auction_items_by_category/nba_draft", headers=headers)
+#r=requests.get(endpoints['test_mediator'].get_prefix() + "get_auction_items_by_keyword/kevin",headers=headers)
 #print(r.json())
 
-#r=requests.get(endpoints['mediator'].get_prefix() + "get_auction_items_by_keyword/kevin",headers=headers)
-#print(r.json())
-
-#r=requests.get(endpoints['mediator'].get_prefix() + "get_auction_items_by_user/1", headers=headers)
+#r=requests.get(endpoints['test_mediator'].get_prefix() + "get_auction_items_by_user/1", headers=headers)
 #print(r.json())
 
 #item not started, 'created'
-test_bid = {'user_key':77, 'item_key':4, 'bid_price':666}
-r=requests.put(endpoints['mediator'].get_prefix() + "bid_item", data=json.dumps(test_bid), headers=headers)
-print(r.json())
+#test_bid = {'user_key':77, 'item_key':4, 'bid_price':666}
+#r=requests.put(endpoints['test_mediator'].get_prefix() + "bid_item", data=json.dumps(test_bid), headers=headers)
+#print(r.json())
 
 #item not started, 'closed'
-test_bid = {'user_key':77, 'item_key':3, 'bid_price':666}
-r=requests.put(endpoints['mediator'].get_prefix() + "bid_item", data=json.dumps(test_bid),headers=headers)
-print(r.json())
+#test_bid = {'user_key':77, 'item_key':3, 'bid_price':666}
+#r=requests.put(endpoints['test_mediator'].get_prefix() + "bid_item", data=json.dumps(test_bid),headers=headers)
+#print(r.json())
 
 #item started, bid < starting_bid_px
-test_bid = {'user_key':77, 'item_key':1, 'bid_price':666}
-r=requests.put(endpoints['mediator'].get_prefix() + "bid_item", data=json.dumps(test_bid),headers=headers)
-print(r.json())
+#test_bid = {'user_key':77, 'item_key':1, 'bid_price':666}
+#r=requests.put(endpoints['test_mediator'].get_prefix() + "bid_item", data=json.dumps(test_bid),headers=headers)
+#print(r.json())
 
 #item started, starting_bid_px < bid < highest_bidding_px
-test_bid = {'user_key':77, 'item_key':1, 'bid_price':900}
-r=requests.put(endpoints['mediator'].get_prefix() + "bid_item", data=json.dumps(test_bid),headers=headers)
-print(r.json())
+#test_bid = {'user_key':77, 'item_key':1, 'bid_price':900}
+#r=requests.put(endpoints['test_mediator'].get_prefix() + "bid_item", data=json.dumps(test_bid),headers=headers)
+#print(r.json())
 
 # hit buyout 1600, item closed
-test_bid = {'user_key':77, 'item_key':1, 'bid_price':1670}
-r=requests.put(endpoints['mediator'].get_prefix() + "bid_item", data=json.dumps(test_bid),headers=headers)
-print(r.json())
+#test_bid = {'user_key':77, 'item_key':1, 'bid_price':1670}
+#r=requests.put(endpoints['test_mediator'].get_prefix() + "bid_item", data=json.dumps(test_bid),headers=headers)
+#print(r.json())
 
