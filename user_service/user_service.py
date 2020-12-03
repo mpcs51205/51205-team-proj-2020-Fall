@@ -25,6 +25,8 @@ def create_user():
     else:
         users_db.insert({'email': request.json['email'], 'password': request.json['password'],
                          'login': False, 'suspend': False, 'items': [], 'cart': []})
+        em = {'to':request.json['email'],'subject':'Hey, Welcome to 51205', 'body':'Mark is awesome !!'}
+        r= requests.post(endpoints['mediator'].get_prefix() + "send_email", data=json.dumps(em),headers=headers)
         return jsonify(Acknowledgement_base(True).serialize()), 200
 
 @app.route('/login', methods=['POST'])
@@ -51,6 +53,8 @@ def logout():
 def update_email():
     users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
     users_db.update({'email': request.json['email']}, doc_ids=[request.json['id']])
+    em = {'to':request.json['email'],'subject':'Nice new email address, bro', 'body':'whats up bro'}
+    r= requests.post(endpoints['mediator'].get_prefix() + "send_email", data=json.dumps(em),headers=headers)
     return jsonify(Acknowledgement_base(True).serialize()), 200
 
 @app.route('/update_password', methods=['POST'])
@@ -79,6 +83,8 @@ def create_item_for_user(user_key):
     new_items = record['items']
     new_items.append(r.json()['item_key'])
     users_db.update({'items': new_items}, doc_ids=[user_key])
+    em = {'to':record['email'],'subject':'New item has been created', 'body':'hope you get rich !'}
+    r= requests.post(endpoints['mediator'].get_prefix() + "send_email", data=json.dumps(em),headers=headers)
     return jsonify(Acknowledgement_base(True).serialize()), 200
 
 @app.route('/update_item_for_user/<int:user_key>/<int:item_key>', methods=['POST'])
@@ -123,4 +129,4 @@ def remove_from_cart():
     return jsonify(Acknowledgement_base(True).serialize()), 200
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=6662, debug=True, threaded=True)
+    app.run(host='0.0.0.0', port=6662, debug=True, threaded=True)
