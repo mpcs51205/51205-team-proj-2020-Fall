@@ -19,9 +19,9 @@ with open("endpoints.json") as endpoints_config:
         endpoints[ep['domain']] = Endpoint(ep['domain'],ep['ip'],ep['port'])
 # pp.pprint(endpoints)
 
-dummy_user = {'email':"michaeljordan@email.com", 'password':"Michael Jordan"}
-r = requests.put(endpoints['test_mediator'].get_prefix() + "create_user", data = json.dumps(dummy_user),headers={'Content-Type':'application/json'})
-print(r.json(),r.status_code)
+dummy_user = {'email':"mpcs.uchicago.51205@email.com", 'password':"Michael Jordan"}
+#r = requests.put(endpoints['test_mediator'].get_prefix() + "create_user", data = json.dumps(dummy_user),headers={'Content-Type':'application/json'})
+#print(r.json(),r.status_code)
 
 r = requests.post(endpoints['test_mediator'].get_prefix() + "login", data=json.dumps(dummy_user),headers={'Content-Type':'application/json'})
 print(r.json(),r.status_code)
@@ -30,9 +30,9 @@ print(r.json(),r.status_code)
 # r = requests.post(endpoints['test_mediator'].get_prefix() + "update_email", data=json.dumps(new_email_updated_user),headers={'Content-Type':'application/json'})
 # print(r.json(),r.status_code)
 
-new_password_updated_user = {'password':"new Michael Jordan", 'id':1}
-r = requests.post(endpoints['test_mediator'].get_prefix() + "update_password", data=json.dumps(new_password_updated_user),headers={'Content-Type':'application/json'})
-print(r.json(),r.status_code)
+#new_password_updated_user = {'password':"new Michael Jordan", 'id':1}
+#r = requests.post(endpoints['test_mediator'].get_prefix() + "update_password", data=json.dumps(new_password_updated_user),headers={'Content-Type':'application/json'})
+#print(r.json(),r.status_code)
 
 # user_id = {'id':1}
 # r = requests.post(endpoints['test_mediator'].get_prefix() + "logout", data=json.dumps(user_id),headers={'Content-Type':'application/json'})
@@ -44,10 +44,10 @@ print(r.json(),r.status_code)
 # r = requests.post(endpoints['test_mediator'].get_prefix() + "remove_account", data=json.dumps(user_id),headers={'Content-Type':'application/json'})
 # print(r.json(), r.status_code)
 
-# dummy_item = {'name':'kevin garnett', 'start_time':'2020-11-21 11:30:05', 'end_time':  '2020-11-21 12:30:05', 'category':'nba_draft', 'start_bidding_price':100000, 'buyout_price':   1000000, 'user_key':1}
+dummy_item = {'name':'lebron James', 'start_time':'2020-11-21 11:30:05', 'end_time':  '2020-12-21 12:30:05', 'category':'nba_draft', 'start_bidding_price':100000, 'buyout_price': 888000000, 'user_key':1}
 
-# r = requests.post(endpoints['test_mediator'].get_prefix() + "create_item_for_user/" + args.key, data=json.dumps(dummy_item), headers={'Content-Type':'application/json'})
-# print(r.json(), r.status_code)
+r = requests.post(endpoints['test_mediator'].get_prefix() + "create_item_for_user/1", data=json.dumps(dummy_item), headers={'Content-Type':'application/json'})
+print(r.json(), r.status_code)
 
 # updated_dummy_item = {'name':'new new new kevin garnett', 'start_time':'2020-11-21 11:30:05', 'end_time':  '2020-11-21 12:30:05', 'category':'nba_draft', 'start_bidding_price':100000, 'buyout_price':   1000000, 'user_key':1}
 
@@ -58,10 +58,10 @@ print(r.json(),r.status_code)
 # r = requests.post(endpoints['test_mediator'].get_prefix() + "remove_item_for_user/" + args.key + "/" + args.item_key, data=json.dumps(key), headers={'Content-Type':'application/json'})
 # print(r.json(), r.status_code)
 
-item_to_add = {'item_key': 1, 'id': 1}
-r = requests.post(endpoints['test_mediator'].get_prefix() + "add_to_cart", data=json.dumps(item_to_add),headers={'Content-Type':'application/json'})
-print(r.json(),r.status_code)
+#item_to_add = {'item_key': 1, 'id': 1}
+#r = requests.post(endpoints['test_mediator'].get_prefix() + "add_to_cart", data=json.dumps(item_to_add),headers={'Content-Type':'application/json'})
+#print(r.json(),r.status_code)
 
-item_to_remove = {'item_key': 1, 'id': 1}
-r = requests.post(endpoints['test_mediator'].get_prefix() + "remove_from_cart", data=json.dumps(item_to_remove),headers={'Content-Type':'application/json'})
-print(r.json(),r.status_code)
+#item_to_remove = {'item_key': 1, 'id': 1}
+#r = requests.post(endpoints['test_mediator'].get_prefix() + "remove_from_cart", data=json.dumps(item_to_remove),headers={'Content-Type':'application/json'})
+#print(r.json(),r.status_code)
