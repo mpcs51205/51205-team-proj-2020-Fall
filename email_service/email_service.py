@@ -75,7 +75,7 @@ except (Exception, psycopg2.DatabaseError) as error:
 
 #server.sendmail(sent_from, to, email_text)
 
-connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+connection = pika.BlockingConnection(pika.ConnectionParameters('host.docker.internal'))
 channel = connection.channel()
 channel.queue_declare(queue='email_queue')
 
