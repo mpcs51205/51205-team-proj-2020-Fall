@@ -10,7 +10,7 @@ Ma, Tian    matian@uchicago.edu
 
 # instructions:
 
-on Kun's ubuntu VM:
+on a mac:
 
 1. run rabbitmq-server
 
@@ -34,7 +34,7 @@ on Kun's ubuntu VM:
 
     run " echo '{"_default": {}}' > users.json "  to clear database
 
-    run 'python3 user_service'
+    run 'python3 user_service.py'
 
 6. docker run -it -p 6664:6664  --name auction_service auction_user_email_services_image:team3 '/bin/bash'
 
@@ -42,6 +42,6 @@ on Kun's ubuntu VM:
 
     run " echo '{"_default": {}}' > items.json "  to clear database
 
-    run 'python3 auction_service'
+    run 'python3 auction_service.py'
 
-7 start frontend on host and point to 'test_midiator' endpoint, then start tests
+7. start frontend on host with 'flask run' and point to 'test_midiator' endpoint, then start tests
