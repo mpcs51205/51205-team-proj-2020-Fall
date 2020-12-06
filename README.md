@@ -44,4 +44,4 @@ on a mac:
 
     run 'python3 auction_service.py'
 
-7. start frontend on host with 'flask run' and point to 'test_midiator' endpoint, then start tests
+7. start frontend on host with 'flask run --host=127.0.0.1 --port=6663' then start web brower http"//"127.0.0.1:6663 

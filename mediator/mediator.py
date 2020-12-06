@@ -15,7 +15,7 @@ with open("endpoints.json") as endpoints_config:
     for idx,ep in enumerate(data['services']):
         endpoints[ep['domain']] = Endpoint(ep['domain'],ep['ip'],ep['port'])
 
-connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+connection = pika.BlockingConnection(pika.ConnectionParameters('localhost',heartbeat=0))
 channel = connection.channel()
 channel.queue_declare(queue='email_queue')
 
