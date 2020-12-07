@@ -88,7 +88,7 @@ def update_auction_items_state():
         #print (end_time)
         #print (now)
         # hit buyout, auction close
-        if item['highest_bidding_price'] >= item['buyout_price']:
+        if float(item['highest_bidding_price']) >= float(item['buyout_price']):
             # new owner is the winning bidder
             items_db.update({'auction_state':'closed','user_key':item['winning_bidder_key']}, doc_ids=[item.doc_id])
             #TODO notify user_service ?
