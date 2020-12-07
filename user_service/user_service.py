@@ -70,7 +70,7 @@ def suspend():
     return jsonify(Acknowledgement_base(True).serialize()), 200
 
 @app.route('/unblock', methods=['POST'])
-def suspend():
+def unblock():
     users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
     users_db.update({'suspend': False}, doc_ids=[request.json['id']])
     return jsonify(Acknowledgement_base(True).serialize()), 200
