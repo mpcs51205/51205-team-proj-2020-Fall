@@ -10,6 +10,7 @@ Ma, Tian    matian@uchicago.edu
 
 # instructions:
 
+(Please find the image located at uchicago cs cluster ~/stage/MPCS51205/yifeix/final_proj_docker_image/.)
 on a mac:
 
 1. run rabbitmq-server
