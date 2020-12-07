@@ -69,6 +69,12 @@ def suspend():
     users_db.update({'suspend': True}, doc_ids=[request.json['id']])
     return jsonify(Acknowledgement_base(True).serialize()), 200
 
+@app.route('/unblock', methods=['POST'])
+def suspend():
+    users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
+    users_db.update({'suspend': False}, doc_ids=[request.json['id']])
+    return jsonify(Acknowledgement_base(True).serialize()), 200
+
 @app.route('/remove_account', methods=['POST'])
 def remove_account():
     users_db = TinyDB('users.json', indent=4, separators=(',', ': '))
