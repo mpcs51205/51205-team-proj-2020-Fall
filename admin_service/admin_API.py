@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 admin_db = Admin_DB()
 
+# @app.route("/", methods = ['GET'])
+# def homepage():
+#     return "test"
+
 @app.route('/admin/sign_up', methods=['POST'])
 def admin_sign_up():
     try:
@@ -25,7 +29,7 @@ def admin_sign_up():
 
     try:
         admin_db.signup(username, password)
-        print("Success")
+        return "Success"
     except:
         return jsonify({"Reason":"Username already exists"}),400
     
@@ -95,7 +99,4 @@ def admin_username_change():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port = 5000)
-
-
-
+    app.run(debug=True)
