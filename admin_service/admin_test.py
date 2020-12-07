@@ -2,7 +2,7 @@ from admin_DB import *
 from admin_API import *
 
 import requests
-APIBaseURL = 'http://localhost:5000'
+APIBaseURL = 'http://127.0.0.1:6666'
 
 endpointdict = {
         'login': f'{APIBaseURL}/admin/login',
@@ -92,7 +92,12 @@ def admin_changeusername(new_username, old_username):
 
 
 def main():
-    admin_changeusername('admin_test_new', 'admin_test')
+    admin_signup('admin_user', 'pass')
+    #admin_login('admin_user', 'pass')
+    #admin_logout('admin_user', 'pass')
+    # admin_changeusername('new_admin_2', 'admin_user')
+    
+
 
 if __name__ == "__main__":
     main()
