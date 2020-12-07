@@ -165,30 +165,71 @@ def add_to_cart():
 def remove_from_cart():
     r=requests.post(endpoints['user'].get_prefix() + "remove_from_cart", data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
-
 # admin sign up
 @app.route('/admin/sign_up', methods=['POST'])
-def admin_signup(username,password):
-    r = requests.post(endpoints['admin_signup'], json={'username': username, 'password': password})
-    return jsonify(r.json())
+def admin_signup():
+    req_data = request.get_json()
+    username = req_data['username']
+    password = req_data['password']
+    r = requests.post(endpointdict['admin_signup'], json={'username': username, 'password': password})
+    return "Successful admin sign up"
 
 # admin login
 @app.route('/admin/login', methods=['POST'])
-def admin_login(username,password):
-    r = requests.post(endpoints['admin_login'], json={'username': username, 'password': password})
-    return jsonify(r.json())
+def admin_login():
+    req_data = request.get_json()
+    username = req_data['username']
+    password = req_data['password']
+    r = requests.post(endpointdict['admin_login'], json={'username': username, 'password': password})
+    return "Successful admin login"
 
 # admin logout
 @app.route('/admin/logout', methods=['POST'])
-def admin_logout(username):
-    r = requests.post(endpoints['admin_logout'], json={'username': username})
-    return jsonify(r.json())
+def admin_logout():
+    req_data = request.get_json()
+    username = req_data['username']
+    r = requests.post(endpointdict['admin_logout'], json={'username': username})
+    return "Successful admin logout"
 
 # admin change username
-@app.route('/admin/change_username', methods=['POST'])
-def admin_changeusername(new_username, old_username):
-    r = requests.post(endpointdict['admin_changeusername'],
+@app.route('/admin/username_change', methods=['POST'])
+def admin_changeusername():
+    req_data = request.get_json()
+    try:
+        old_username = req_data['old_username']
+        new_username = req_data['new_username']
+    except:
+        print("No data")
+    try:
+        r = requests.post(endpointdict['admin_changeusername'],
                                 json={'old_username': old_username, 'new_username': new_username})
+    except:
+        print("Couldn't post")
+    return "Successfully changed admin username"
+
+@app.route('/admin/remove_user', methods = ['POST'])
+def admin_remove_user():
+    r=requests.post(endpoints['user'].get_prefix() + "remove_account", data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
+
+@app.route('/admin/block_user', methods = ['POST'])
+def admin_block_user():
+    r=requests.post(endpoints['user'].get_prefix() + "suspend", data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
+
+@app.route('/admin/unblock_user', methods = ['POST'])
+def admin_unblock_user():
+    r=requests.post(endpoints['user'].get_prefix() + "unblock", data=json.dumps(request.json),headers=headers)
+    return jsonify(r.json())
+
+@app.route('/admin/send_email', methods = ['POST'])
+def admin_send_email():
+    channel.basic_publish(exchange='',routing_key='email_queue',body=json.dumps(request.json))
+    return jsonify({'success':True})
+
+@app.route('/admin/modify_category', methods = ['POST'])
+def admin_modify_category():
+    r=requests.put(endpoints['auction'].get_prefix() + "update_auction_item/"+str(key), data=json.dumps(request.json),headers=headers)
     return jsonify(r.json())
 
 
